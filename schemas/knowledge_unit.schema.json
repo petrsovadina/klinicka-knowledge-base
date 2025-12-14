@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Knowledge Unit",
+  "description": "A single unit of knowledge about the Czech ambulatory healthcare system.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique identifier for the knowledge unit (UUID).",
+      "type": "string",
+      "format": "uuid"
+    },
+    "type": {
+      "description": "The type of knowledge unit.",
+      "type": "string",
+      "enum": ["rule", "exception", "risk", "anti_pattern", "condition", "definition"]
+    },
+    "domain": {
+      "description": "The domain of the knowledge unit.",
+      "type": "string",
+      "enum": ["uhrady", "provoz", "compliance", "financni-rizika", "legislativa"]
+    },
+    "title": {
+      "description": "A concise, human-readable title for the knowledge unit.",
+      "type": "string"
+    },
+    "description": {
+      "description": "A detailed explanation of the knowledge unit.",
+      "type": "string"
+    },
+    "version": {
+      "description": "The version of the regulation or source this unit is based on (e.g., year of the reimbursement decree).",
+      "type": "string"
+    },
+    "source": {
+      "description": "The original source of the information.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the source (e.g., 'Úhradová vyhláška 2026', 'InfoProLekare.cz').",
+          "type": "string"
+        },
+        "url": {
+          "description": "URL of the source document or article.",
+          "type": "string",
+          "format": "uri"
+        },
+        "retrieved_at": {
+          "description": "The date the information was retrieved (ISO 8601).",
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["name", "url", "retrieved_at"]
+    },
+    "content": {
+      "description": "The core content of the knowledge unit, structured by type.",
+      "type": "object"
+    },
+    "applicability": {
+      "description": "Defines the context in which this knowledge unit applies.",
+      "type": "object",
+      "properties": {
+        "specialties": {
+          "description": "List of medical specialties this unit is relevant for (using official codes, e.g., '001', '603'). Use 'all' for general applicability.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "valid_from": {
+          "description": "The date from which this unit is valid (ISO 8601).",
+          "type": "string",
+          "format": "date"
+        },
+        "valid_to": {
+          "description": "The date until which this unit is valid (ISO 8601). Null if indefinite.",
+          "type": ["string", "null"],
+          "format": "date"
+        }
+      },
+      "required": ["specialties", "valid_from"]
+    },
+    "related_units": {
+      "description": "A list of IDs of related knowledge units.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "tags": {
+      "description": "Keywords for easier search and categorization.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["id", "type", "domain", "title", "description", "version", "source", "content", "applicability"]
+}
