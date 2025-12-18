@@ -1,0 +1,38 @@
+{
+  "downloaded_at": "2025-12-14T12:32:38.280298",
+  "sources": [
+    {
+      "name": "Úhradová vyhláška 2026",
+      "url": "https://mzd.gov.cz/wp-content/uploads/2025/11/Uhradova_vyhlaska_2026.pdf",
+      "filename": "uhradova_vyhlaska_2026.pdf",
+      "year": 2026,
+      "type": "decree"
+    },
+    {
+      "name": "Úhradová vyhláška 2025",
+      "url": "https://mzd.gov.cz/wp-content/uploads/2024/11/Uhradova-vyhlaska-2025.pdf",
+      "filename": "uhradova_vyhlaska_2025.pdf",
+      "year": 2025,
+      "type": "decree"
+    },
+    {
+      "name": "Odůvodnění k Úhradové vyhlášce 2025",
+      "url": "https://www.lkcr.cz/doc/cms_library/uv-mz-zduvodneni-102013.pdf",
+      "filename": "oduvodneni_uhradova_vyhlaska_2025.pdf",
+      "year": 2025,
+      "type": "explanation"
+    },
+    {
+      "name": "Metodické doporučení PMÚ 2025",
+      "url": "https://mzd.gov.cz/wp-content/uploads/2024/11/Metodicke-doporuceni-ke-stanoveni-predbezne-mesicni-uhrady-v-segmentu-ambulantnich-specialistu-v-roce-2025.pdf",
+      "filename": "metodicke_doporuceni_pmu_2025.pdf",
+      "year": 2025,
+      "type": "methodology"
+    }
+  ],
+  "stats": {
+    "downloaded": 4,
+    "skipped": 0,
+    "failed": 0
+  }
+}
