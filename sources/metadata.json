@@ -28,6 +28,13 @@
       "filename": "metodicke_doporuceni_pmu_2025.pdf",
       "year": 2025,
       "type": "methodology"
+    },
+    {
+      "filename": "zpmvcr_zpp_2026.pdf",
+      "name": "Zdravotně pojistný plán ZP MV ČR 2026",
+      "url": "https://www.zpmvcr.cz/system/files/dokumenty/2025-12/ZPP_2026_komplet_sign.pdf",
+      "year": 2026,
+      "type": "insurance-plan"
     }
   ],
   "stats": {
