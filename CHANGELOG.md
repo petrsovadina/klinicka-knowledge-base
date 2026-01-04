@@ -1,3 +1,46 @@
+# Changelog - Klinická Knowledge Base
+
+## Verze 0.3.0 - Pokrok Fáze 3 (ZP MV ČR)
+
+**Datum:** 2026-01-03
+
+### Nové funkce a obsah
+
+*   **Rozšíření datové báze:** Celkový počet validovaných znalostních jednotek se zvýšil na **456**.
+*   **Nové zdroje:**
+    *   Úhradové ujednání VZP ČR pro rok 2026 (Dodatek č. 5).
+    *   Zdravotně pojistný plán ZP MV ČR pro rok 2026.
+*   **Nové jednotky:** Extrahováno 47 nových jednotek z dokumentu ZP MV ČR, zaměřených na specifika úhrad a provozu u této pojišťovny.
+
+### Vylepšení a opravy
+
+*   **Stabilizace extrakčního skriptu:** Opravena chyba v llm_extract_v2.py týkající se manipulace s cestami k souborům, což umožňuje spolehlivou extrakci z PDF i textových souborů.
+*   **Oprava duplicitních ID:** Automaticky opraveno 7 duplicitních ID, které vznikly při slučování extrahovaných dat.
+*   **Bezpečnostní oprava:** Odstraněn hardcoded Hugging Face token z upload skriptů, aby bylo zajištěno dodržení pravidel GitHub Push Protection.
+*   **Publikace:** Úspěšně publikováno na GitHub a aktualizován dataset na Hugging Face.
+
+---
+
+## Verze 0.2.0 - Dokončení Fáze 2 (VZP)
+
+**Datum:** 2025-12-28
+
+### Nové funkce a obsah
+
+*   **Rozšíření datové báze:** Celkový počet validovaných znalostních jednotek se zvýšil na **409**.
+*   **Nové zdroje:**
+    *   VZP Metodika pro pořizování a předávání dokladů.
+    *   VZP Číselníky.
+    *   Agregovaná úhrada pro gynekology.
+*   **Publikace:** První publikace datasetu na GitHub (petrsovadina/klinicka-knowledge-base) a Hugging Face.
+
+### Vylepšení a opravy
+
+*   **Validace domén:** Opravena chyba v doméně "uhrazeni" na "uhrady".
+*   **Extrakční pipeline:** Optimalizace LLM-assisted extrakce pro gpt-4.1-nano.
+
+---
+
 # Changelog
 
 ## [phase2_core_2025] - 2025-12-14
