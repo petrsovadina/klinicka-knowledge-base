@@ -27,12 +27,26 @@
       "url": "https://mzd.gov.cz/wp-content/uploads/2024/11/Metodicke-doporuceni-ke-stanoveni-predbezne-mesicni-uhrady-v-segmentu-ambulantnich-specialistu-v-roce-2025.pdf",
       "filename": "metodicke_doporuceni_pmu_2025.pdf",
       "year": 2025,
-      "type": "methodology"
+     "type": "methodology"
+    },
+    {
+      "filename": "ozp_vyhled_2026_2027.pdf",
+      "name": "Výhled na roky 2026-2027 OZP",
+      "url": "https://www.ozp.cz/web/files-c/545/Vyhled_2026-2027.pdf?241128",
+      "year": 2026,
+      "type": "insurance-plan"
     },
     {
       "filename": "zpmvcr_zpp_2026.pdf",
       "name": "Zdravotně pojistný plán ZP MV ČR 2026",
       "url": "https://www.zpmvcr.cz/system/files/dokumenty/2025-12/ZPP_2026_komplet_sign.pdf",
+      "year": 2026,
+      "type": "insurance-plan"
+    },
+    {
+      "filename": "rbp_zpp_2026.pdf",
+      "name": "Zdravotně pojistný plán RBP 2026",
+      "url": "https://www.rbp213.cz/systemfiles/file/1767681087zp-2026-01.pdf",
       "year": 2026,
       "type": "insurance-plan"
     }
