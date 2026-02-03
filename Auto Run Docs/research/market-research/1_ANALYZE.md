@@ -2,9 +2,9 @@
 
 ## Context
 - **Playbook:** Market Research
-- **Agent:** {{AGENT_NAME}}
-- **Auto Run Folder:** {{AUTORUN_FOLDER}}
-- **Loop:** {{LOOP_NUMBER}}
+- **Agent:** Benjamin-wizzard
+- **Auto Run Folder:** /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs
+- **Loop:** 00001
 
 ## Objective
 
@@ -20,16 +20,16 @@ Survey the target market to understand its structure, identify relevant entity c
    - Recent news and developments
 3. **Identify relevant entity categories** for this specific market
 4. **Create entity templates** tailored to the market
-5. **Output analysis** to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_MARKET_ANALYSIS.md`
+5. **Output analysis** to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_MARKET_ANALYSIS.md`
 6. **Initialize the vault** with INDEX.md and folder structure
 
 ## Analysis Checklist
 
-- [ ] **Analyze market and initialize vault (if needed)**: First check if `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_MARKET_ANALYSIS.md` already exists with at least one entity category defined in the "Entity Categories for Research" section. If it does, skip the analysis and mark this task complete—the market analysis is already in place. If it doesn't exist, read Agent-Prompt.md for MARKET_TOPIC and OUTPUT_FOLDER, use web search to understand the market landscape, identify which entity categories are most relevant, create the market analysis file with findings, and initialize the vault folder structure with INDEX.md as the launch page.
+- [ ] **Analyze market and initialize vault (if needed)**: First check if `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_MARKET_ANALYSIS.md` already exists with at least one entity category defined in the "Entity Categories for Research" section. If it does, skip the analysis and mark this task complete—the market analysis is already in place. If it doesn't exist, read Agent-Prompt.md for MARKET_TOPIC and OUTPUT_FOLDER, use web search to understand the market landscape, identify which entity categories are most relevant, create the market analysis file with findings, and initialize the vault folder structure with INDEX.md as the launch page.
 
 ## Output Format
 
-Create `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_MARKET_ANALYSIS.md`:
+Create `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_MARKET_ANALYSIS.md`:
 
 ```markdown
 # Market Analysis: [MARKET_TOPIC]
@@ -121,8 +121,8 @@ Create the launch page:
 ```markdown
 # [MARKET_TOPIC] Research Vault
 
-> Last updated: {{DATE}}
-> Research by: {{AGENT_NAME}}
+> Last updated: 2026-02-03
+> Research by: Benjamin-wizzard
 
 ## Overview
 [2-3 sentence summary of the market]
