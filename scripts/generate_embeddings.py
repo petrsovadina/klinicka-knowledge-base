@@ -9,10 +9,15 @@ from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import TruncatedSVD
 import pickle
+import argparse
 
-# Paths
-DATA_DIR = Path("/home/ubuntu/klinicka-knowledge-base/data")
-INPUT_FILE = DATA_DIR / "knowledge_base_final.jsonl"
+# Paths - use relative paths from script location
+SCRIPT_DIR = Path(__file__).parent.absolute()
+PROJECT_DIR = SCRIPT_DIR.parent
+DATA_DIR = PROJECT_DIR / "data"
+
+# Default files (can be overridden via command-line)
+DEFAULT_INPUT_FILE = "knowledge_base_expanded_v2.jsonl"
 OUTPUT_FILE = DATA_DIR / "knowledge_base_embeddings.jsonl"
 VECTORIZER_FILE = DATA_DIR / "tfidf_vectorizer.pkl"
 SVD_FILE = DATA_DIR / "svd_model.pkl"
@@ -35,14 +40,22 @@ def create_embedding_text(unit):
     return " ".join(parts)
 
 def main():
+    parser = argparse.ArgumentParser(description='Generate embeddings for knowledge units')
+    parser.add_argument('--input', '-i', default=DEFAULT_INPUT_FILE,
+                        help=f'Input JSONL file (default: {DEFAULT_INPUT_FILE})')
+    args = parser.parse_args()
+
+    input_file = DATA_DIR / args.input
+
     print("="*80)
     print("GENERATING EMBEDDINGS (TF-IDF + SVD)")
     print("="*80)
+    print(f"Input file: {input_file}")
     print()
-    
+
     # Load knowledge units
     units = []
-    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+    with open(input_file, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
             if line:
