@@ -25,12 +25,31 @@ Tato závěrečná fáze validuje kompletní znalostní bázi, optimalizuje RAG 
     - Identifikované mezery: bezhotovostní platby, meziroční srovnání regulací
   - Výsledky uloženy do `data/test_results_mvp.json`
 
-- [ ] Analyzovat výsledky testů a identifikovat zbývající slabiny:
+- [x] Analyzovat výsledky testů a identifikovat zbývající slabiny:
   - Vyhodnotit skóre pro každou doménu a typ dotazu
   - Identifikovat persistentní mezery po rozšíření datasetu
   - Porovnat s baseline (60% úspěšnost z Phase 2)
   - Dokumentovat zlepšení a zbývající limitace
   - Vytvořit `docs/analysis/mvp_test_analysis.md` s YAML front matter
+
+  **Dokončeno 2026-02-03:**
+  - Vytvořena komplexní analýza `docs/analysis/mvp_test_analysis.md`
+  - **Výsledky podle domén:**
+    - Finanční rizika: 0.789 avg, 80% úspěšnost (nejsilnější)
+    - Compliance: 0.745 avg, 75% úspěšnost
+    - Provoz: 0.737 avg, 60% úspěšnost
+    - Úhrady: 0.695 avg, 45% úspěšnost (nejslabší)
+  - **Srovnání s baseline:**
+    - Průměrné skóre: 0.69 → 0.730 (+5.8%)
+    - Knowledge Units: 409 → 669 (+63.6%)
+    - Úspěšnost zůstává na 60% (cíl 80% nesplněn)
+  - **Identifikované persistentní mezery:**
+    - PMGAP-001: Bezhotovostní platby (chybí explicitní info)
+    - PMGAP-002: Vzorce výpočtu (PURO/PMÚ/MAXÚ nedostatečné)
+    - PMGAP-003: HBmin srovnání (chybí comparison jednotka)
+    - PMGAP-004: Regulace preskripce srovnání
+  - **Srovnávací dotazy:** Průměr 0.589, pod prahem
+  - **Potenciální zlepšení:** Při řešení kritických mezer možno dosáhnout 80%
 
 - [ ] Optimalizovat API pro produkční provoz:
   - Přidat caching pro opakované dotazy
