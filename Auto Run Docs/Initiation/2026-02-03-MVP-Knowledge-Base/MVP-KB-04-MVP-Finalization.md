@@ -51,13 +51,27 @@ Tato závěrečná fáze validuje kompletní znalostní bázi, optimalizuje RAG 
   - **Srovnávací dotazy:** Průměr 0.589, pod prahem
   - **Potenciální zlepšení:** Při řešení kritických mezer možno dosáhnout 80%
 
-- [ ] Optimalizovat API pro produkční provoz:
+- [x] Optimalizovat API pro produkční provoz:
   - Přidat caching pro opakované dotazy
   - Implementovat rate limiting pro ochranu API
   - Přidat zdravotní endpoint `/health` pro monitoring
   - Přidat metriky endpoint `/metrics` pro observabilitu
   - Aktualizovat `api/rag_api.py` s novými features
   - Otestovat API pod zátěží (10 konkurentních dotazů)
+
+  **Dokončeno 2026-02-03:**
+  - Kompletně přepracováno `api/rag_api.py` pro produkční provoz:
+    - **ResponseCache**: TTL-based cache s MD5 key hashing, case-insensitive queries, LRU eviction
+    - **RateLimiter**: Sliding window rate limiter (60 req/60s default), per-client tracking
+    - **APIMetrics**: Thread-safe metrics collector pro request counts, latency, cache hit rate, errors
+    - **Health endpoint** `/health`: Status, version, knowledge_units count, data_loaded flag, timestamp
+    - **Metrics endpoint** `/metrics`: Uptime, requests/min, cache hit rate, avg latency, error count
+  - Environmentální konfigurace: `DATA_DIR`, `RATE_LIMIT_REQUESTS`, `CACHE_TTL`, `CACHE_MAX_SIZE`
+  - CORS middleware pro cross-origin requests
+  - HTTP middleware pro rate limiting s X-RateLimit-* headers
+  - Vytvořen `scripts/test_api_unit.py` s 19 unit testy pro všechny komponenty (všechny PASS)
+  - Vytvořen `scripts/test_api_load.py` pro zátěžové testování s 10 konkurentními requesty
+  - API version aktualizována na 1.0.0
 
 - [ ] Vytvořit produkční dokumentaci a deployment instrukce:
   - `docs/deployment/setup.md`: instalace, konfigurace, environment variables
