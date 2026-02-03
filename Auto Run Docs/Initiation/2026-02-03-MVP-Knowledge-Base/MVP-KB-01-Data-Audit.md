@@ -23,12 +23,20 @@ Tato fáze provede hloubkovou analýzu stávajících 409 znalostních jednotek 
   - **Relationships:** Only 24 units have related_units (94% have none), no orphan references
   - Statistics saved to `docs/analysis/data_statistics.json`
 
-- [ ] Analyzovat výsledky RAG testu z `data/test_results.json`:
+- [x] Analyzovat výsledky RAG testu z `data/test_results.json`:
   - Extrahovat dotazy se skóre < 0.7 (identifikované mezery)
   - Mapovat slabé odpovědi na chybějící typy znalostí
   - Analyzovat chybějící témata zmíněná v `docs/rag_mvp_analysis.md`
   - Vytvořit seznam témat s nedostatečným pokrytím
   - Uložit analýzu do `docs/analysis/rag_gap_analysis.json`
+
+  **Completed 2026-02-03:** Analyzed 10 RAG test queries from `data/test_results.json`. Key findings:
+  - **4 queries below 0.7 threshold:** PURO consequences (0.50), year-over-year comparison (0.39), specific point values (0.59), IČZ change risks (0.66)
+  - **Critical gaps identified:** Missing specific point values from insurance supplements, missing comparison-type units, incomplete consequence descriptions
+  - **7 gap categories prioritized:** GAP-001 to GAP-007 covering concrete values, comparisons, other insurers' methodologies, historical data, practical heuristics
+  - **Missing knowledge types:** comparison, heuristic, example (not present in current schema)
+  - **Recommendations:** Immediate focus on VZP supplement extraction, creating comparison units, and documenting regulation consequences
+  - Analysis saved to `docs/analysis/rag_gap_analysis.json`
 
 - [ ] Porovnat aktuální pokrytí s cílovými use-cases z dokumentace:
   - Načíst plánované use-cases z `docs/roadmap_and_strategy.md`

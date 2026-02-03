@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "analysis_date": "2026-02-03",
+    "source_files": [
+      "data/test_results.json",
+      "docs/rag_mvp_analysis.md"
+    ],
+    "total_test_queries": 10,
+    "score_threshold": 0.7
+  },
+  "summary": {
+    "queries_above_threshold": 6,
+    "queries_below_threshold": 4,
+    "average_top_score": 0.6909,
+    "min_top_score": 0.3937,
+    "max_top_score": 0.9272
+  },
+  "low_score_queries": [
+    {
+      "question": "Co se stane, když překročím PURO v roce 2025?",
+      "top_score": 0.504,
+      "issue_type": "incomplete_answer",
+      "analysis": "Systém nalezl relevantní jednotky o PURO, ale chybí explicitní popis důsledků překročení PURO v roce 2025",
+      "missing_knowledge_type": "consequence",
+      "suggested_action": "Přidat znalostní jednotky popisující konkrétní důsledky překročení PURO (regulace, srážky, dopady na úhrady)"
+    },
+    {
+      "question": "Jak se liší úhrady oproti minulému roku?",
+      "top_score": 0.394,
+      "issue_type": "missing_comparison",
+      "analysis": "Nejnižší skóre ze všech dotazů. Chybí srovnávací jednotky umožňující meziroční porovnání úhrad.",
+      "missing_knowledge_type": "comparison",
+      "suggested_action": "Vytvořit nový typ znalostní jednotky 'comparison' pro meziroční srovnání parametrů (úhrady, koeficienty, hodnoty bodu)"
+    },
+    {
+      "question": "Co znamená hodnota bodu 0,94 Kč?",
+      "top_score": 0.590,
+      "issue_type": "missing_specific_value",
+      "analysis": "AI správně identifikovala, že konkrétní hodnota 0,94 Kč není v datasetu. Chybí data z úhradových dodatků pojišťoven.",
+      "missing_knowledge_type": "specific_value",
+      "suggested_action": "Extrahovat konkrétní hodnoty bodu z úhradových dodatků všech 7 pojišťoven"
+    },
+    {
+      "question": "Jaké mám riziko při změně IČZ?",
+      "top_score": 0.662,
+      "issue_type": "borderline",
+      "analysis": "Těsně pod prahem 0.7, odpověď byla kvalitní díky existující jednotce ku-011-riziko-prevzetí-ordinace",
+      "missing_knowledge_type": null,
+      "suggested_action": "Rozšířit existující jednotky o další specifická rizika při změně IČZ"
+    }
+  ],
+  "identified_gaps": {
+    "priority_critical": [
+      {
+        "gap_id": "GAP-001",
+        "category": "Konkrétní hodnoty bodu",
+        "description": "Chybí specifické hodnoty bodu pro jednotlivé odbornosti a pojišťovny z úhradových dodatků",
+        "affected_queries": ["Co znamená hodnota bodu 0,94 Kč?"],
+        "impact": "Lékaři nemohou získat konkrétní číselné hodnoty pro jejich odbornost",
+        "source_required": "Úhradové dodatky všech 7 pojišťoven (VZP, VOZP, OZP, ZP MV ČR, ČPZP, ZP Škoda, RBP)",
+        "estimated_units": 100,
+        "current_coverage": 0
+      },
+      {
+        "gap_id": "GAP-002",
+        "category": "Důsledky překročení regulačních limitů",
+        "description": "Chybí explicitní popis důsledků překročení PURO, MAXÚ a dalších regulačních parametrů",
+        "affected_queries": ["Co se stane, když překročím PURO v roce 2025?"],
+        "impact": "Lékaři neznají konkrétní dopady nesplnění limitů",
+        "source_required": "Úhradová vyhláška - sekce o regulacích, metodická doporučení",
+        "estimated_units": 20,
+        "current_coverage": 5
+      }
+    ],
+    "priority_high": [
+      {
+        "gap_id": "GAP-003",
+        "category": "Srovnávací jednotky (comparison type)",
+        "description": "Chybí typ znalostní jednotky pro meziroční srovnání parametrů",
+        "affected_queries": ["Jak se liší úhrady oproti minulému roku?"],
+        "impact": "Systém nedokáže odpovědět na srovnávací dotazy",
+        "source_required": "Porovnání úhradových vyhlášek 2024, 2025, 2026",
+        "estimated_units": 30,
+        "current_coverage": 0
+      },
+      {
+        "gap_id": "GAP-004",
+        "category": "Metodiky ostatních pojišťoven",
+        "description": "Dataset obsahuje převážně data z VZP, chybí specifika ostatních pojišťoven",
+        "affected_queries": [],
+        "impact": "Omezená použitelnost pro lékaře s pacienty od jiných pojišťoven",
+        "source_required": "Metodické pokyny ZP MV ČR, OZP, ČPZP, VOZP, ZP Škoda, RBP",
+        "estimated_units": 80,
+        "current_coverage": 12
+      }
+    ],
+    "priority_medium": [
+      {
+        "gap_id": "GAP-005",
+        "category": "Historická data pro srovnání",
+        "description": "Chybí data z předchozích let (2023, 2024) pro umožnění meziročního srovnání",
+        "affected_queries": ["Jak se liší úhrady oproti minulému roku?"],
+        "impact": "Nelze poskytovat časové trendy a srovnání",
+        "source_required": "Úhradové vyhlášky 2023, 2024",
+        "estimated_units": 50,
+        "current_coverage": 0
+      },
+      {
+        "gap_id": "GAP-006",
+        "category": "Praktické heuristiky",
+        "description": "Chybí praktické tipy a best practices od zkušených praktiků",
+        "affected_queries": [],
+        "impact": "Dataset je příliš formální, chybí praktický kontext",
+        "source_required": "InfoProLekare.cz, odborné články, praktická doporučení",
+        "estimated_units": 40,
+        "current_coverage": 3
+      }
+    ],
+    "priority_low": [
+      {
+        "gap_id": "GAP-007",
+        "category": "Granularita existujících jednotek",
+        "description": "Některé jednotky jsou příliš obecné a neposkytují dostatek detailů",
+        "affected_queries": [],
+        "impact": "Odpovědi mohou být vágní",
+        "source_required": "Revize existujících jednotek",
+        "estimated_units": 20,
+        "current_coverage": "N/A"
+      }
+    ]
+  },
+  "missing_topics": [
+    {
+      "topic": "Konkrétní hodnoty bodu pro odbornosti",
+      "frequency_in_queries": "vysoká",
+      "current_units": 22,
+      "gap_severity": "critical"
+    },
+    {
+      "topic": "Důsledky regulací a sankcí",
+      "frequency_in_queries": "střední",
+      "current_units": 11,
+      "gap_severity": "high"
+    },
+    {
+      "topic": "Meziroční srovnání úhrad",
+      "frequency_in_queries": "vysoká",
+      "current_units": 0,
+      "gap_severity": "high"
+    },
+    {
+      "topic": "Specifika jednotlivých pojišťoven",
+      "frequency_in_queries": "střední",
+      "current_units": 15,
+      "gap_severity": "high"
+    },
+    {
+      "topic": "Praktické příklady vykazování",
+      "frequency_in_queries": "střední",
+      "current_units": 6,
+      "gap_severity": "medium"
+    }
+  ],
+  "type_coverage_analysis": {
+    "well_covered": [
+      {
+        "type": "rule",
+        "count": 294,
+        "percentage": "71.9%",
+        "assessment": "Dostatečné pokrytí"
+      },
+      {
+        "type": "definition",
+        "count": 35,
+        "percentage": "8.6%",
+        "assessment": "Dostatečné pokrytí"
+      }
+    ],
+    "needs_expansion": [
+      {
+        "type": "risk",
+        "count": 30,
+        "percentage": "7.3%",
+        "assessment": "Rozšířit o praktická rizika z ordinací"
+      },
+      {
+        "type": "anti_pattern",
+        "count": 11,
+        "percentage": "2.7%",
+        "assessment": "Přidat více anti-patternů z praxe"
+      },
+      {
+        "type": "exception",
+        "count": 19,
+        "percentage": "4.6%",
+        "assessment": "Přidat výjimky pro specifické odbornosti"
+      }
+    ],
+    "missing_types": [
+      {
+        "type": "comparison",
+        "count": 0,
+        "assessment": "Nový typ pro meziroční srovnání"
+      },
+      {
+        "type": "heuristic",
+        "count": 0,
+        "assessment": "Nový typ pro praktické tipy z praxe"
+      },
+      {
+        "type": "example",
+        "count": 0,
+        "assessment": "Nový typ pro konkrétní příklady vykazování"
+      }
+    ]
+  },
+  "domain_coverage_gaps": {
+    "uhrady": {
+      "current_count": 307,
+      "percentage": "75.1%",
+      "missing_areas": [
+        "Konkrétní hodnoty bodu z dodatků",
+        "Meziroční srovnání",
+        "Specifika podle pojišťoven"
+      ]
+    },
+    "financni-rizika": {
+      "current_count": 34,
+      "percentage": "8.3%",
+      "missing_areas": [
+        "Důsledky regulací",
+        "Praktická rizika z ordinací"
+      ]
+    },
+    "provoz": {
+      "current_count": 16,
+      "percentage": "3.9%",
+      "missing_areas": [
+        "Optimalizace ordinačních hodin",
+        "Praktické workflow tipy"
+      ]
+    },
+    "compliance": {
+      "current_count": 20,
+      "percentage": "4.9%",
+      "missing_areas": [
+        "Audit checklist",
+        "Kontrolní mechanismy pojišťoven"
+      ]
+    },
+    "legislativa": {
+      "current_count": 32,
+      "percentage": "7.8%",
+      "missing_areas": [
+        "Aktualizace 2026",
+        "Připravované změny"
+      ]
+    }
+  },
+  "recommendations": {
+    "immediate_actions": [
+      "Extrahovat konkrétní hodnoty bodu z úhradových dodatků VZP 2026",
+      "Vytvořit znalostní jednotky typu 'comparison' pro klíčové parametry",
+      "Doplnit důsledky překročení regulačních limitů (PURO, MAXÚ)"
+    ],
+    "short_term": [
+      "Zpracovat úhradové dodatky všech 7 pojišťoven",
+      "Přidat praktické heuristiky z InfoProLekare.cz",
+      "Rozšířit pokrytí anti-patternů"
+    ],
+    "medium_term": [
+      "Přidat historická data pro meziroční srovnání (2023, 2024)",
+      "Zvýšit granularitu obecných jednotek",
+      "Zavést pravidelné retestování po rozšíření datasetu"
+    ]
+  }
+}
