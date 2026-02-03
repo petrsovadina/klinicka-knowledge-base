@@ -1,6 +1,8 @@
 {
   "downloaded_at": "2025-12-14T12:32:38.280298",
-  "updated_at": "2026-02-03T00:00:00.000000",
+  "updated_at": "2026-02-03T02:00:00.000000",
+  "phase": 3,
+  "description": "Extended sources including other health insurance companies and InfoProLekare articles",
   "sources": [
     {
       "name": "Úhradová vyhláška 2026",
@@ -151,12 +153,347 @@
       "priority": "high",
       "expected_units": "10-15",
       "format": "webpage"
+    },
+    {
+      "name": "ZP MV ČR - Úhradové dodatky 2025 (přehled)",
+      "url": "https://www.zpmvcr.cz/poskytovatele/uhrady-zdravotnich-sluzeb/uhradove-dodatky-pro-rok-2025",
+      "filename": "zpmv_uhradove_dodatky_2025.html",
+      "year": 2025,
+      "type": "payment-supplement",
+      "priority": "high",
+      "expected_units": "15-25",
+      "insurance_company": "ZP MV ČR",
+      "insurance_code": "211",
+      "market_share": 0.105,
+      "format": "webpage",
+      "note": "ZP MV pro většinu segmentů nezasílá úhradové dodatky, odkazuje na úhradovou vyhlášku"
+    },
+    {
+      "name": "ZP MV ČR - Dodatek AS/2025 pro ambulantní specialisty",
+      "url": "https://lkcr.cz/doc/cms_library/as-vyk_ud2025_zp-mv-cr-101950.pdf",
+      "filename": "zpmv_dodatek_as_2025.pdf",
+      "year": 2025,
+      "type": "payment-supplement",
+      "priority": "high",
+      "expected_units": "20-30",
+      "insurance_company": "ZP MV ČR",
+      "insurance_code": "211",
+      "market_share": 0.105,
+      "topics": [
+        "ambulantní specialisté",
+        "bonifikace",
+        "regulace"
+      ]
+    },
+    {
+      "name": "OZP - Aktuální informace pro ambulantní specialisty",
+      "url": "https://www.ozp.cz/pro-lekare/aktualni-informace/ambulantni-specialiste",
+      "filename": "ozp_ambulantni_specialiste_info.html",
+      "year": 2026,
+      "type": "methodology",
+      "priority": "medium",
+      "expected_units": "10-15",
+      "insurance_company": "OZP",
+      "insurance_code": "207",
+      "market_share": 0.065,
+      "format": "webpage",
+      "topics": [
+        "metodiky",
+        "screeningy",
+        "distanční terapie"
+      ]
+    },
+    {
+      "name": "OZP - Metodika screeningu štítné žlázy v těhotenství",
+      "url": "https://www.ozp.cz/pro-lekare/aktualni-informace/ambulantni-specialiste",
+      "filename": "ozp_screening_stitna_zlaza.html",
+      "year": 2026,
+      "type": "methodology",
+      "priority": "low",
+      "expected_units": "5-10",
+      "insurance_company": "OZP",
+      "insurance_code": "207",
+      "market_share": 0.065,
+      "format": "webpage",
+      "topics": [
+        "screening",
+        "těhotenství",
+        "štítná žláza"
+      ]
+    },
+    {
+      "name": "ČPZP - Úhradové dodatky 2025",
+      "url": "https://www.cpzp.cz/clanek/10168-0-Uhradove-dodatky-pro-rok-2025.html",
+      "filename": "cpzp_uhradove_dodatky_2025.html",
+      "year": 2025,
+      "type": "payment-supplement",
+      "priority": "medium",
+      "expected_units": "10-15",
+      "insurance_company": "ČPZP",
+      "insurance_code": "205",
+      "market_share": 0.12,
+      "format": "webpage",
+      "topics": [
+        "ambulantní specialisté",
+        "bonifikace"
+      ],
+      "note": "ČLK doporučuje podepsat úhradový dodatek ČPZP",
+      "status": "unavailable",
+      "status_note": "URL returned 404 (2026-02-03). URL structure changed, needs manual lookup."
+    },
+    {
+      "name": "RBP - Smlouvy s poskytovateli",
+      "url": "https://www.rbp213.cz/cs/poskytovatele/smluvni-vztahy/smlouvy-s-poskytovateli/a-417/",
+      "filename": "rbp_smlouvy_poskytovatele.html",
+      "year": 2026,
+      "type": "contracts",
+      "priority": "low",
+      "expected_units": "5-10",
+      "insurance_company": "RBP",
+      "insurance_code": "213",
+      "market_share": 0.04,
+      "format": "webpage",
+      "topics": [
+        "úhradové dodatky",
+        "smlouvy"
+      ],
+      "note": "ČLK doporučuje jednu z variant RBP. RBP ZPP 2026 already downloaded.",
+      "status": "unavailable",
+      "status_note": "URL returned 404 (2026-02-03). RBP already has rbp_zpp_2026.pdf."
+    },
+    {
+      "name": "VoZP - Úhradové dodatky 2025",
+      "url": "https://www.vozp.cz/poskytovatele/uhradove-dodatky",
+      "filename": "vozp_uhradove_dodatky_2025.html",
+      "year": 2025,
+      "type": "payment-supplement",
+      "priority": "low",
+      "expected_units": "5-10",
+      "insurance_company": "VoZP",
+      "insurance_code": "201",
+      "market_share": 0.06,
+      "format": "webpage",
+      "topics": [
+        "speciální programy",
+        "bonifikace"
+      ],
+      "note": "Specifické programy (kardiologie, autismus)",
+      "status": "unavailable",
+      "status_note": "URL returned 404 (2026-02-03). VoZP website restructured."
+    },
+    {
+      "name": "ZPŠ - Úhradové dodatky 2025",
+      "url": "https://www.zpskoda.cz/poskytovatele/uhradove-dodatky",
+      "filename": "zps_uhradove_dodatky_2025.html",
+      "year": 2025,
+      "type": "payment-supplement",
+      "priority": "low",
+      "expected_units": "5-10",
+      "insurance_company": "ZPŠ",
+      "insurance_code": "209",
+      "market_share": 0.012,
+      "format": "webpage",
+      "topics": [
+        "odbornosti 920, 935",
+        "osteoporóza"
+      ],
+      "note": "Specifické podmínky pro některé odbornosti",
+      "status": "unavailable",
+      "status_note": "URL returned 404 (2026-02-03). ZPŠ website restructured."
+    },
+    {
+      "name": "InfoProLekare - Přehled úhradových dodatků 2025",
+      "url": "https://www.infoprolekare.cz/uhradove-dodatky-zdravotnich-pojistoven-pro-ambulantni-specialisty-na-rok-2025-prehled",
+      "filename": "infoprolekare_uhradove_dodatky_2025_prehled.html",
+      "year": 2025,
+      "type": "article",
+      "priority": "very-high",
+      "expected_units": "30-40",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "topics": [
+        "srovnání pojišťoven",
+        "bonifikace",
+        "regulace",
+        "PMÚ"
+      ]
+    },
+    {
+      "name": "InfoProLekare - Úhradová vyhláška 2026 pro VPL a PLDD",
+      "url": "https://www.infoprolekare.cz/uhradova-vyhlaska-2026-pro-vpl-pldd",
+      "filename": "infoprolekare_uv_2026_vpl_pldd.html",
+      "year": 2026,
+      "type": "article",
+      "priority": "high",
+      "expected_units": "15-20",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "date": "2025-11-10",
+      "topics": [
+        "praktičtí lékaři",
+        "kapitace",
+        "bonifikace"
+      ]
+    },
+    {
+      "name": "InfoProLekare - Úhradová vyhláška 2026 pro gynekology",
+      "url": "https://www.infoprolekare.cz/uhradova-vyhlaska-2026-pro-gynekology",
+      "filename": "infoprolekare_uv_2026_gynekology.html",
+      "year": 2026,
+      "type": "article",
+      "priority": "high",
+      "expected_units": "15-20",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "date": "2025-11-10",
+      "topics": [
+        "gynekologie",
+        "screening",
+        "prevence"
+      ]
+    },
+    {
+      "name": "InfoProLekare - Úhradová vyhláška 2026 pro domácí péče",
+      "url": "https://www.infoprolekare.cz/uhradova-vyhlaska-2026-pro-domaci-pece",
+      "filename": "infoprolekare_uv_2026_domaci_pece.html",
+      "year": 2026,
+      "type": "article",
+      "priority": "medium",
+      "expected_units": "10-15",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "date": "2025-11-24",
+      "topics": [
+        "domácí péče",
+        "ošetřovatelství"
+      ]
+    },
+    {
+      "name": "InfoProLekare - Bonifikace za ordinační hodiny 2025 (VZP)",
+      "url": "https://www.infoprolekare.cz/bonifikace-za-ordinacni-hodiny-pro-rok-2025-dle-metodiky-vzp-ambulantni-specialiste",
+      "filename": "infoprolekare_bonifikace_ordinacni_hodiny_2025.html",
+      "year": 2025,
+      "type": "article",
+      "priority": "high",
+      "expected_units": "10-15",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "date": "2025-02-14",
+      "topics": [
+        "ordinační hodiny",
+        "bonifikace",
+        "VZP metodika"
+      ]
+    },
+    {
+      "name": "InfoProLekare - Převzetí ordinace s existujícím IČZ - finanční rizika",
+      "url": "https://www.infoprolekare.cz/prevzeti-ordinace-s-existujicim-icz-skryta-financni-rizika",
+      "filename": "infoprolekare_prevzeti_ordinace_icz_rizika.html",
+      "year": 2025,
+      "type": "article",
+      "priority": "medium",
+      "expected_units": "5-10",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "date": "2025-12-10",
+      "topics": [
+        "finanční rizika",
+        "převzetí praxe"
+      ],
+      "note": "Již částečně zpracováno",
+      "status": "unavailable",
+      "status_note": "URL returned 404 (2026-02-03). Article may have been moved/archived."
+    },
+    {
+      "name": "InfoProLekare - Povinnosti příjemce dotace - rezidenční místa",
+      "url": "https://www.infoprolekare.cz/povinnosti-prijemce-dotace-jak-zvladnout-administraci-rezidencnich-mist",
+      "filename": "infoprolekare_povinnosti_dotace_rezidencni_mista.html",
+      "year": 2025,
+      "type": "article",
+      "priority": "medium",
+      "expected_units": "10-15",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "date": "2025-12-03",
+      "topics": [
+        "dotace",
+        "rezidenční místa",
+        "administrace"
+      ],
+      "status": "unavailable",
+      "status_note": "URL returned 404 (2026-02-03). Article may have been moved/archived."
+    },
+    {
+      "name": "InfoProLekare - Transformace a prodej stomatologických ordinací",
+      "url": "https://www.infoprolekare.cz/transformace-a-prodej-stomatologickych-ordinaci-na-co-si-dat-pozor",
+      "filename": "infoprolekare_transformace_prodej_stomatologie.html",
+      "year": 2025,
+      "type": "article",
+      "priority": "low",
+      "expected_units": "10-15",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "date": "2025-11-12",
+      "topics": [
+        "stomatologie",
+        "prodej",
+        "transformace"
+      ],
+      "status": "unavailable",
+      "status_note": "URL returned 404 (2026-02-03). Article may have been moved/archived."
+    },
+    {
+      "name": "InfoProLekare - Pracujete zadarmo? Temná strana úhradové vyhlášky 2026",
+      "url": "https://www.infoprolekare.cz/pracujete-zadarmo-temna-strana-uhradove-vyhlasky-2026",
+      "filename": "infoprolekare_temna_strana_uv_2026.html",
+      "year": 2026,
+      "type": "article",
+      "priority": "very-high",
+      "expected_units": "15-25",
+      "source": "InfoProLekare.cz",
+      "format": "webpage",
+      "date": "2025-10-31",
+      "topics": [
+        "rizika",
+        "nevýhodné podmínky",
+        "anti-patterny"
+      ]
     }
   ],
   "stats": {
-    "downloaded": 10,
-    "skipped": 7,
-    "failed": 0,
-    "last_run": "2026-02-03T02:05:48.859422"
+    "total_sources": 34,
+    "downloaded": 27,
+    "failed": 7,
+    "last_run": "2026-02-03T03:05:03.156115"
+  },
+  "priority_by_market_share": [
+    {"company": "VZP", "code": "111", "share": 0.59, "sources_available": 11},
+    {"company": "ČPZP", "code": "205", "share": 0.12, "sources_available": 0, "note": "URL unavailable"},
+    {"company": "ZP MV ČR", "code": "211", "share": 0.105, "sources_available": 3},
+    {"company": "OZP", "code": "207", "share": 0.065, "sources_available": 3},
+    {"company": "VoZP", "code": "201", "share": 0.06, "sources_available": 0, "note": "URL unavailable"},
+    {"company": "RBP", "code": "213", "share": 0.04, "sources_available": 1},
+    {"company": "ZPŠ", "code": "209", "share": 0.012, "sources_available": 0, "note": "URL unavailable"}
+  ],
+  "sources_summary": {
+    "by_type": {
+      "decree": 2,
+      "methodology": 5,
+      "insurance-plan": 3,
+      "payment-supplement": 6,
+      "technical-spec": 3,
+      "rules": 1,
+      "news": 2,
+      "contracts": 2,
+      "guide": 2,
+      "article": 8,
+      "explanation": 1
+    },
+    "by_format": {
+      "pdf": 13,
+      "html": 14
+    },
+    "available_for_extraction": 27,
+    "unavailable": 7
   }
 }
