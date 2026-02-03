@@ -93,12 +93,34 @@ Tato fáze rozšíří znalostní bázi o metodiky dalších zdravotních pojiš
   - Risk assessment: transitional period risks and mitigation strategies
   - All 16 units validated against schema (100% compliance)
 
-- [ ] Extrahovat praktické heuristiky z InfoProLekare.cz článků:
+- [x] Extrahovat praktické heuristiky z InfoProLekare.cz článků:
   - Identifikovat 10 nejrelevantnějších článků o úhradách a provozu praxe
   - Extrahovat praktická doporučení, tipy, varování
   - Zaměřit se na anti-patterny a rizika z reálné praxe
   - Uložit do `data/extracted/infoprolekare_articles.jsonl`
   - Očekávaný výstup: 25-40 jednotek typu anti_pattern, risk, rule
+
+  **Completed 2026-02-03:**
+  - Extracted 40 knowledge units from 6 InfoProLekare.cz HTML articles
+  - Analyzed articles: temná strana ÚV 2026, přehled úhradových dodatků 2025, bonifikace ordinační hodiny, ÚV 2026 VPL/PLDD, ÚV 2026 gynekologie, ÚV 2026 domácí péče
+  - Type distribution: 28 rules, 5 anti-patterns, 5 risks, 2 exceptions
+  - Domain distribution: 22 úhrady, 9 bonifikace, 5 administrativa, 4 regulace
+  - Key anti-patterns documented:
+    - HBmin trap for small practices (0.90 Kč minimum)
+    - Prepayment risk (PMÚ > actual production)
+    - Cumulative bonification loss impact
+    - Outdated ultrasound penalty for gynecology (50% cut)
+    - Ignoring regulation limits until year-end
+    - Unprepared transition period
+  - Key practical rules:
+    - Office hours bonification (30h: +0.04 Kč, 35h: +0.02 Kč)
+    - New patient thresholds (5%: +0.01 Kč, 10%: +0.03 Kč)
+    - Gynecology capitation revolution (118 Kč with 24-month prevention condition)
+    - VPL/PLDD screening bonus (+5 Kč)
+    - Home care 921 MAXÚ exemption, 926 value increase
+    - Insurance company specifics (OZP programs, ČPZP transparency, ZP MV tiers)
+  - All 40 units validated against schema (100% compliance)
+  - Saved to `data/extracted/infoprolekare_articles.jsonl`
 
 - [ ] Finální sloučení, validace a regenerace embeddings:
   - Sloučit všechny nové extrakce do `data/knowledge_base_phase3.jsonl`
