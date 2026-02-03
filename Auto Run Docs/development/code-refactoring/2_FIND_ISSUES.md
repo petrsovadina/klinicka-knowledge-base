@@ -2,30 +2,30 @@
 
 ## Context
 - **Playbook:** Refactor
-- **Agent:** {{AGENT_NAME}}
-- **Project:** {{AGENT_PATH}}
-- **Auto Run Folder:** {{AUTORUN_FOLDER}}
-- **Loop:** {{LOOP_NUMBER}}
+- **Agent:** Benjamin
+- **Project:** /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base
+- **Auto Run Folder:** /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs
+- **Loop:** 00001
 
 ## Objective
 
-Execute ONE tactic from `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_GAME_PLAN.md` to find specific refactoring candidates. Output findings to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md`.
+Execute ONE tactic from `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_GAME_PLAN.md` to find specific refactoring candidates. Output findings to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md`.
 
 ## Instructions
 
-1. **Read `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_GAME_PLAN.md`** to see available investigation tactics
-2. **Read `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md`** (if it exists) to see which tactics have already been executed
+1. **Read `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_GAME_PLAN.md`** to see available investigation tactics
+2. **Read `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md`** (if it exists) to see which tactics have already been executed
 3. **Select ONE unexecuted tactic** from the game plan
 4. **Execute the tactic**: Search the codebase using the specified patterns
-5. **Document findings** in `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md`
+5. **Document findings** in `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md`
 
 ## Task
 
-- [ ] **Execute one tactic (or mark exhausted)**: Read {{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_GAME_PLAN.md and check for unexecuted tactics. If ALL tactics are already marked `[EXECUTED]`, append a section `## ALL_TACTICS_EXHAUSTED` to {{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md and mark this task complete. Otherwise, pick one unexecuted tactic, search the codebase for matching issues, append findings to {{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md, and mark the tactic as `[EXECUTED]` in the game plan.
+- [x] **Execute one tactic (or mark exhausted)**: Read /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_GAME_PLAN.md and check for unexecuted tactics. If ALL tactics are already marked `[EXECUTED]`, append a section `## ALL_TACTICS_EXHAUSTED` to /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md and mark this task complete. Otherwise, pick one unexecuted tactic, search the codebase for matching issues, append findings to /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md, and mark the tactic as `[EXECUTED]` in the game plan.
 
 ## Output Format
 
-Append to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md` using this format:
+Append to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md` using this format:
 
 ```markdown
 ---
@@ -89,7 +89,7 @@ Append to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md` using this for
 - **One issue per candidate**: Don't bundle unrelated issues
 - **Skip trivials**: Focus on issues worth the refactoring effort
 - **Note dependencies**: If a change might affect other files, note it
-- **Mark as executed**: Update `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_GAME_PLAN.md` to show which tactics have been run (add `[EXECUTED]` prefix)
+- **Mark as executed**: Update `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_GAME_PLAN.md` to show which tactics have been run (add `[EXECUTED]` prefix)
 
 ## How to Know You're Done
 
@@ -97,11 +97,11 @@ This task is complete when ONE of the following is true:
 
 **Option A - Executed a tactic:**
 1. You've executed exactly ONE tactic from the game plan
-2. You've appended all findings to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md`
-3. You've marked the tactic as `[EXECUTED]` in `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_GAME_PLAN.md`
+2. You've appended all findings to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md`
+3. You've marked the tactic as `[EXECUTED]` in `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_GAME_PLAN.md`
 
 **Option B - All tactics exhausted:**
 1. All tactics in the game plan are already marked as `[EXECUTED]`
-2. You've appended `## ALL_TACTICS_EXHAUSTED` to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md`
+2. You've appended `## ALL_TACTICS_EXHAUSTED` to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md`
 
 The `ALL_TACTICS_EXHAUSTED` marker signals to downstream documents that discovery is complete.

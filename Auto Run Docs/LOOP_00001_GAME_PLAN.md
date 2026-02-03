@@ -90,7 +90,7 @@ Each tactic is a specific, actionable search pattern for finding refactoring opp
   - Similar test case structures
   A shared test utilities module and pytest fixtures would reduce duplication.
 
-### Tactic 6: Hardcoded Path Constants
+### [EXECUTED] Tactic 6: Hardcoded Path Constants
 - **Target:** Repeated absolute path definitions across multiple files
 - **Search Pattern:** `BASE_DIR = Path(` or hardcoded paths like `/Users/petrsovadina/`
 - **Files to Check:**
