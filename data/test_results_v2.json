@@ -1,41 +1,17 @@
 {
   "metadata": {
-    "test_date": "2026-02-03T02:47:26.251058",
+    "test_date": "2026-02-03T04:11:57.513136",
     "knowledge_base": "/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/data/knowledge_base_expanded_v2.jsonl",
     "knowledge_units_count": 658,
-    "average_top_score": 0.6519145403472659
+    "average_top_score": 0.655102033112658
   },
   "results": [
     {
       "question": "Co se stane, když překročím PURO v roce 2025?",
       "sources": [
         {
-          "id": "11b5818d-a694-40ec-823f-e2c448d3a466",
-          "score": 0.44939535505082245,
-          "title": "PURO vzorec - minimální hodnota bodu HBmin",
-          "description": "Ve vzorci pro PURO se používá minimální hodnota bodu HBmin = 0.90 Kč. Tato hodnota zajišťuje minimální ocenění výkonů při výpočtu alternativní varianty PURO: ((PBref × HBmin) + ZUMROo + ZULPROo)/POPref.",
-          "type": "rule",
-          "domain": "uhrady"
-        },
-        {
-          "id": "ku-as-2026-009",
-          "score": 0.43931489052813877,
-          "title": "Vzorec pro výpočet PURO (přepočtená úhrada na unikátního pojištěnce)",
-          "description": "PURO se stanoví jako maximum z dvou hodnot: (1) UHRref/POPref nebo (2) ((PBref × HBmin) + ZUMROo + ZULPROo)/POPref. Kde HBmin = 0,90 Kč je minimální hodnota bodu, UHRref je celková úhrada v referenčním období, POPref je počet unikátních pojištěnců v referenčním období.",
-          "type": "definition",
-          "domain": "uhrady"
-        },
-        {
-          "id": "ku-013-optimalizace-puro",
-          "score": 0.43890008424860205,
-          "title": "Strategie optimalizace PURO (průměrné úhrady na unikátního pojištěnce)",
-          "description": "PURO je klíčový ukazatel zdraví ordinace. Optimalizace PURO zvyšuje konkurenceschopnost a hodnotu praxe. Hlavní strategie zahrnují efektivní vykazování, splnění bonifikačních podmínek a zvýšení počtu nových pacientů.",
-          "type": "rule",
-          "domain": "provoz"
-        },
-        {
           "id": "ku-002-hbmin-2026",
-          "score": 0.4318036945390583,
+          "score": 0.49250459642627664,
           "title": "Snížení minimální hodnoty bodu (HBmin) pro výpočet PURO v roce 2026",
           "description": "Minimální hodnota bodu pro výpočet PURO (průměrná úhrada na unikátního pojištěnce) byla snížena z 1,03 Kč na 0,90 Kč. Toto snížení má přímý dopad na výpočet PURO a následně na úhrady poskytovatelů.",
           "type": "rule",
@@ -43,113 +19,137 @@
         },
         {
           "id": "f6da7bce-e134-4f71-9abf-f08bc4b96b15",
-          "score": 0.4301274906060096,
+          "score": 0.4858229102068445,
           "title": "Definice referenčního období pro PURO výpočty",
           "description": "Referenčním obdobím pro výpočty PURO je rok 2023. Data z tohoto období se používají pro stanovení základních hodnot: UHRref, POPref, PBref, ZUMROo, ZULPROo. Pokud poskytovatel v roce 2023 neexistoval, použijí se data srovnatelných poskytovatelů.",
           "type": "definition",
           "domain": "uhrady"
+        },
+        {
+          "id": "ku-as-2026-009",
+          "score": 0.4778473718891766,
+          "title": "Vzorec pro výpočet PURO (přepočtená úhrada na unikátního pojištěnce)",
+          "description": "PURO se stanoví jako maximum z dvou hodnot: (1) UHRref/POPref nebo (2) ((PBref × HBmin) + ZUMROo + ZULPROo)/POPref. Kde HBmin = 0,90 Kč je minimální hodnota bodu, UHRref je celková úhrada v referenčním období, POPref je počet unikátních pojištěnců v referenčním období.",
+          "type": "definition",
+          "domain": "uhrady"
+        },
+        {
+          "id": "11b5818d-a694-40ec-823f-e2c448d3a466",
+          "score": 0.4689435143921894,
+          "title": "PURO vzorec - minimální hodnota bodu HBmin",
+          "description": "Ve vzorci pro PURO se používá minimální hodnota bodu HBmin = 0.90 Kč. Tato hodnota zajišťuje minimální ocenění výkonů při výpočtu alternativní varianty PURO: ((PBref × HBmin) + ZUMROo + ZULPROo)/POPref.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-013-optimalizace-puro",
+          "score": 0.4652274364620572,
+          "title": "Strategie optimalizace PURO (průměrné úhrady na unikátního pojištěnce)",
+          "description": "PURO je klíčový ukazatel zdraví ordinace. Optimalizace PURO zvyšuje konkurenceschopnost a hodnotu praxe. Hlavní strategie zahrnují efektivní vykazování, splnění bonifikačních podmínek a zvýšení počtu nových pacientů.",
+          "type": "rule",
+          "domain": "provoz"
         }
       ],
-      "top_score": 0.44939535505082245
+      "top_score": 0.49250459642627664
     },
     {
       "question": "Jaké mám riziko při změně IČZ?",
       "sources": [
         {
+          "id": "ku-195-slug",
+          "score": 0.4390882792997319,
+          "title": "Vykazování komplexní léčby chronických onemocnění parodontu",
+          "description": "Kód 00931 umožňuje vykázat komplexní léčbu chronických onemocnění parodontu maximálně 1krát za 2 kalendářní roky nebo při změně zdravotního stavu. Výkon zahrnuje odborné vyšetření, stanovení léčebného postupu, odstranění zubního kamene, instruktáž a motivaci hygieny. Výkon nespadá do preventivní péče a je hrazen 1200 Kč.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
           "id": "ku-018-riziko-vlivu-jednoho-pojistence-na-limit-uhrazeni-pri-nizkem-poctu",
-          "score": 0.45649639198868974,
+          "score": 0.4267762828194848,
           "title": "Riziko negativního ovlivnění limitu úhrady jedním pojištěncem při nízkém počtu pacientů",
           "description": "Při nízkém počtu pojištěnců může jeden pojištěnec, který se výrazně vymyká standardním úhradovým průměrům, velmi negativně ovlivnit limit úhrady poskytovatele, což může vést k nevhodné regulaci.",
           "type": "risk",
           "domain": "financni-rizika"
         },
         {
-          "id": "8a02001b-ca2a-428b-9438-d17645a0ab53",
-          "score": 0.410930451657712,
-          "title": "Riziko přefakturace při vysoké PMÚ",
-          "description": "Pokud je předběžná měsíční úhrada (PMÚ) nastavena příliš vysoko vzhledem k reálnému objemu péče, vzniká riziko přefakturace. Po finančním vypořádání (do 150 dnů po skončení období) bude VZP požadovat vrácení přeplatku, což může způsobit cash-flow problémy.",
-          "type": "risk",
-          "domain": "financni-rizika"
-        },
-        {
-          "id": "ku-033-risk",
-          "score": 0.39744258836117907,
-          "title": "Riziko neefektivního využití nadměrných příjmů",
-          "description": "Při vyšších příjmech nad plánované hodnoty existuje riziko, že prostředky nebudou rozděleny efektivně, což může vést ke zbytečnému plýtvání nebo nesprávnému alokování financí v rámci segmentů zdravotních služeb. Efektivní mechanismy rozdělení jsou klíčové pro minimalizaci tohoto rizika.",
-          "type": "risk",
-          "domain": "financni-rizika"
-        },
-        {
-          "id": "ku-067-slug",
-          "score": 0.3969372457219925,
-          "title": "Riziko omezení růstu úhrad kvůli legislativním a regulačním omezením",
-          "description": "Existuje riziko, že legislativní změny a regulační opatření omezí tempo růstu úhrad za zdravotní služby, což může ovlivnit financování a dostupnost péče v roce 2026.",
+          "id": "f3626427-030e-421d-9974-cbecd5ce5b15",
+          "score": 0.39412703075865124,
+          "title": "Riziko kumulace regulačních srážek - až 120% limitu preskripce",
+          "description": "Při současném překročení limitů ZULP/ZUM (115%), preskripce (115%) a vyžádané péče (110%) mohou regulační srážky dosáhnout až 120% původní úhrady. Je nutné průběžně sledovat všechny tři kategorie nákladů.",
           "type": "risk",
           "domain": "financni-rizika"
         },
         {
           "id": "ku-031-slug",
-          "score": 0.3919622050505864,
+          "score": 0.3534728410546309,
           "title": "Riziko deficitního hospodaření kvůli úhradovým vyhláškám a dohodám nad rámec nich",
           "description": "Existuje riziko, že úhradové vyhlášky a dohody nad rámec nich nebudou dostatečně nastavovat úhrady, což může vést k deficitnímu hospodaření zdravotních pojišťoven v letech 2026 a 2027.",
           "type": "risk",
           "domain": "provoz"
+        },
+        {
+          "id": "ku-011-riziko-prevzetí-ordinace",
+          "score": 0.34181424581748665,
+          "title": "Riziko skrytých finančních problémů při převzetí ordinace s existujícím IČZ",
+          "description": "Převzetí ordinace s existujícím identifikačním číslem zařízení (IČZ) může skrývat finanční rizika. Nový majitel může dědit nevyřešené vratky, nesprávné vykazování nebo smlouvy s nevýhodným nastavením PURO a bonifikací.",
+          "type": "risk",
+          "domain": "financni-rizika"
         }
       ],
-      "top_score": 0.45649639198868974
+      "top_score": 0.4390882792997319
     },
     {
       "question": "Jak se liší úhrady oproti minulému roku?",
       "sources": [
         {
-          "id": "2615e652-79a7-4892-b5fa-70d0a55b9ef1",
-          "score": 0.35564674990754785,
-          "title": "Tabulka koeficientů navýšení KN podle odbornosti 2026",
-          "description": "Koeficient navýšení KN ve vzorci celkové úhrady se liší podle odbornosti. Nejvyšší KN = 0.15 má nukleární medicína (404), nejnižší KN = 0.00 mají odbornosti 107 (kardiologie), 302 (dětská gynekologie) a 780 (urgentní příjem).",
+          "id": "ku-31-rule",
+          "score": 0.35702190207453877,
+          "title": "Snížení čerpání PF v roce 2026 oproti roku 2025",
+          "description": "Pojišťovna plánuje snížení čerpání prostředků PF na 1 486 337 tis. Kč v roce 2026 oproti očekávané skutečnosti 2025, což odráží snahu o hospodárné nakládání s provozními prostředky vzhledem k celkové finanční situaci.",
           "type": "rule",
-          "domain": "uhrady"
+          "domain": "financni-rizika"
         },
         {
-          "id": "ku-as-2026-013",
-          "score": 0.35053277618073636,
-          "title": "Koeficient navýšení KN podle odbornosti",
-          "description": "Koeficient navýšení KN se liší podle odbornosti: 0,15 pro odbornost 404 (nukleární medicína), 0,09 pro odbornost 405 (radiační onkologie), 0,00 pro odbornosti 107, 302, 780, 0,02 pro odbornosti 108, 205, 403, 501, 601, 708, 0,04 pro odbornosti 102, 202, 207, 209, 402, 606, 701, 705, 706, a 0,06 pro ostatní odbornosti.",
+          "id": "ku-035-rule",
+          "score": 0.3415498270754104,
+          "title": "Plánovaný nárůst příjmů z pojistného ve výši 5,8 % v roce 2026",
+          "description": "Pojišťovna plánuje zvýšení příjmů z výběru pojistného o 5,8 % oproti předchozímu roku, což ovlivní její finanční stabilitu a schopnost pokrýt náklady na zdravotní péči. Tento růst je založen na predikcích MF ČR a je klíčový pro rozpočet roku 2026.",
           "type": "rule",
-          "domain": "uhrady"
+          "domain": "financni-rizika"
         },
         {
-          "id": "fa383cf4-c6da-4c58-8071-2a55faaeba74",
-          "score": 0.3144315578201838,
-          "title": "Hodnota bodu pro odbornost 107 (Kardiologie) - 0.98 Kč",
-          "description": "Pro poskytovatele v odbornosti 107 (Kardiologie) se v roce 2026 stanoví základní hodnota bodu ve výši 0.98 Kč. Oproti roku 2025 (0.95 Kč) je to navýšení o 0.03 Kč (3.2%).",
+          "id": "ku-020-prezkum-dopadu-vyhlasky-v-roce-2026",
+          "score": 0.33062280303212466,
+          "title": "Vyhodnocení dopadů vyhlášky během roku 2026",
+          "description": "Během roku 2026 se budou vyhodnocovat dopady vyhlášky na poskytování zdravotních služeb a na základě závěrů bude formulován návrh příští vyhlášky.",
           "type": "rule",
-          "domain": "uhrady"
+          "domain": "compliance"
         },
         {
           "id": "ku-019-variabilita-zmeny-jednotkovych-uhrad",
-          "score": 0.2996073419149171,
+          "score": 0.3015382339946423,
           "title": "Změna jednotkových úhrad se liší podle poskytovatelů a pojišťoven",
           "description": "Změna jednotkových úhrad může být odlišná u jednotlivých poskytovatelů nebo zdravotních pojišťoven v závislosti na struktuře poskytované péče a historické výši úhrad. Pro konkrétní poskytovatele může představovat i meziroční pokles úhrad, pro jednotlivé pojišťovny pak různě deficitní hospodaření.",
           "type": "rule",
           "domain": "uhrady"
         },
         {
-          "id": "ku-114-rule",
-          "score": 0.29901743378313633,
-          "title": "Specifikace DRG skupin a jejich váhy pro úhradu",
-          "description": "Definuje DRG skupiny, jejich kódy, názvy a relativní váhy, které určují výši úhrady za zdravotní výkony v rámci českého zdravotnictví od roku 2025. Tato pravidla stanovují, jak jsou jednotlivé výkony oceněny a jak se počítají úhrady podle DRG skupin a jejich podkategorií.",
+          "id": "ku-016-navyseni-uhrazen-zdravotnicke-dopravy-2026",
+          "score": 0.2986414925563167,
+          "title": "Navýšení úhrad za zdravotnickou dopravní službu o 2 % v roce 2026",
+          "description": "Výše úhrad hrazených služeb poskytovaných poskytovatelům zdravotnické dopravní služby bude v roce 2026 navýšena o 2 % oproti roku 2025.",
           "type": "rule",
           "domain": "uhrady"
         }
       ],
-      "top_score": 0.35564674990754785
+      "top_score": 0.35702190207453877
     },
     {
       "question": "Co je MAXÚ a jak funguje?",
       "sources": [
         {
           "id": "ku-003-maxu-2026",
-          "score": 0.873610422746176,
+          "score": 0.6627456249856689,
           "title": "Snížení koeficientu MAXÚ v roce 2026",
           "description": "Základní koeficient ve vzorci pro výpočet maximální úhrady (MAXÚ) byl snížen z 1,065 na 1,03. MAXÚ je horní limit úhrady, kterou pojišťovna poskytne za dané období.",
           "type": "rule",
@@ -157,7 +157,7 @@
         },
         {
           "id": "ku-481-ipl-as-maxu-koeficient",
-          "score": 0.8488907069021161,
+          "score": 0.5665729424615351,
           "title": "Snížení základního koeficientu ve vzorci MAXÚ v roce 2026",
           "description": "Základní koeficient ve vzorci pro výpočet maximální úhrady (MAXÚ) byl snížen z 1,065 na 1,03, což znamená zpřísnění regulace maximální úhrady.",
           "type": "rule",
@@ -165,61 +165,61 @@
         },
         {
           "id": "ku-22-rule-dup-7",
-          "score": 0.23756431027676306,
+          "score": 0.2913067269010625,
           "title": "Stanovení výše pojistného a jeho rozdělení",
           "description": "Pravidlo stanoví, jakým způsobem je určována výše pojistného a jak je rozdělováno mezi různé fondy a segmenty zdravotního pojištění, včetně podmínek pro přerozdělování a financování zdravotních služeb.",
           "type": "rule",
           "domain": "uhrady"
         },
         {
+          "id": "ku-pl-2026-028",
+          "score": 0.19107626865458238,
+          "title": "Vzorec pro výpočet úhrady za týmovou praxi",
+          "description": "Měsíční úhrada za týmovou praxi = KPPokres × Úv+ × 10 400 Kč, kde Úv+ = (ÚvΣ - 1) × 10 je počet desetin úvazků nad 1.0 a KPPokres je koeficient pojištěnců v okrese.",
+          "type": "definition",
+          "domain": "uhrady"
+        },
+        {
           "id": "ku-114-rule",
-          "score": 0.14481696590061494,
+          "score": 0.1590859978505095,
           "title": "Specifikace DRG skupin a jejich váhy pro úhradu",
           "description": "Definuje DRG skupiny, jejich kódy, názvy a relativní váhy, které určují výši úhrady za zdravotní výkony v rámci českého zdravotnictví od roku 2025. Tato pravidla stanovují, jak jsou jednotlivé výkony oceněny a jak se počítají úhrady podle DRG skupin a jejich podkategorií.",
           "type": "rule",
           "domain": "uhrady"
-        },
-        {
-          "id": "ku-163",
-          "score": 0.1289354052757808,
-          "title": "CZ-DRG skupiny a jejich kódy a váhy",
-          "description": "Definuje strukturu CZ-DRG skupin, jejich kódy, názvy, relativní váhy a přiřazená centra specializované péče. Tato pravidla určují, jak jsou jednotlivé výkonové jednotky zařazeny do systému úhrad a jaké váhy jsou přiřazeny pro výpočet úhrad.",
-          "type": "definition",
-          "domain": "uhrady"
         }
       ],
-      "top_score": 0.873610422746176
+      "top_score": 0.6627456249856689
     },
     {
       "question": "Jaké jsou bonifikace za ordinační hodiny?",
       "sources": [
         {
           "id": "af269707-6a1b-4519-899e-c6d74155605e",
-          "score": 0.6666710873109247,
+          "score": 0.7132283876267129,
           "title": "Bonifikace za ordinační hodiny - rozdělení podle typu oboru",
           "description": "Požadavky na rozšířené ordinační hodiny se liší podle typu oboru: pro operační obory (chirurgické) platí min. 24 hodin/4 dny týdně, pro neoperační obory min. 30 hodin/5 dní týdně. Navíc je nutný provoz do 18:00 nebo od 7:00 alespoň 2 dny v týdnu.",
           "type": "rule",
           "domain": "uhrady"
         },
         {
-          "id": "ku-as-2026-030",
-          "score": 0.658377527990155,
-          "title": "Definice operačních oborů pro účely bonifikací",
-          "description": "Za operační obory se pro účely bonifikací za ordinační hodiny a nové pacienty považují odbornosti 501-507, 601, 602, 605, 606, 701 a 704-707 podle seznamu výkonů. Tyto obory mají nižší požadavky na ordinační hodiny (24 hodin/4 dny) a vyšší prahy pro nové pacienty (15%).",
-          "type": "definition",
-          "domain": "uhrady"
-        },
-        {
           "id": "ku-005-ordinacni-hodiny-2026",
-          "score": 0.6311654916670293,
+          "score": 0.6259050427744551,
           "title": "Ordinační hodiny jako podmínka pro vyšší bonifikaci v roce 2026",
           "description": "Aby poskytovatel získal vyšší bonifikaci (+0,04 Kč/bod), musí splnit podmínku ordinačních hodin. Tato podmínka je součástí nového systému bonifikací zavedených v roce 2026.",
           "type": "condition",
           "domain": "provoz"
         },
         {
+          "id": "ku-as-2026-030",
+          "score": 0.6074253625722952,
+          "title": "Definice operačních oborů pro účely bonifikací",
+          "description": "Za operační obory se pro účely bonifikací za ordinační hodiny a nové pacienty považují odbornosti 501-507, 601, 602, 605, 606, 701 a 704-707 podle seznamu výkonů. Tyto obory mají nižší požadavky na ordinační hodiny (24 hodin/4 dny) a vyšší prahy pro nové pacienty (15%).",
+          "type": "definition",
+          "domain": "uhrady"
+        },
+        {
           "id": "d0b7f889-b817-4d80-afe9-5e361d428a54",
-          "score": 0.5441144591649416,
+          "score": 0.5973921601784962,
           "title": "Oftalmologie (008) - vyloučení bonifikace za nové pacienty",
           "description": "Pro odbornost 008 (oftalmologie) se nepoužije bonifikace za nové pacienty (bod 1k)iii.). Důvodem je vysoká přirozená fluktuace pacientů u očních lékařů. Ostatní bonifikace (vzdělávání, ordinační hodiny, objednávkový systém) platí.",
           "type": "exception",
@@ -227,21 +227,21 @@
         },
         {
           "id": "ku-as-2026-006",
-          "score": 0.43577322830959575,
+          "score": 0.5791120006701572,
           "title": "Bonifikace za rozšířené ordinační hodiny (+0,04 Kč)",
           "description": "Hodnota bodu se navýší o 0,04 Kč, pokud poskytovatel alespoň u 50% pracovišť v dané odbornosti poskytuje služby v rozsahu alespoň 24 ordinačních hodin rozložených do 4 pracovních dnů týdně u operačních oborů, nebo 30 ordinačních hodin do 5 dnů u ostatních oborů. Podmínkou je také provoz do 18:00 nebo od 7:00 alespoň 2 dny v týdnu.",
           "type": "condition",
           "domain": "uhrady"
         }
       ],
-      "top_score": 0.6666710873109247
+      "top_score": 0.7132283876267129
     },
     {
       "question": "Co je předběžná měsíční úhrada a jak se počítá?",
       "sources": [
         {
           "id": "ku-101",
-          "score": 0.7383165017919732,
+          "score": 0.7669040329127059,
           "title": "Měsíční předběžná úhrada za poskytované služby",
           "description": "Měsíční předběžná úhrada je stanovena na základě hodnoty vykázaných a uznaných hrazených služeb za daný měsíc s hodnotou bodu podle bodů 1 a 2. Tato předběžná úhrada je základem pro finanční vypořádání a je vyrovnána do 150 dnů po skončení hodnoceného období.",
           "type": "rule",
@@ -249,7 +249,7 @@
         },
         {
           "id": "ku-62-rule",
-          "score": 0.7266710054916441,
+          "score": 0.7001560757589562,
           "title": "Předběžná měsíční úhrada a její finanční vypořádání",
           "description": "Poskytovateli se měsíčně poskytne předběžná úhrada ve výši jedné dvanáctiny předpokládané úhrady za období, která se upraví podle změn v rozsahu služeb, počtu hospitalizací a počtu pojištěnců. Finální vyúčtování proběhne do 180 dnů po skončení období.",
           "type": "rule",
@@ -257,7 +257,7 @@
         },
         {
           "id": "ku-86-rule",
-          "score": 0.7076191092916015,
+          "score": 0.6718383708686477,
           "title": "Stanovení předběžné měsíční úhrady na základě referenčního období",
           "description": "Předběžná úhrada je stanovena jako jedna dvanáctina 106 % úhrady za referenční období a finančně se vypořádá do 150 dnů po skončení hodnoceného období, včetně regulačních omezení.",
           "type": "rule",
@@ -265,29 +265,29 @@
         },
         {
           "id": "ku-as-2026-019",
-          "score": 0.7065481173159143,
+          "score": 0.6244309968423429,
           "title": "Předběžná měsíční úhrada (PMÚ) - výše 108% referenčního období",
           "description": "Měsíční předběžná úhrada se poskytne poskytovateli ve výši jedné dvanáctiny 108% úhrady za referenční období. Do výše PMÚ zdravotní pojišťovna zahrne změny v rozsahu a struktuře poskytovaných služeb. Finanční vypořádání proběhne nejpozději do 150 dnů po skončení hodnoceného období.",
           "type": "rule",
           "domain": "uhrady"
         },
         {
-          "id": "8a02001b-ca2a-428b-9438-d17645a0ab53",
-          "score": 0.5713036314002663,
-          "title": "Riziko přefakturace při vysoké PMÚ",
-          "description": "Pokud je předběžná měsíční úhrada (PMÚ) nastavena příliš vysoko vzhledem k reálnému objemu péče, vzniká riziko přefakturace. Po finančním vypořádání (do 150 dnů po skončení období) bude VZP požadovat vrácení přeplatku, což může způsobit cash-flow problémy.",
-          "type": "risk",
-          "domain": "financni-rizika"
+          "id": "ku-016-individualni-mesicni-predbezna-uhrada",
+          "score": 0.5793044691238696,
+          "title": "Individuální měsíční předběžná úhrada podle očekávané celoroční úhrady poskytovatele",
+          "description": "Pro rok 2025 je stanovena měsíční předběžná úhrada individuálně pro každého poskytovatele na základě očekávané celoroční úhrady, aby se předešlo velkým přeplatkům a nedoplatkům napříč různými odbornostmi a poskytovateli.",
+          "type": "rule",
+          "domain": "uhrady"
         }
       ],
-      "top_score": 0.7383165017919732
+      "top_score": 0.7669040329127059
     },
     {
       "question": "Jaká jsou rizika při převzetí ordinace?",
       "sources": [
         {
           "id": "ku-011-riziko-prevzetí-ordinace",
-          "score": 0.8892415803509336,
+          "score": 0.8957332672804679,
           "title": "Riziko skrytých finančních problémů při převzetí ordinace s existujícím IČZ",
           "description": "Převzetí ordinace s existujícím identifikačním číslem zařízení (IČZ) může skrývat finanční rizika. Nový majitel může dědit nevyřešené vratky, nesprávné vykazování nebo smlouvy s nevýhodným nastavením PURO a bonifikací.",
           "type": "risk",
@@ -295,7 +295,7 @@
         },
         {
           "id": "ku-019-prevzeti-praxe-referencni-uhra",
-          "score": 0.6293704866665344,
+          "score": 0.614077948277569,
           "title": "Určení referenční úhrady při převzetí praxe",
           "description": "Při převzetí praxe podle § 17 odst. 8 zákona se pro výpočet celkové výše úhrady použijí referenční hodnoty srovnatelných poskytovatelů, aby se zohlednila struktura a rozsah péče nového poskytovatele.",
           "type": "rule",
@@ -303,83 +303,83 @@
         },
         {
           "id": "ku-025-anti-pattern-prevzeti-praxe-bez-aktualizace-referencnich-hodnot",
-          "score": 0.5606162251989595,
+          "score": 0.528878182885241,
           "title": "Převzetí praxe bez aktualizace referenčních hodnot neodpovídajících nové struktuře péče",
           "description": "Lékař po převzetí praxe často převezme referenční hodnoty předchozího poskytovatele, které nezohledňují strukturu a rozsah péče nového poskytovatele, což může vést k nespravedlivému ohodnocení a neadekvátní úhradě.",
           "type": "anti_pattern",
           "domain": "uhrady"
         },
         {
-          "id": "ku-013-optimalizace-puro",
-          "score": 0.25870684116006315,
-          "title": "Strategie optimalizace PURO (průměrné úhrady na unikátního pojištěnce)",
-          "description": "PURO je klíčový ukazatel zdraví ordinace. Optimalizace PURO zvyšuje konkurenceschopnost a hodnotu praxe. Hlavní strategie zahrnují efektivní vykazování, splnění bonifikačních podmínek a zvýšení počtu nových pacientů.",
-          "type": "rule",
-          "domain": "provoz"
-        },
-        {
           "id": "ku-010-anti-pattern-nizka-puro",
-          "score": 0.24366411407597946,
+          "score": 0.24977138481739847,
           "title": "Anti-pattern: Ordinace s nízkou PURO a bez nových pacientů",
           "description": "Ordinace, která má nízkou PURO (průměrnou úhradu na unikátního pojištěnce) a zároveň nepřijímá nové pacienty, ztrácí obě možnosti zvýšení úhrad: nižší PURO a bez bonifikace za nové pacienty. Toto je typická chyba vedoucí k postupnému snižování příjmů.",
           "type": "anti_pattern",
           "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-013-optimalizace-puro",
+          "score": 0.22742432346228597,
+          "title": "Strategie optimalizace PURO (průměrné úhrady na unikátního pojištěnce)",
+          "description": "PURO je klíčový ukazatel zdraví ordinace. Optimalizace PURO zvyšuje konkurenceschopnost a hodnotu praxe. Hlavní strategie zahrnují efektivní vykazování, splnění bonifikačních podmínek a zvýšení počtu nových pacientů.",
+          "type": "rule",
+          "domain": "provoz"
         }
       ],
-      "top_score": 0.8892415803509336
+      "top_score": 0.8957332672804679
     },
     {
       "question": "Co znamená hodnota bodu 0,94 Kč?",
       "sources": [
         {
-          "id": "ku-479-ipl-as-hodnota-bodu",
-          "score": 0.711904397881428,
-          "title": "Jednotná základní hodnota bodu pro ambulantní specialisty (AS) v roce 2026",
-          "description": "Základní hodnota bodu pro hrazené služby ambulantních specialistů je nově stanovena jednotně ve výši 0,98 Kč, což nahrazuje dřívější členění do čtyř kategorií (0,94 Kč až 1,00 Kč).",
+          "id": "52b75426-d93f-463b-a3ea-edcfe127826a",
+          "score": 0.785264687884916,
+          "title": "Hodnota bodu pro odbornost 205 (Neurochirurgie) - 0.98 Kč",
+          "description": "Pro poskytovatele v odbornosti 205 (Neurochirurgie) se v roce 2026 stanoví základní hodnota bodu ve výši 0.98 Kč. Oproti roku 2025 (0.95 Kč) je to navýšení o 0.03 Kč (3.2%).",
           "type": "rule",
           "domain": "uhrady"
         },
         {
-          "id": "ku-as-2026-004",
-          "score": 0.5910962965290903,
-          "title": "Hodnota bodu pro ergoterapii a fyzioterapii na pracovištích (905, 927)",
-          "description": "Pro poskytovatele poskytující hrazené služby v odbornostech 905 (ergoterapie) a 927 (léčebná rehabilitace) podle seznamu výkonů se hodnota bodu stanoví ve výši 0,94 Kč.",
+          "id": "79f8bb60-f11f-4899-992e-78d08684bac9",
+          "score": 0.7836996651625175,
+          "title": "Hodnota bodu pro odbornost 105 (Gastroenterologie) - 0.98 Kč",
+          "description": "Pro poskytovatele v odbornosti 105 (Gastroenterologie) se v roce 2026 stanoví základní hodnota bodu ve výši 0.98 Kč. Oproti roku 2025 (0.95 Kč) je to navýšení o 0.03 Kč (3.2%).",
           "type": "rule",
           "domain": "uhrady"
         },
         {
-          "id": "ku-045-hodnota-bodu-v-nejvyssich-uradnich-odbornostech",
-          "score": 0.5744438056740595,
-          "title": "Hodnota bodu v nejvyšších úředních odbornostech",
-          "description": "Hodnota bodu v nejvyšších úředních odbornostech, například výkon č. 88101, je stanovena na 0,92 Kč, což představuje specifickou hodnotu bodu pro tyto odbornosti v rámci úhradového systému.",
-          "type": "definition",
-          "domain": "legislativa"
-        },
-        {
-          "id": "ku-001-bod-sas-2026",
-          "score": 0.5686378776595025,
-          "title": "Jednotná hodnota bodu pro ambulantní specialisty (SAS) v roce 2026",
-          "description": "Od roku 2026 platí jednotná základní hodnota bodu pro hrazené služby ambulantních specialistů ve výši 0,98 Kč. Toto zjednodušení nahradilo předchozí členění do čtyř kategorií (0,94 až 1,00 Kč).",
+          "id": "87b87ee5-9ff9-459e-bffa-c2512c55baf4",
+          "score": 0.7836996651625175,
+          "title": "Hodnota bodu pro odbornost 209 (Traumatologie) - 0.98 Kč",
+          "description": "Pro poskytovatele v odbornosti 209 (Traumatologie) se v roce 2026 stanoví základní hodnota bodu ve výši 0.98 Kč. Oproti roku 2025 (0.95 Kč) je to navýšení o 0.03 Kč (3.2%).",
           "type": "rule",
           "domain": "uhrady"
         },
         {
-          "id": "ku-as-2026-001",
-          "score": 0.5224143959476194,
-          "title": "Základní hodnota bodu pro ambulantní specialisty 2026",
-          "description": "Pro specializovanou ambulantní péči poskytovanou poskytovateli ambulantní péče hrazenou podle seznamu výkonů se stanoví základní hodnota bodu ve výši 0,98 Kč. Tato hodnota platí pro všechny odbornosti, které nejsou specificky uvedeny v bodě 1 přílohy č. 3.",
+          "id": "4d324d54-9c33-4058-84cb-13325abd0539",
+          "score": 0.7836996651625175,
+          "title": "Hodnota bodu pro odbornost 208 (Popáleninová medicína) - 0.98 Kč",
+          "description": "Pro poskytovatele v odbornosti 208 (Popáleninová medicína) se v roce 2026 stanoví základní hodnota bodu ve výši 0.98 Kč. Oproti roku 2025 (0.95 Kč) je to navýšení o 0.03 Kč (3.2%).",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "bdc18c4a-da0f-4b29-9e94-bc24bcefa24e",
+          "score": 0.7836996651625175,
+          "title": "Hodnota bodu pro odbornost 204 (Kardiochirurgie) - 0.98 Kč",
+          "description": "Pro poskytovatele v odbornosti 204 (Kardiochirurgie) se v roce 2026 stanoví základní hodnota bodu ve výši 0.98 Kč. Oproti roku 2025 (0.95 Kč) je to navýšení o 0.03 Kč (3.2%).",
           "type": "rule",
           "domain": "uhrady"
         }
       ],
-      "top_score": 0.711904397881428
+      "top_score": 0.785264687884916
     },
     {
       "question": "Jak funguje regulace na léky?",
       "sources": [
         {
           "id": "ku-007-regulace-lp-zp-2026",
-          "score": 0.7627957655434079,
+          "score": 0.6907418165439158,
           "title": "Zmírnění regulace na předepsané léčiva a zdravotnické prostředky v roce 2026",
           "description": "Limit pro překročení průměrné úhrady, od kterého se uplatní regulace na předepsané léčiva a zdravotnické prostředky (Regulace B.3), byl zvýšen ze 110% na 115%. Toto zmírnění umožňuje poskytovatelům vyšší výkony bez automatické regulace.",
           "type": "rule",
@@ -387,84 +387,84 @@
         },
         {
           "id": "ku-485-ipl-as-regulace-lp-zp",
-          "score": 0.7512443871465876,
+          "score": 0.669771811645642,
           "title": "Zmírnění regulace na předepsané LP a ZP (Regulace B.3) v roce 2026",
           "description": "Limit pro překročení průměrné úhrady, od kterého se uplatní regulace na předepsané léčivé přípravky a zdravotnické prostředky (Regulace B.3), byl zvýšen (zmírněn) ze 110 % na 115 %.",
           "type": "rule",
           "domain": "financni-rizika"
         },
         {
-          "id": "ku-023-vyneti-centrove-leky",
-          "score": 0.38277985347410914,
-          "title": "Vyjmutí centrových léků ze základní úhrady a jejich samostatné hrazení podle přílohy č. 15",
-          "description": "Centrové léky označené symbolem „S“ jsou vyňaty z úhrady podle přílohy č. 3 a nově hrazeny samostatně podle přílohy č. 15. Tím byla srovnána pozice nemocnic, kde byla úhrada těchto léků objemově regulována, s ambulantními specialisty, u kterých byla úhrada původně objemově neregulovaná.",
+          "id": "ku-pl-2026-020",
+          "score": 0.4280403161392797,
+          "title": "Regulační omezení preskripce léků (+20%, srážka do 25%)",
+          "description": "Pokud průměrná úhrada za předepsané léky a zdravotnické prostředky (mimo inkontinenční) přepočtená na pojištěnce překročí o 20% celostátní průměr, může pojišťovna uplatnit srážku do 25% z překročení.",
           "type": "rule",
           "domain": "uhrady"
         },
         {
-          "id": "ku-023-rust-nakladu-leky-zdravotnicke-prostredky-ockovani",
-          "score": 0.36181416607813077,
-          "title": "Riziko vysoké růstové dynamiky nákladů na léky na recept, zdravotnické prostředky a očkování",
-          "description": "Mandatorní položky jako léky na recept, zdravotnické prostředky a očkování vykazují vysokou růstovou dynamiku v posledních letech, částečně způsobenou legislativními změnami (např. ochranné limity, změny ve zdravotnických prostředcích, monoklonální protilátky). Ministerstvo zdravotnictví odhaduje růst těchto segmentů na 3,7 mld. Kč.",
-          "type": "risk",
+          "id": "ku-024-rust-centrove-leky-s-uspory",
+          "score": 0.42495889655974817,
+          "title": "Nízký růst nákladů na centrové léky díky úsporám z nového úhradového mechanismu",
+          "description": "Na rozdíl od minulých let je růst nákladů na centrové léky nízký díky realizovaným významným úsporám vlivem nového úhradového mechanismu cenových slev. Přesto se odhaduje růst tohoto segmentu o téměř 4 mld. Kč.",
+          "type": "rule",
           "domain": "financni-rizika"
         },
         {
-          "id": "e8b7b065-70c5-4297-9b81-69fa3057da3d",
-          "score": 0.3552011631739997,
-          "title": "Výjimky z regulace ZULP - léčivé přípravky označené symbolem S",
-          "description": "Z regulačních omezení na ZULP jsou vyloučeny léčivé přípravky označené v číselníku symbolem 'S' (centrově/ambulantně podávané léky). Tyto léky se nezapočítávají do průměrné úhrady na unikátního pojištěnce při posuzování 115% limitu.",
-          "type": "exception",
+          "id": "ku-023-vyneti-centrove-leky",
+          "score": 0.4157752427857583,
+          "title": "Vyjmutí centrových léků ze základní úhrady a jejich samostatné hrazení podle přílohy č. 15",
+          "description": "Centrové léky označené symbolem „S“ jsou vyňaty z úhrady podle přílohy č. 3 a nově hrazeny samostatně podle přílohy č. 15. Tím byla srovnána pozice nemocnic, kde byla úhrada těchto léků objemově regulována, s ambulantními specialisty, u kterých byla úhrada původně objemově neregulovaná.",
+          "type": "rule",
           "domain": "uhrady"
         }
       ],
-      "top_score": 0.7627957655434079
+      "top_score": 0.6907418165439158
     },
     {
       "question": "Co je koeficient navýšení a jak ho získám?",
       "sources": [
         {
-          "id": "ku-095",
-          "score": 0.6150671509007567,
-          "title": "Koeficient navýšení (KN) podle podílu výkonů s určitými výkonovými skupinami a diagnózami",
-          "description": "Koeficient navýšení KN je součtem koeficientů určených na základě podílu počtu ošetřených a uznaných unikátních pojištěnců s výkonem nebo diagnózou na celkovém počtu ošetřených. Podmínky zahrnují výkonové skupiny s výkonem č. 06135, 06137, nebo skupiny s výkonem č. 06325-06334, a diagnózy C00-C97, G09-G99, F00-F99, I60-I69, E10.3-E10.7, E11.3-E11.7, L88, L89, L93, L97, s prahovými hodnotami 25 %, 35 %, nebo 35 % s rozdílnými koeficienty podle splnění podmínek.",
+          "id": "db1c35d0-fbc8-4e0c-a5a7-ae6f26b50c64",
+          "score": 0.747787736091645,
+          "title": "Foniatrie (903) - navýšení KN za specializaci na vady",
+          "description": "Pro odbornost 903 (foniatrie) se koeficient navýšení KN zvyšuje, pokud podíl pacientů se specifickými diagnózami (autismus F84, vady řeči R47, rozštěpy Q35-Q37, Downův syndrom Q90) překročí 10%. Navýšení je +0.08 při splnění v obou obdobích, +0.12 při splnění jen v hodnoceném období.",
           "type": "rule",
           "domain": "uhrady"
         },
         {
           "id": "2615e652-79a7-4892-b5fa-70d0a55b9ef1",
-          "score": 0.5375554940951024,
+          "score": 0.64475829065422,
           "title": "Tabulka koeficientů navýšení KN podle odbornosti 2026",
           "description": "Koeficient navýšení KN ve vzorci celkové úhrady se liší podle odbornosti. Nejvyšší KN = 0.15 má nukleární medicína (404), nejnižší KN = 0.00 mají odbornosti 107 (kardiologie), 302 (dětská gynekologie) a 780 (urgentní příjem).",
           "type": "rule",
           "domain": "uhrady"
         },
         {
-          "id": "ku-as-2026-010",
-          "score": 0.5334424807347347,
-          "title": "Vzorec pro celkovou výši úhrady ambulantních specialistů",
-          "description": "Celková výše úhrady za hrazené služby v dané odbornosti nepřekročí částku: (1,03 + KN) × (POPzpoZ × PURO + max[PURO × POPzpoMh; UHRMh − UHRMr]). Kde KN je koeficient navýšení, POPzpoZ jsou základní unikátní pojištěnci, POPzpoMh jsou mimořádně nákladní pojištěnci.",
+          "id": "ku-095",
+          "score": 0.6446091291363489,
+          "title": "Koeficient navýšení (KN) podle podílu výkonů s určitými výkonovými skupinami a diagnózami",
+          "description": "Koeficient navýšení KN je součtem koeficientů určených na základě podílu počtu ošetřených a uznaných unikátních pojištěnců s výkonem nebo diagnózou na celkovém počtu ošetřených. Podmínky zahrnují výkonové skupiny s výkonem č. 06135, 06137, nebo skupiny s výkonem č. 06325-06334, a diagnózy C00-C97, G09-G99, F00-F99, I60-I69, E10.3-E10.7, E11.3-E11.7, L88, L89, L93, L97, s prahovými hodnotami 25 %, 35 %, nebo 35 % s rozdílnými koeficienty podle splnění podmínek.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-as-2026-032",
+          "score": 0.5669539337176704,
+          "title": "Navýšení hodnoty bodu pro odbornost 903 - logopedie s fokusem na vady (+0,08-0,12)",
+          "description": "Pro odbornost 903 (foniatrie) se koeficient navýšení KN zvyšuje, pokud podíl pacientů s diagnózami F84.0-F84.3, F84.5, F84.8, F98.5, F98.6, R47, R13, Q35-Q37 nebo Q90-Q99 překročí 10% z celkového počtu ošetřených. Navýšení činí 0,08 při splnění v obou obdobích až 0,12 při splnění pouze v hodnoceném období.",
           "type": "rule",
           "domain": "uhrady"
         },
         {
           "id": "ku-as-2026-013",
-          "score": 0.5263240435999686,
+          "score": 0.5344434275579892,
           "title": "Koeficient navýšení KN podle odbornosti",
           "description": "Koeficient navýšení KN se liší podle odbornosti: 0,15 pro odbornost 404 (nukleární medicína), 0,09 pro odbornost 405 (radiační onkologie), 0,00 pro odbornosti 107, 302, 780, 0,02 pro odbornosti 108, 205, 403, 501, 601, 708, 0,04 pro odbornosti 102, 202, 207, 209, 402, 606, 701, 705, 706, a 0,06 pro ostatní odbornosti.",
           "type": "rule",
           "domain": "uhrady"
-        },
-        {
-          "id": "db1c35d0-fbc8-4e0c-a5a7-ae6f26b50c64",
-          "score": 0.4848223840344013,
-          "title": "Foniatrie (903) - navýšení KN za specializaci na vady",
-          "description": "Pro odbornost 903 (foniatrie) se koeficient navýšení KN zvyšuje, pokud podíl pacientů se specifickými diagnózami (autismus F84, vady řeči R47, rozštěpy Q35-Q37, Downův syndrom Q90) překročí 10%. Navýšení je +0.08 při splnění v obou obdobích, +0.12 při splnění jen v hodnoceném období.",
-          "type": "rule",
-          "domain": "uhrady"
         }
       ],
-      "top_score": 0.6150671509007567
+      "top_score": 0.747787736091645
     }
   ]
 }
