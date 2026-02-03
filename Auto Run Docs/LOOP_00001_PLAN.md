@@ -2,7 +2,8 @@
 
 ## Summary
 - **Total Candidates:** 3
-- **PENDING (auto-implement):** 1
+- **PENDING (auto-implement):** 0
+- **IMPLEMENTED:** 1
 - **PENDING - MANUAL REVIEW:** 0
 - **WON'T DO:** 0
 - **Remaining to evaluate:** 2
@@ -11,7 +12,7 @@
 
 | # | Candidate | Risk | Benefit | Status |
 |---|-----------|------|---------|--------|
-| 1 | Hardcoded BASE_DIR in extract_as_2026.py | LOW | HIGH | PENDING |
+| 1 | Hardcoded BASE_DIR in extract_as_2026.py | LOW | HIGH | IMPLEMENTED |
 
 ## Detailed Evaluations
 
@@ -20,7 +21,7 @@
 - **Category:** Organization (Portability)
 - **Risk:** LOW
 - **Benefit:** HIGH
-- **Status:** PENDING
+- **Status:** IMPLEMENTED
 
 #### Risk Rationale
 - **Internal-only change:** The path constants are only used within this single file

@@ -21,11 +21,12 @@ from openai import OpenAI
 # Initialize OpenAI client
 client = OpenAI()
 
-# Paths - Updated for local environment
-BASE_DIR = Path("/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base")
-SOURCES_DIR = BASE_DIR / "sources"
-SCHEMA_PATH = BASE_DIR / "schemas/knowledge_unit.schema.json"
-OUTPUT_DIR = BASE_DIR / "data/extracted"
+# Paths - use relative paths from script location for portability
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent
+SOURCES_DIR = PROJECT_ROOT / "sources"
+SCHEMA_PATH = PROJECT_ROOT / "schemas/knowledge_unit.schema.json"
+OUTPUT_DIR = PROJECT_ROOT / "data/extracted"
 OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
 
 # Document metadata

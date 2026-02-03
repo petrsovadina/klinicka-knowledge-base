@@ -2,18 +2,18 @@
 
 ## Context
 - **Playbook:** Refactor
-- **Agent:** {{AGENT_NAME}}
-- **Project:** {{AGENT_PATH}}
-- **Auto Run Folder:** {{AUTORUN_FOLDER}}
-- **Loop:** {{LOOP_NUMBER}}
+- **Agent:** Benjamin
+- **Project:** /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base
+- **Auto Run Folder:** /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs
+- **Loop:** 00001
 
 ## Objective
 
-Implement ONE refactoring candidate from `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md` that has status `PENDING` and meets criteria (LOW risk + HIGH/VERY HIGH benefit). Log all changes to `{{AUTORUN_FOLDER}}/REFACTOR_LOG_{{AGENT_NAME}}_{{DATE}}.md`.
+Implement ONE refactoring candidate from `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md` that has status `PENDING` and meets criteria (LOW risk + HIGH/VERY HIGH benefit). Log all changes to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/REFACTOR_LOG_Benjamin_2026-02-03.md`.
 
 ## Instructions
 
-1. **Read `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md`** to find evaluated refactoring candidates
+1. **Read `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md`** to find evaluated refactoring candidates
 2. **Filter for actionable items**: Only consider candidates where:
    - **Status = `PENDING`** (exactly - not `PENDING - MANUAL REVIEW` or `WON'T DO`)
    - **Risk = LOW** (not MEDIUM or HIGH)
@@ -21,12 +21,12 @@ Implement ONE refactoring candidate from `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}
 3. **Select ONE candidate** that meets all criteria (prioritize VERY HIGH benefit over HIGH)
 4. **Implement the refactoring**: Make the code changes as specified
 5. **Verify the change**: Ensure the code still works (syntax check, no obvious errors)
-6. **Log the change** to `{{AUTORUN_FOLDER}}/REFACTOR_LOG_{{AGENT_NAME}}_{{DATE}}.md`
-7. **Update status** in `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md` to `IMPLEMENTED`
+6. **Log the change** to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/REFACTOR_LOG_Benjamin_2026-02-03.md`
+7. **Update status** in `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md` to `IMPLEMENTED`
 
 ## Task
 
-- [ ] **Implement one PENDING refactor (or skip if none)**: Read {{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md. If the file doesn't exist OR contains no items with status exactly `PENDING` that also have LOW risk AND HIGH/VERY HIGH benefit, mark this task complete without changes. Otherwise, find ONE item that meets all criteria, implement the refactoring, log to {{AUTORUN_FOLDER}}/REFACTOR_LOG_{{AGENT_NAME}}_{{DATE}}.md, and mark as IMPLEMENTED in {{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md.
+- [x] **Implement one PENDING refactor (or skip if none)**: Read /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md. If the file doesn't exist OR contains no items with status exactly `PENDING` that also have LOW risk AND HIGH/VERY HIGH benefit, mark this task complete without changes. Otherwise, find ONE item that meets all criteria, implement the refactoring, log to /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/REFACTOR_LOG_Benjamin_2026-02-03.md, and mark as IMPLEMENTED in /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md.
 
 ## Implementation Checklist
 
@@ -85,10 +85,10 @@ Before implementing, verify:
 
 ## Log Format
 
-Append to `{{AUTORUN_FOLDER}}/REFACTOR_LOG_{{AGENT_NAME}}_{{DATE}}.md`:
+Append to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/REFACTOR_LOG_Benjamin_2026-02-03.md`:
 
 ```markdown
-## Loop {{LOOP_NUMBER}} - [Timestamp]
+## Loop 00001 - [Timestamp]
 
 ### Implemented Refactors
 
@@ -129,8 +129,8 @@ Before implementing each refactor:
 
 - **Only `PENDING` items**: Do NOT implement `PENDING - MANUAL REVIEW` or `WON'T DO` items
 - **One refactor per run**: Implement exactly ONE refactor, then stop. This keeps changes small and reviewable.
-- **Follow the plan**: Implement exactly what was proposed in `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md`, don't improvise
-- **Update both files**: Log to `{{AUTORUN_FOLDER}}/REFACTOR_LOG_{{AGENT_NAME}}_{{DATE}}.md` AND update status in `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md`
+- **Follow the plan**: Implement exactly what was proposed in `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md`, don't improvise
+- **Update both files**: Log to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/REFACTOR_LOG_Benjamin_2026-02-03.md` AND update status in `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md`
 - **Be conservative**: If anything is unclear about the refactor, skip it and note why in the log file
 - **Preserve behavior**: Refactoring must not change functionality
 
@@ -139,12 +139,12 @@ Before implementing each refactor:
 This task is complete when ONE of the following is true:
 
 **Option A - Implemented a refactor:**
-1. You've implemented exactly ONE refactor from `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md`
-2. You've appended the change details to `{{AUTORUN_FOLDER}}/REFACTOR_LOG_{{AGENT_NAME}}_{{DATE}}.md`
-3. You've updated the item status in `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md` to `IMPLEMENTED`
+1. You've implemented exactly ONE refactor from `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md`
+2. You've appended the change details to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/REFACTOR_LOG_Benjamin_2026-02-03.md`
+3. You've updated the item status in `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md` to `IMPLEMENTED`
 
 **Option B - No PENDING refactors available:**
-1. `LOOP_{{LOOP_NUMBER}}_PLAN.md` doesn't exist, OR
+1. `LOOP_00001_PLAN.md` doesn't exist, OR
 2. It contains no items with status exactly `PENDING` that meet criteria (LOW risk + HIGH/VERY HIGH benefit)
 3. Mark this task complete without making changes
 
@@ -152,16 +152,16 @@ This graceful handling allows the pipeline to continue when a loop iteration pro
 
 ## When No Refactors Are Available
 
-If there are no items with status exactly `PENDING` (meeting criteria) in the plan file, append to `{{AUTORUN_FOLDER}}/REFACTOR_LOG_{{AGENT_NAME}}_{{DATE}}.md`:
+If there are no items with status exactly `PENDING` (meeting criteria) in the plan file, append to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/REFACTOR_LOG_Benjamin_2026-02-03.md`:
 
 ```markdown
 ---
 
-## [YYYY-MM-DD HH:MM] - Loop {{LOOP_NUMBER}} Complete
+## [YYYY-MM-DD HH:MM] - Loop 00001 Complete
 
-**Agent:** {{AGENT_NAME}}
-**Project:** {{AGENT_NAME}}
-**Loop:** {{LOOP_NUMBER}}
+**Agent:** Benjamin
+**Project:** Benjamin
+**Loop:** 00001
 **Status:** No PENDING refactors available (or no qualifying candidates)
 
 **Summary:**
