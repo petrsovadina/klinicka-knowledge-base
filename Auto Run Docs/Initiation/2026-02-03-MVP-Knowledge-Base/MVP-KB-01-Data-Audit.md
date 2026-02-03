@@ -38,11 +38,21 @@ Tato fáze provede hloubkovou analýzu stávajících 409 znalostních jednotek 
   - **Recommendations:** Immediate focus on VZP supplement extraction, creating comparison units, and documenting regulation consequences
   - Analysis saved to `docs/analysis/rag_gap_analysis.json`
 
-- [ ] Porovnat aktuální pokrytí s cílovými use-cases z dokumentace:
+- [x] Porovnat aktuální pokrytí s cílovými use-cases z dokumentace:
   - Načíst plánované use-cases z `docs/roadmap_and_strategy.md`
   - Vyhodnotit pokrytí pro každý use-case (plné/částečné/chybí)
   - Identifikovat use-cases bez podpory v datech
   - Vytvořit matici pokrytí use-case vs. dostupná data
+
+  **Completed 2026-02-03:** Created comprehensive use-case coverage matrix analyzing roadmap against current dataset. Key findings:
+  - **AI Decision-Support:** 2/8 use-cases fully covered (25%), 4/8 partial (50%), 2/8 missing (25%)
+  - **Source Coverage:** Only 1/12 sources fully covered (Úhradová vyhláška 2025), 7 partial, 4 missing
+  - **Domain Balance:** 75% of units in 'uhrady' domain; other domains underrepresented
+  - **Missing Types:** Schema lacks 'comparison', 'heuristic', 'example' types needed for key use-cases
+  - **Critical Gaps:** Konkrétní hodnoty bodu (0%), meziroční srovnání (0%), důsledky regulací (25%)
+  - **Specialty Coverage:** 102 unique specialties but key ones missing (psychiatrie, kardiologie, fyzioterapie)
+  - **Product Use-Cases:** 0/8 fully covered, 4/8 partial, 4/8 missing
+  - Outputs: `docs/analysis/use_case_coverage_matrix.md` and `docs/analysis/use_case_coverage_matrix.json`
 
 - [ ] Vytvořit strukturovaný Gap Analysis Report v `docs/analysis/gap_analysis_report.md`:
   - YAML front matter: type: analysis, title: Gap Analysis Report, created: YYYY-MM-DD, tags: [data-quality, gaps, priorities]
