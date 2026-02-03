@@ -42,12 +42,33 @@ Tato fáze rozšíří znalostní bázi o metodiky dalších zdravotních pojiš
   - Included risk unit for bonification loss penalties
   - All 30 units validated against schema (100% compliance)
 
-- [ ] Extrahovat znalostní jednotky z OZP a ČPZP:
+- [x] Extrahovat znalostní jednotky z OZP a ČPZP:
   - Zpracovat OZP (Oborová zdravotní pojišťovna) metodiky
   - Zpracovat ČPZP (Česká průmyslová zdravotní pojišťovna)
   - Zaměřit se na unikátní pravidla a odchylky od standardu
   - Uložit do `data/extracted/ozp_metodika_2026.jsonl` a `data/extracted/cpzp_metodika_2026.jsonl`
   - Očekávaný výstup: 15-25 jednotek za každou pojišťovnu
+
+  **Completed 2026-02-03:**
+  - Extracted 16 knowledge units for OZP to `data/extracted/ozp_metodika_2026.jsonl`
+  - Extracted 15 knowledge units for ČPZP to `data/extracted/cpzp_metodika_2026.jsonl`
+  - OZP unique features documented:
+    - Financial outlook 2026-2027 (budget surplus, growth rates)
+    - Special programs: cardiology, autistic spectrum disorders
+    - PMÚ guarantee (not lower than 2024)
+    - Special procedures for odb 108 (nephrology)
+    - Auto-contracting of new procedures per SZV/ÚV amendments
+    - Early osteoporosis screening program for VPL and gynecologists
+    - Risk units: deficit risk, negotiation process degradation
+  - ČPZP unique features documented:
+    - PURO values published in supplement (unique among insurers)
+    - Extended new patient bonification (+0.04 Kč at 10%+OH)
+    - PMÚ as 1/12 of preliminary payment
+    - ČLK recommendation to sign supplement
+    - Market share context (12%, 2nd largest)
+    - Note: ČPZP URL unavailable (404), used InfoProLekare comparison data
+  - All 31 units validated against schema (100% compliance)
+  - Sources: Výhled OZP 2026-2027 PDF, OZP ambulantní specialisté HTML, InfoProLekare přehled úhradových dodatků 2025
 
 - [ ] Vytvořit srovnávací jednotky (comparison type) pro meziroční změny:
   - Porovnat pravidla 2025 vs 2026 z existujících dat
