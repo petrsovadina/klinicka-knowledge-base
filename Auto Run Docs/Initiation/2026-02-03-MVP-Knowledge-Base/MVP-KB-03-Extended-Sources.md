@@ -70,12 +70,28 @@ Tato fáze rozšíří znalostní bázi o metodiky dalších zdravotních pojiš
   - All 31 units validated against schema (100% compliance)
   - Sources: Výhled OZP 2026-2027 PDF, OZP ambulantní specialisté HTML, InfoProLekare přehled úhradových dodatků 2025
 
-- [ ] Vytvořit srovnávací jednotky (comparison type) pro meziroční změny:
+- [x] Vytvořit srovnávací jednotky (comparison type) pro meziroční změny:
   - Porovnat pravidla 2025 vs 2026 z existujících dat
   - Vytvořit nový typ jednotky "comparison" nebo použít "rule" s tagy
   - Zachytit: co se změnilo, dopad na praxi, rizika přechodného období
   - Uložit do `data/extracted/year_comparison_2025_2026.jsonl`
   - Očekávaný výstup: 15-20 srovnávacích jednotek
+
+  **Completed 2026-02-03:**
+  - Created 16 comparison knowledge units in `data/extracted/year_comparison_2025_2026.jsonl`
+  - Used existing "rule", "exception", and "risk" types with "srovnání" tags (schema-compliant)
+  - Key changes documented:
+    - Point value unification: 4 categories (0.94-1.00 Kč) → unified 0.98 Kč (+3.2% average)
+    - HBmin reduction: 1.03 Kč → 0.90 Kč (-12.6%, significant risk for low-volume providers)
+    - MAXÚ coefficient: 1.065 → 1.03 (-3.3 percentage points, tighter cap)
+    - Regulation B.3 limit: 110% → 115% (more tolerance for prescriptions)
+    - Penalty reduction: -0.02 → -0.01 Kč for missed bonifications (50% less harsh)
+    - PMÚ formula change: explicit 108% coefficient, reference period 2022 → 2023
+    - Psychiatry exception tightening: now subject to regulation B.2
+    - New legislative changes: white fillings covered, mandatory e-communication
+  - Included insurance company specifics: ZP MV, OZP, ČPZP comparison
+  - Risk assessment: transitional period risks and mitigation strategies
+  - All 16 units validated against schema (100% compliance)
 
 - [ ] Extrahovat praktické heuristiky z InfoProLekare.cz článků:
   - Identifikovat 10 nejrelevantnějších článků o úhradách a provozu praxe
