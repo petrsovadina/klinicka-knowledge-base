@@ -1,0 +1,1285 @@
+{
+  "metadata": {
+    "test_date": "2026-02-03T11:16:08.801895",
+    "knowledge_base": "/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/data/knowledge_base_mvp.jsonl",
+    "knowledge_units_count": 669,
+    "total_queries": 25,
+    "average_top_score": 0.7302087456972083,
+    "success_rate_07": 60.0,
+    "target_met": false
+  },
+  "domain_summary": {
+    "uhrady": {
+      "count": 11,
+      "average": 0.6951323222865045,
+      "above_07": 5
+    },
+    "provoz": {
+      "count": 5,
+      "average": 0.7370569381407895,
+      "above_07": 3
+    },
+    "compliance": {
+      "count": 4,
+      "average": 0.7445294873634527,
+      "above_07": 3
+    },
+    "financni-rizika": {
+      "count": 5,
+      "average": 0.7890720914241801,
+      "above_07": 4
+    }
+  },
+  "results": [
+    {
+      "query": "Jaká je hodnota bodu pro ambulantní specialisty v roce 2026?",
+      "domain": "uhrady",
+      "difficulty": "easy",
+      "is_comparison": false,
+      "top_score": 0.8075380495516653,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "ku-479-ipl-as-hodnota-bodu",
+          "score": 0.8075380495516653,
+          "title": "Jednotná základní hodnota bodu pro ambulantní specialisty (AS) v roce 2026",
+          "description": "Základní hodnota bodu pro hrazené služby ambulantních specialistů je nově stanovena jednotně ve výši 0,98 Kč, což nahrazuje dřívější členění do čtyř kategorií (0,94 Kč až 1,00 Kč).",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-001-bod-sas-2026",
+          "score": 0.7505325862812713,
+          "title": "Jednotná hodnota bodu pro ambulantní specialisty (SAS) v roce 2026",
+          "description": "Od roku 2026 platí jednotná základní hodnota bodu pro hrazené služby ambulantních specialistů ve výši 0,98 Kč. Toto zjednodušení nahradilo předchozí členění do čtyř kategorií (0,94 až 1,00 Kč).",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "comp-001-hodnota-bodu-sjednoceni",
+          "score": 0.6090193029179429,
+          "title": "Srovnání 2025 vs 2026: Sjednocení základní hodnoty bodu pro AS",
+          "description": "Základní hodnota bodu pro ambulantní specialisty byla v roce 2026 sjednocena na 0,98 Kč. V roce 2025 existovaly 4 kategorie: 0,94 Kč, 0,96 Kč, 0,98 Kč a 1,00 Kč podle odbornosti. Tato změna zjednodušuje systém úhrad a zvyšuje průměrnou úhradu pro většinu odborností.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111101",
+          "score": 0.606004320227787,
+          "title": "ZP MV - Základní hodnota bodu pro ambulantní specialisty dle odbornosti 2025",
+          "description": "ZP MV ČR stanoví různé základní hodnoty bodu pro ambulantní specialisty podle odbornosti: 1,00 Kč pro odbornosti 107, 302, 780; 0,98 Kč pro odbornosti 108, 205, 403, 501, 601, 708; 0,96 Kč pro odbornosti 102, 202, 207, 209, 402, 606, 701, 705, 706; 0,94 Kč pro ostatní odbornosti.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-045-hodnota-bodu-v-nejvyssich-uradnich-odbornostech",
+          "score": 0.49411703346722535,
+          "title": "Hodnota bodu v nejvyšších úředních odbornostech",
+          "description": "Hodnota bodu v nejvyšších úředních odbornostech, například výkon č. 88101, je stanovena na 0,92 Kč, což představuje specifickou hodnotu bodu pro tyto odbornosti v rámci úhradového systému.",
+          "type": "definition",
+          "domain": "legislativa"
+        }
+      ]
+    },
+    {
+      "query": "Co je MAXÚ a jak se vypočítá maximální úhrada?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.6192782854788947,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "ku-003-maxu-2026",
+          "score": 0.6192782854788947,
+          "title": "Snížení koeficientu MAXÚ v roce 2026",
+          "description": "Základní koeficient ve vzorci pro výpočet maximální úhrady (MAXÚ) byl snížen z 1,065 na 1,03. MAXÚ je horní limit úhrady, kterou pojišťovna poskytne za dané období.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-481-ipl-as-maxu-koeficient",
+          "score": 0.565706377793756,
+          "title": "Snížení základního koeficientu ve vzorci MAXÚ v roce 2026",
+          "description": "Základní koeficient ve vzorci pro výpočet maximální úhrady (MAXÚ) byl snížen z 1,065 na 1,03, což znamená zpřísnění regulace maximální úhrady.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "comp-003-maxu-koeficient",
+          "score": 0.5199189495249368,
+          "title": "Srovnání 2025 vs 2026: Snížení základního koeficientu MAXÚ",
+          "description": "Základní koeficient ve vzorci pro výpočet maximální úhrady (MAXÚ) byl snížen z 1,065 (2025) na 1,03 (2026). Toto představuje zpřísnění regulace maximální úhrady a omezuje prostor pro překročení průměru.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-026-maxu-koeficient-snizeni",
+          "score": 0.4788428913237938,
+          "title": "MAXÚ koeficient - snížení z 1.065 na 1.03",
+          "description": "Snížení MAXÚ koeficientu omezuje maximální možný růst úhrad a zvyšuje riziko krácení.",
+          "type": "risk",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-24-rule",
+          "score": 0.46198243770217584,
+          "title": "Maximální úhrada za léčivé přípravky určené k léčbě a profylaxi u pojištěnců do 18 let",
+          "description": "Stanovuje maximální úhradu na 1 podaný léčivý přípravek pro pojištěnce do 18 let, pokud jsou hrazené podle zákona nebo zařazené ve skupinách podle bodu 2.2.2, a to v roce 2023. Úhrada se stanoví jako součet vykázaných a uznaných úhrad, s výjimkou přípravků s jinou právní úpravou.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jak funguje PURO a jaký je vzorec pro její výpočet?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.5661669917083597,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "ku-002-hbmin-2026",
+          "score": 0.5661669917083597,
+          "title": "Snížení minimální hodnoty bodu (HBmin) pro výpočet PURO v roce 2026",
+          "description": "Minimální hodnota bodu pro výpočet PURO (průměrná úhrada na unikátního pojištěnce) byla snížena z 1,03 Kč na 0,90 Kč. Toto snížení má přímý dopad na výpočet PURO a následně na úhrady poskytovatelů.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-021-pojistovny-srovnani-puro-hodnoty",
+          "score": 0.5620080356403243,
+          "title": "Srovnání pojišťoven - PURO hodnoty a specifika",
+          "description": "Každá pojišťovna má mírně odlišné PURO hodnoty a specifické dodatky - je důležité znát rozdíly.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-022-cpzp-puro-v-dodatku",
+          "score": 0.5083097994841095,
+          "title": "ČPZP - unikátní zveřejnění PURO hodnot v dodatku",
+          "description": "Česká průmyslová zdravotní pojišťovna jako jediná zveřejňuje PURO hodnoty přímo ve svých úhradových dodatcích.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-013-optimalizace-puro",
+          "score": 0.4877133019257862,
+          "title": "Strategie optimalizace PURO (průměrné úhrady na unikátního pojištěnce)",
+          "description": "PURO je klíčový ukazatel zdraví ordinace. Optimalizace PURO zvyšuje konkurenceschopnost a hodnotu praxe. Hlavní strategie zahrnují efektivní vykazování, splnění bonifikačních podmínek a zvýšení počtu nových pacientů.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "cpzp-003-rule-puro-v-dodatku",
+          "score": 0.4824237208544718,
+          "title": "ČPZP - PURO hodnoty uvedeny v úhradovém dodatku",
+          "description": "ČPZP jako jediná pojišťovna uvádí referenční hodnoty PURO (Průměrná úhrada na unikátního pojištěnce v referenčním období) přímo v úhradovém dodatku, což poskytovatelům usnadňuje výpočet očekávané úhrady.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jaké jsou bonifikace za příjem nových pacientů v roce 2026?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.9002301827806124,
+      "topic_coverage": 0.25,
+      "sources": [
+        {
+          "id": "ku-004-bonifikace-2026",
+          "score": 0.9002301827806124,
+          "title": "Nová odstupňovaná bonifikace za příjem nových pacientů v roce 2026",
+          "description": "V roce 2026 byla zavedena nová, odstupňovaná bonifikace za příjem nových pacientů. Poskytovatel může získat +0,04 Kč/bod (vyšší bonus) nebo +0,01 Kč/bod (nižší bonus) v závislosti na splnění kombinovaných podmínek.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-482-ipl-as-bonifikace-novi-pacienti",
+          "score": 0.8548970272117051,
+          "title": "Nová odstupňovaná bonifikace za příjem nových pacientů v roce 2026",
+          "description": "Bonifikace za příjem nových pacientů je odstupňovaná: +0,04 Kč za splnění ordinačních hodin A ošetření 10 % nových pojištěnců (15 % u operačních oborů), nebo +0,01 Kč za ošetření 5 % nových pojištěnců (10 % u operačních oborů) bez splnění podmínky ordinačních hodin.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "comp-005-bonifikace-novi-pacienti",
+          "score": 0.7550430586320731,
+          "title": "Srovnání 2025 vs 2026: Restrukturalizace bonifikace za nové pacienty",
+          "description": "Bonifikace za příjem nových pacientů byla v roce 2026 restrukturalizována do dvou úrovní. Vyšší bonus (+0,04 Kč) vyžaduje kombinaci ordinačních hodin A vyššího podílu nových pacientů. Nižší bonus (+0,01 Kč) je dostupný i bez ordinačních hodin.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-016-novi-pacienti-rozsireny-prah",
+          "score": 0.4285488681034012,
+          "title": "Rozšířená bonifikace za nové pacienty - práh 10%",
+          "description": "Při dosažení 10% podílu nových pacientů se bonifikace zvyšuje na +0.03 Kč.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-036-cpzp-rozsirena-bonifikace-novacienti",
+          "score": 0.36695054684923806,
+          "title": "ČPZP - rozšířená bonifikace za nové pacienty +0.04 Kč",
+          "description": "ČPZP nabízí vyšší bonifikaci +0.04 Kč při dosažení 10%+ podílu nových pacientů s rozšířenými ordinačními hodinami.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Co je předběžná měsíční úhrada a jak se počítá PMÚ?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.6183465785880556,
+      "topic_coverage": 0.3333333333333333,
+      "sources": [
+        {
+          "id": "ku-101",
+          "score": 0.6183465785880556,
+          "title": "Měsíční předběžná úhrada za poskytované služby",
+          "description": "Měsíční předběžná úhrada je stanovena na základě hodnoty vykázaných a uznaných hrazených služeb za daný měsíc s hodnotou bodu podle bodů 1 a 2. Tato předběžná úhrada je základem pro finanční vypořádání a je vyrovnána do 150 dnů po skončení hodnoceného období.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-62-rule",
+          "score": 0.5916469684522461,
+          "title": "Předběžná měsíční úhrada a její finanční vypořádání",
+          "description": "Poskytovateli se měsíčně poskytne předběžná úhrada ve výši jedné dvanáctiny předpokládané úhrady za období, která se upraví podle změn v rozsahu služeb, počtu hospitalizací a počtu pojištěnců. Finální vyúčtování proběhne do 180 dnů po skončení období.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-86-rule",
+          "score": 0.5704238141642127,
+          "title": "Stanovení předběžné měsíční úhrady na základě referenčního období",
+          "description": "Předběžná úhrada je stanovena jako jedna dvanáctina 106 % úhrady za referenční období a finančně se vypořádá do 150 dnů po skončení hodnoceného období, včetně regulačních omezení.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ozp-009-rule-pmu-minimum-2024",
+          "score": 0.5594295676378948,
+          "title": "OZP - PMÚ nesmí být nižší než v roce 2024",
+          "description": "OZP stanovuje předběžnou měsíční úhradu (PMÚ) jako 1/12 předpokládané úhrady za hodnocené období, přičemž PMÚ nesmí být nižší než v roce 2024. Toto představuje ochranu poskytovatelů před poklesem cash flow.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-016-individualni-mesicni-predbezna-uhrada",
+          "score": 0.4873928206497832,
+          "title": "Individuální měsíční předběžná úhrada podle očekávané celoroční úhrady poskytovatele",
+          "description": "Pro rok 2025 je stanovena měsíční předběžná úhrada individuálně pro každého poskytovatele na základě očekávané celoroční úhrady, aby se předešlo velkým přeplatkům a nedoplatkům napříč různými odbornostmi a poskytovateli.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jaké jsou podmínky pro bonifikaci za ordinační hodiny?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.7074880027268042,
+      "topic_coverage": 0.75,
+      "sources": [
+        {
+          "id": "ku-005-ordinacni-hodiny-2026",
+          "score": 0.7074880027268042,
+          "title": "Ordinační hodiny jako podmínka pro vyšší bonifikaci v roce 2026",
+          "description": "Aby poskytovatel získal vyšší bonifikaci (+0,04 Kč/bod), musí splnit podmínku ordinačních hodin. Tato podmínka je součástí nového systému bonifikací zavedených v roce 2026.",
+          "type": "condition",
+          "domain": "provoz"
+        },
+        {
+          "id": "ipl-003-bonifikace-ordinacni-hodiny-30h",
+          "score": 0.48567233413000666,
+          "title": "Bonifikace za rozšířené ordinační hodiny - 30 hodin týdně",
+          "description": "Pro získání bonifikace +0.04 Kč musí praxe splnit podmínku 30 ordinačních hodin týdně po celý rok.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111105",
+          "score": 0.4588291870689222,
+          "title": "ZP MV - Bonifikace za rozšířené ordinační hodiny (30 hodin + večerní/ranní)",
+          "description": "ZP MV ČR poskytuje bonifikaci +0,04 Kč pro danou odbornost, pokud poskytovatel u alespoň 50% pracovišť v dané odbornosti poskytuje hrazené služby v rozsahu alespoň 30 ordinačních hodin rozložených do 5 dnů týdně a má alespoň 2 dny do 18:00 nebo od 7:00, případně 1 den od 7:00 a 1 den do 18:00.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111108",
+          "score": 0.3820711803335356,
+          "title": "ZP MV - Bonifikace za nové pacienty (rozšířená) + ordinační hodiny",
+          "description": "ZP MV ČR poskytuje vyšší bonifikaci +0,03 Kč pro danou odbornost, pokud poskytovatel ošetří alespoň 10% nových pojištěnců (15% u operačních oborů) a současně splňuje podmínku rozsahu ordinačních hodin dle odst. 4b.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-63",
+          "score": 0.3671440818443962,
+          "title": "Kontroly dodržování ordinačních hodin a personálního zabezpečení",
+          "description": "Revizní pracovníci budou provádět kontroly dodržování ordinačních hodin a nasmlouvaných podmínek personálního zabezpečení, technického a přístrojového vybavení, což přispěje ke zvýšení kvality a dostupnosti zdravotních služeb.",
+          "type": "rule",
+          "domain": "provoz"
+        }
+      ]
+    },
+    {
+      "query": "Kolik je koeficient navýšení KN podle odbornosti?",
+      "domain": "uhrady",
+      "difficulty": "hard",
+      "is_comparison": false,
+      "top_score": 0.7863204969641127,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111129",
+          "score": 0.7863204969641127,
+          "title": "ZP MV - Koeficienty navýšení (KN) matice pro CŽV",
+          "description": "Dílčí koeficient navýšení KN pro bonifikaci CŽV závisí na plnění v referenčním i hodnoceném období: splnil/splnil = +0,02; splnil/nesplnil = -0,01; nesplnil/splnil = +0,03; nesplnil/nesplnil = 0.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-095",
+          "score": 0.7531227237269686,
+          "title": "Koeficient navýšení (KN) podle podílu výkonů s určitými výkonovými skupinami a diagnózami",
+          "description": "Koeficient navýšení KN je součtem koeficientů určených na základě podílu počtu ošetřených a uznaných unikátních pojištěnců s výkonem nebo diagnózou na celkovém počtu ošetřených. Podmínky zahrnují výkonové skupiny s výkonem č. 06135, 06137, nebo skupiny s výkonem č. 06325-06334, a diagnózy C00-C97, G09-G99, F00-F99, I60-I69, E10.3-E10.7, E11.3-E11.7, L88, L89, L93, L97, s prahovými hodnotami 25 %, 35 %, nebo 35 % s rozdílnými koeficienty podle splnění podmínek.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-63-exception",
+          "score": 0.49335388351709986,
+          "title": "Výjimka pro hrazené služby zahraničním pojištěncům",
+          "description": "U hrazených služeb poskytnutých zahraničním pojištěncům se nepoužije koeficient navýšení KN podle písmen c) až g). Tyto služby jsou hrazeny bez navýšení podle standardních pravidel.",
+          "type": "exception",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-483-ipl-as-penalizace-kn",
+          "score": 0.41706894259814625,
+          "title": "Snížení penalizací za nesplnění bonifikací Koeficientu Navýšení (KN) v roce 2026",
+          "description": "U poskytovatelů, kteří splnili bonifikaci v referenčním období, ale v hodnoceném nikoli, došlo ke snížení penalizace (záporný koeficient). Např. u ordinačních hodin (KN b) klesla srážka z -0,02 na -0,01.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111112",
+          "score": 0.3722695260411843,
+          "title": "ZP MV - Výpočet maximální úhrady (MAXÚ) pro ambulantní specialisty",
+          "description": "Celková úhrada poskytovateli nepřekročí částku: (1,065 + KN) × (POPzpoz × PUROo) + max[PUROo × POPzpoMh; UHRMh - UHRMr], kde KN je koeficient navýšení dle splněných podmínek, POPzpoz je počet základních unikátních pojištěnců, PUROo je přepočtená průměrná úhrada na pojištěnce.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jak se hradí bílé plomby a endodoncie od roku 2026?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.7418443639197125,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "ipl-028-bile-plomby-hrazene",
+          "score": 0.7418443639197125,
+          "title": "Bílé plomby nově hrazené z veřejného pojištění",
+          "description": "Od roku 2026 jsou estetické bílé výplně (kompozitní) hrazeny z veřejného zdravotního pojištění.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-022-zmeny-vykazovani-vyplni-z-amalgamu",
+          "score": 0.47544861808721617,
+          "title": "Nová pravidla vykazování amalgámových výplní od poloviny roku 2026",
+          "description": "Výplně z amalgámu lze provádět bez nových omezení do poloviny roku 2026, poté pouze jako výjimečné výplně z důvodu zdravotních potřeb pojištěnce. Pro sledování počtu těchto výplní jsou zavedeny samostatné kódy 00829 (do 2 plošek) a 00830 (3 a více plošek).",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-478-cpzp-uhrada-stomatologie",
+          "score": 0.4712678510953762,
+          "title": "Úhrada bílých plomb a ošetření kanálků",
+          "description": "Pojišťovny nově hradí bílé plomby a ošetření kanálků (endodoncie) v rámci rozšíření nabídky zdravotní péče.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-023-zruseni-uhrazeni-ucasti-v-referencni-siti-cz-drg",
+          "score": 0.45831273120828436,
+          "title": "Zrušení úhrady spojené s účastí v referenční síti CZ-DRG od roku 2026",
+          "description": "Úhrada spojená s účastí v referenční síti CZ-DRG byla odebrána, protože tato činnost bude díky změně zákona podléhat jinému právnímu předpisu od roku 2026.",
+          "type": "exception",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-23-rule-dup-8",
+          "score": 0.45267785843214525,
+          "title": "Změna oznamovací povinnosti pojištěnců a zaměstnavatelů od roku 2026",
+          "description": "Od roku 2026 bude ZP MV ČR reagovat na legislativní změny, které omezí oznamovací povinnost pojištěnců a zaměstnavatelů na skutečnosti, které nemůže ZP získat z evidence jiného OVM, a přejdou na elektronické podání datovou zprávou, což umožní automatické zpracování a sníží používání papírových formulářů.",
+          "type": "rule",
+          "domain": "legislativa"
+        }
+      ]
+    },
+    {
+      "query": "Jaká je minimální měsíční záloha OSVČ pro zdravotní pojištění v roce 2026?",
+      "domain": "provoz",
+      "difficulty": "easy",
+      "is_comparison": false,
+      "top_score": 0.6571112385883535,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "ku-475-cpzp-zaloha-osvc",
+          "score": 0.6571112385883535,
+          "title": "Minimální měsíční záloha OSVČ od 1. 1. 2026",
+          "description": "Minimální měsíční záloha pro Osoby samostatně výdělečně činné (OSVČ) je od 1. ledna 2026 stanovena na 3 306 Kč, což odpovídá 13,5 % z minimálního vyměřovacího základu 24 483,50 Kč.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-92-slug",
+          "score": 0.5372922155116748,
+          "title": "Nepředvídané odchylky ve výdajích a příjmech zdravotního pojištění v roce 2026",
+          "description": "V textu je popsáno, že vzhledem k nejistotám, jako jsou makroekonomické podmínky, restrukturalizace průmyslu, migrace obyvatel a vstup nových léčiv, může dojít k odchylkám ve výdajových a příjmových položkách fondů zdravotního pojištění v roce 2026.",
+          "type": "risk",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-473-cpzp-min-pojistne-zamestnavatel",
+          "score": 0.5089726118412635,
+          "title": "Minimální pojistné pro zaměstnavatele od 1. 1. 2026",
+          "description": "Od 1. ledna 2026 činí minimální pojistné hrazené zaměstnavatelem 3 024 Kč, což je navázáno na zvýšení minimální mzdy na 22 400 Kč.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-474-cpzp-pojistne-obzp",
+          "score": 0.48526782978768024,
+          "title": "Měsíční pojistné pro OBZP od 1. 1. 2026",
+          "description": "Měsíční pojistné pro Osoby bez zdanitelných příjmů (OBZP) se od 1. ledna 2026 zvyšuje na 3 024 Kč, v důsledku zvýšení minimální mzdy.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "comp-016-minimalni-pojistne-2026",
+          "score": 0.46535567158399854,
+          "title": "Srovnání 2025 vs 2026: Navýšení minimálního pojistného a záloh",
+          "description": "Od 1.1.2026 se zvyšuje minimální pojistné pro zaměstnavatele a OBZP na 3 024 Kč (z 2 968 Kč v 2025) a minimální záloha OSVČ na 3 306 Kč (z 3 230 Kč). Toto je důsledek zvýšení minimální mzdy na 22 400 Kč.",
+          "type": "rule",
+          "domain": "provoz"
+        }
+      ]
+    },
+    {
+      "query": "Co je checklist při nákupu lékařské praxe?",
+      "domain": "provoz",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.9189678175505069,
+      "topic_coverage": 0.5,
+      "sources": [
+        {
+          "id": "ku-012-checklist-kupujiciho",
+          "score": 0.9189678175505069,
+          "title": "Checklist kupujícího lékařské praxe: Klíčové oblasti kontroly",
+          "description": "Před nákupem lékařské praxe je nezbytné zkontrolovat klíčové oblasti. Tento checklist pokrývá ekonomickou situaci, vykazování, personál, smlouvy, pacienty, vybavení a právní formu.",
+          "type": "definition",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-019-prevzeti-praxe-referencni-uhra",
+          "score": 0.28005848061836786,
+          "title": "Určení referenční úhrady při převzetí praxe",
+          "description": "Při převzetí praxe podle § 17 odst. 8 zákona se pro výpočet celkové výše úhrady použijí referenční hodnoty srovnatelných poskytovatelů, aby se zohlednila struktura a rozsah péče nového poskytovatele.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-008-gynekologie-uz-penalizace",
+          "score": 0.2493644638128372,
+          "title": "Gynekologie - penalizace za starý ultrazvuk (před 2011)",
+          "description": "Praxe s ultrazvukovým přístrojem vyrobeným před rokem 2011 přijde o 50% hodnoty kapitace.",
+          "type": "anti_pattern",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-025-anti-pattern-prevzeti-praxe-bez-aktualizace-referencnich-hodnot",
+          "score": 0.24162997017358898,
+          "title": "Převzetí praxe bez aktualizace referenčních hodnot neodpovídajících nové struktuře péče",
+          "description": "Lékař po převzetí praxe často převezme referenční hodnoty předchozího poskytovatele, které nezohledňují strukturu a rozsah péče nového poskytovatele, což může vést k nespravedlivému ohodnocení a neadekvátní úhradě.",
+          "type": "anti_pattern",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-68-rule",
+          "score": 0.22153199948971108,
+          "title": "Registrace nových pojištěnců na pracovišti týmové praxe",
+          "description": "Poskytovatel na pracovišti týmové praxe průběžně registruje nové pojištěnce do kapacity 1 800 přepočtených pojištěnců na 1,0 úvazku lékaře, přičemž se nepočítají pojištěnci registrovaní na původních pracovištích při sloučení více pracovišť.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jak optimalizovat PURO v ambulantní praxi?",
+      "domain": "provoz",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.6167413054711908,
+      "topic_coverage": 1.0,
+      "sources": [
+        {
+          "id": "ipl-021-pojistovny-srovnani-puro-hodnoty",
+          "score": 0.6167413054711908,
+          "title": "Srovnání pojišťoven - PURO hodnoty a specifika",
+          "description": "Každá pojišťovna má mírně odlišné PURO hodnoty a specifické dodatky - je důležité znát rozdíly.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-022-cpzp-puro-v-dodatku",
+          "score": 0.6167071152330481,
+          "title": "ČPZP - unikátní zveřejnění PURO hodnot v dodatku",
+          "description": "Česká průmyslová zdravotní pojišťovna jako jediná zveřejňuje PURO hodnoty přímo ve svých úhradových dodatcích.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-013-optimalizace-puro",
+          "score": 0.5469922603675551,
+          "title": "Strategie optimalizace PURO (průměrné úhrady na unikátního pojištěnce)",
+          "description": "PURO je klíčový ukazatel zdraví ordinace. Optimalizace PURO zvyšuje konkurenceschopnost a hodnotu praxe. Hlavní strategie zahrnují efektivní vykazování, splnění bonifikačních podmínek a zvýšení počtu nových pacientů.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "cpzp-003-rule-puro-v-dodatku",
+          "score": 0.5043140686257657,
+          "title": "ČPZP - PURO hodnoty uvedeny v úhradovém dodatku",
+          "description": "ČPZP jako jediná pojišťovna uvádí referenční hodnoty PURO (Průměrná úhrada na unikátního pojištěnce v referenčním období) přímo v úhradovém dodatku, což poskytovatelům usnadňuje výpočet očekávané úhrady.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "cpzp-004-rule-prumerne-puro-v-dodatku",
+          "score": 0.4595525277690385,
+          "title": "ČPZP - Průměrné PURO pro nové poskytovatele v dodatku",
+          "description": "ČPZP uvádí v úhradovém dodatku průměrné hodnoty PURO pro poskytovatele bez existujícího referenčního období (nové poskytovatele), což umožňuje lepší plánování pro začínající praxi.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jaké je minimální pojistné pro zaměstnavatele od roku 2026?",
+      "domain": "provoz",
+      "difficulty": "easy",
+      "is_comparison": false,
+      "top_score": 0.7729139465131744,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "ku-473-cpzp-min-pojistne-zamestnavatel",
+          "score": 0.7729139465131744,
+          "title": "Minimální pojistné pro zaměstnavatele od 1. 1. 2026",
+          "description": "Od 1. ledna 2026 činí minimální pojistné hrazené zaměstnavatelem 3 024 Kč, což je navázáno na zvýšení minimální mzdy na 22 400 Kč.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-474-cpzp-pojistne-obzp",
+          "score": 0.6975459588548236,
+          "title": "Měsíční pojistné pro OBZP od 1. 1. 2026",
+          "description": "Měsíční pojistné pro Osoby bez zdanitelných příjmů (OBZP) se od 1. ledna 2026 zvyšuje na 3 024 Kč, v důsledku zvýšení minimální mzdy.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "comp-016-minimalni-pojistne-2026",
+          "score": 0.6767848249028343,
+          "title": "Srovnání 2025 vs 2026: Navýšení minimálního pojistného a záloh",
+          "description": "Od 1.1.2026 se zvyšuje minimální pojistné pro zaměstnavatele a OBZP na 3 024 Kč (z 2 968 Kč v 2025) a minimální záloha OSVČ na 3 306 Kč (z 3 230 Kč). Toto je důsledek zvýšení minimální mzdy na 22 400 Kč.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-475-cpzp-zaloha-osvc",
+          "score": 0.5869520690164823,
+          "title": "Minimální měsíční záloha OSVČ od 1. 1. 2026",
+          "description": "Minimální měsíční záloha pro Osoby samostatně výdělečně činné (OSVČ) je od 1. ledna 2026 stanovena na 3 306 Kč, což odpovídá 13,5 % z minimálního vyměřovacího základu 24 483,50 Kč.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ipl-027-povinne-e-omunikace",
+          "score": 0.3931333479355678,
+          "title": "Povinná elektronická komunikace s pojišťovnami",
+          "description": "Od roku 2026 je elektronická komunikace s pojišťovnami povinná pro všechny poskytovatele.",
+          "type": "rule",
+          "domain": "provoz"
+        }
+      ]
+    },
+    {
+      "query": "Musím používat objednávkový systém pro bonifikaci?",
+      "domain": "provoz",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.7195503825807216,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111109",
+          "score": 0.7195503825807216,
+          "title": "ZP MV - Bonifikace za objednávkový systém s prioritizací",
+          "description": "ZP MV ČR poskytuje bonifikaci +0,01 Kč pro danou odbornost, pokud poskytovatel využívá objednávkový systém umožňující přednostní vyšetření pojištěnců, u nichž to vyžaduje jejich zdravotní stav.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-51-rule",
+          "score": 0.6409689156787236,
+          "title": "Výpočet hodnoty péče podle bodů a bonifikací",
+          "description": "Stanovuje pravidla pro výpočet hodnoty ambulantní péče v roce 2023 a 2025 na základě bodových hodnot, korunových položek a bonifikací za prodloužený režim, akreditaci a objednávkový systém.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-018-objednaci-system-bonifikace",
+          "score": 0.5156958896780687,
+          "title": "Bonifikace za elektronický objednací systém",
+          "description": "Provozování elektronického objednacího systému pro pacienty přináší bonifikaci +0.01 Kč.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111130",
+          "score": 0.3548608648019306,
+          "title": "ZP MV - Riziko penalizace za nesplnění bonifikačních podmínek",
+          "description": "Pokud poskytovatel splňoval bonifikační podmínky v referenčním období ale nesplní je v hodnoceném období, hrozí záporný koeficient navýšení: CŽV -0,01; ordinační hodiny -0,02; noví pacienti -0,02; objednávkový systém -0,02. Může vést k výraznému snížení úhrady.",
+          "type": "risk",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111107",
+          "score": 0.2959560619503982,
+          "title": "ZP MV - Bonifikace za nové pacienty (základní)",
+          "description": "ZP MV ČR poskytuje bonifikaci +0,01 Kč pro danou odbornost, pokud poskytovatel v hodnoceném období ošetří alespoň 5% nových pojištěnců (u operačních oborů 10%), u nichž v období 2022-2024 nevykázal žádný výkon.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jaké jsou nové povinnosti elektronické komunikace se zdravotními pojišťovnami?",
+      "domain": "compliance",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.7605107487906037,
+      "topic_coverage": 0.3333333333333333,
+      "sources": [
+        {
+          "id": "ipl-027-povinne-e-omunikace",
+          "score": 0.7605107487906037,
+          "title": "Povinná elektronická komunikace s pojišťovnami",
+          "description": "Od roku 2026 je elektronická komunikace s pojišťovnami povinná pro všechny poskytovatele.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-476-cpzp-povinna-elektronicka-komunikace",
+          "score": 0.7438742857536906,
+          "title": "Povinná elektronická komunikace pro zaměstnavatele a OSVČ",
+          "description": "Novela zavádí povinnou elektronickou komunikaci se zdravotními pojišťovnami pro zaměstnavatele a OSVČ.",
+          "type": "rule",
+          "domain": "compliance"
+        },
+        {
+          "id": "ku-024-slug",
+          "score": 0.5651978930606429,
+          "title": "Rozšiřování elektronické pasportizace PZS",
+          "description": "RBP bude pokračovat v digitalizaci smluvní agendy a elektronické pasportizaci PZS, což zvýší efektivitu komunikace, sníží administrativní zátěž a umožní rychlejší a kvalitnější spolupráci s poskytovateli zdravotních služeb.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-23-rule-dup-8",
+          "score": 0.3802644065553267,
+          "title": "Změna oznamovací povinnosti pojištěnců a zaměstnavatelů od roku 2026",
+          "description": "Od roku 2026 bude ZP MV ČR reagovat na legislativní změny, které omezí oznamovací povinnost pojištěnců a zaměstnavatelů na skutečnosti, které nemůže ZP získat z evidence jiného OVM, a přejdou na elektronické podání datovou zprávou, což umožní automatické zpracování a sníží používání papírových formulářů.",
+          "type": "rule",
+          "domain": "legislativa"
+        },
+        {
+          "id": "ku-022-rule-uhrazeni-specializovane-ambulantni-pece",
+          "score": 0.3417975364123949,
+          "title": "Stanovení úhrad specializované ambulantní péče Ministerstvem zdravotnictví v roce 2025",
+          "description": "Segment ambulantních specialistů nedospěl k dohodě se zdravotními pojišťovnami, proto Ministerstvo zdravotnictví stanovilo úhrady s průměrným růstem cca 4,5 % při splnění bonifikačních kritérií, plus dalších 4 % z růstu objemu péče a nových kapacit.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Které odbornosti jsou vyjmuty z regulací v roce 2026?",
+      "domain": "compliance",
+      "difficulty": "hard",
+      "is_comparison": false,
+      "top_score": 0.9105157015099075,
+      "topic_coverage": 1.0,
+      "sources": [
+        {
+          "id": "ku-008-vyjimky-regulace-2026",
+          "score": 0.9105157015099075,
+          "title": "Výjimky z regulací pro vybrané odbornosti v roce 2026",
+          "description": "Některé odbornosti jsou vyjmuty z určitých regulací. V roce 2026 došlo ke zpřísnění těchto výjimek. Odbornosti 305, 306, 308, 309, 350, 355, 360, 370, 920, 922, 935 jsou vyjmuty pouze z regulací B.3 (předpisy) a B.4 (vykazování), nikoliv z B.2 (výkony).",
+          "type": "exception",
+          "domain": "uhrady"
+        },
+        {
+          "id": "comp-009-vyjimky-z-regulaci-psychiatrie",
+          "score": 0.729911814303588,
+          "title": "Srovnání 2025 vs 2026: Zpřísnění výjimek z regulací pro psychiatrii a CDZ",
+          "description": "V roce 2025 byly psychiatrické a CDZ odbornosti vyjmuty ze všech regulací (B.2, B.3, B.4). V roce 2026 jsou tyto odbornosti vyjmuty pouze z regulací B.3 (preskripce) a B.4 (vykazování), ale podléhají regulaci B.2 (výkony).",
+          "type": "exception",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-014-mnp-vyjimka-psychiatrie",
+          "score": 0.4011467835774186,
+          "title": "MNP výjimka pro psychiatrické odbornosti",
+          "description": "Psychiatrické odbornosti (305, 306, 308, 309) mají výjimku z regulace minimálního počtu nových pacientů.",
+          "type": "exception",
+          "domain": "uhrady"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111119",
+          "score": 0.37258520442881105,
+          "title": "ZP MV - Výjimka z regulací pro psychiatrii a CDZ",
+          "description": "Regulační omezení pro ZUM/ZULP, předepsané léčiva a vyžádanou péči se nepoužijí u poskytovatelů v odbornostech 305, 306, 308, 309, 350, 355, 360, 370 a 922 (duševní zdraví a CDZ).",
+          "type": "exception",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-029-psychiatrie-regulace-b2-zprisneni",
+          "score": 0.31308066634697074,
+          "title": "Psychiatrie - nové podřízení regulaci B.2",
+          "description": "Psychiatrické odbornosti jsou nově podřízeny regulaci B.2 (indukovaná péče), což je zpřísnění.",
+          "type": "risk",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Co se změnilo v novele zákona o zdravotním pojištění od ledna 2026?",
+      "domain": "compliance",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.8479462203560146,
+      "topic_coverage": 1.0,
+      "sources": [
+        {
+          "id": "ku-471-cpzp-novela-zakonu-2026",
+          "score": 0.8479462203560146,
+          "title": "Novela zákona o veřejném zdravotním pojištění od 1. 1. 2026",
+          "description": "Od 1. ledna 2026 vstupuje v platnost novela zákona č. 48/1997 Sb., o veřejném zdravotním pojištění a zákona č. 592/1992 Sb., o pojistném na veřejném zdravotním pojištění, která rozšiřuje nabídku zdravotní péče, zavádí nové výkony a častější preventivní vyšetření.",
+          "type": "rule",
+          "domain": "legislativa"
+        },
+        {
+          "id": "comp-010-nove-legislativni-zmeny",
+          "score": 0.6271422121609683,
+          "title": "Srovnání 2025 vs 2026: Nové legislativní změny od 1.1.2026",
+          "description": "Od 1. ledna 2026 vstupuje v platnost novela zákona č. 48/1997 Sb. o veřejném zdravotním pojištění. Mezi hlavní změny patří: hrazení bílých plomb a endodoncie, povinná elektronická komunikace pro zaměstnavatele a OSVČ, pouze bezhotovostní platba pojistného.",
+          "type": "rule",
+          "domain": "legislativa"
+        },
+        {
+          "id": "ku-020-rust-nakladu-stomatologie-2026",
+          "score": 0.43549322016127906,
+          "title": "Riziko výrazného růstu nákladů ve stomatologii v roce 2026",
+          "description": "Vzhledem k novele zákona o veřejném zdravotním pojištění, konci používání amalgámu a hrazení moderních stomatologických metod se očekává růst nákladů ve stomatologii o více než 5 mld. Kč (přes 25 %). Zdravotní pojišťovny odhadují až 7 mld. Kč, přičemž částka závisí na smluvní politice a počtu dosud nehrazených výplní.",
+          "type": "risk",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-475-cpzp-zaloha-osvc",
+          "score": 0.40050522610883627,
+          "title": "Minimální měsíční záloha OSVČ od 1. 1. 2026",
+          "description": "Minimální měsíční záloha pro Osoby samostatně výdělečně činné (OSVČ) je od 1. ledna 2026 stanovena na 3 306 Kč, což odpovídá 13,5 % z minimálního vyměřovacího základu 24 483,50 Kč.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-474-cpzp-pojistne-obzp",
+          "score": 0.3923543610263976,
+          "title": "Měsíční pojistné pro OBZP od 1. 1. 2026",
+          "description": "Měsíční pojistné pro Osoby bez zdanitelných příjmů (OBZP) se od 1. ledna 2026 zvyšuje na 3 024 Kč, v důsledku zvýšení minimální mzdy.",
+          "type": "rule",
+          "domain": "provoz"
+        }
+      ]
+    },
+    {
+      "query": "Mohu platit pojistné hotově v roce 2026?",
+      "domain": "compliance",
+      "difficulty": "easy",
+      "is_comparison": false,
+      "top_score": 0.45914527879728495,
+      "topic_coverage": 0.3333333333333333,
+      "sources": [
+        {
+          "id": "ku-016-navyseni-uhrazen-zdravotnicke-dopravy-2026",
+          "score": 0.45914527879728495,
+          "title": "Navýšení úhrad za zdravotnickou dopravní službu o 2 % v roce 2026",
+          "description": "Výše úhrad hrazených služeb poskytovaných poskytovatelům zdravotnické dopravní služby bude v roce 2026 navýšena o 2 % oproti roku 2025.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-035-rule",
+          "score": 0.42890967164166305,
+          "title": "Plánovaný nárůst příjmů z pojistného ve výši 5,8 % v roce 2026",
+          "description": "Pojišťovna plánuje zvýšení příjmů z výběru pojistného o 5,8 % oproti předchozímu roku, což ovlivní její finanční stabilitu a schopnost pokrýt náklady na zdravotní péči. Tento růst je založen na predikcích MF ČR a je klíčový pro rozpočet roku 2026.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-023-rule",
+          "score": 0.418644680365814,
+          "title": "Očekávané zvýšení příjmů z pojistného v letech 2026-2027",
+          "description": "Příjmy z pojistného na veřejné zdravotní pojištění jsou plánovány na růst o 5,2 % v roce 2026 a 4,7 % v roce 2027, což je založeno na růstu mezd, stabilním počtu pojištěnců a předpokladu stabilního vývoje plateb od státu.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-474-cpzp-pojistne-obzp",
+          "score": 0.4021165065158021,
+          "title": "Měsíční pojistné pro OBZP od 1. 1. 2026",
+          "description": "Měsíční pojistné pro Osoby bez zdanitelných příjmů (OBZP) se od 1. ledna 2026 zvyšuje na 3 024 Kč, v důsledku zvýšení minimální mzdy.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-473-cpzp-min-pojistne-zamestnavatel",
+          "score": 0.3973663600918818,
+          "title": "Minimální pojistné pro zaměstnavatele od 1. 1. 2026",
+          "description": "Od 1. ledna 2026 činí minimální pojistné hrazené zaměstnavatelem 3 024 Kč, což je navázáno na zvýšení minimální mzdy na 22 400 Kč.",
+          "type": "rule",
+          "domain": "provoz"
+        }
+      ]
+    },
+    {
+      "query": "Jaká jsou rizika při převzetí ordinace s existujícím IČZ?",
+      "domain": "financni-rizika",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.9097382335409496,
+      "topic_coverage": 0.75,
+      "sources": [
+        {
+          "id": "ku-011-riziko-prevzetí-ordinace",
+          "score": 0.9097382335409496,
+          "title": "Riziko skrytých finančních problémů při převzetí ordinace s existujícím IČZ",
+          "description": "Převzetí ordinace s existujícím identifikačním číslem zařízení (IČZ) může skrývat finanční rizika. Nový majitel může dědit nevyřešené vratky, nesprávné vykazování nebo smlouvy s nevýhodným nastavením PURO a bonifikací.",
+          "type": "risk",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-019-prevzeti-praxe-referencni-uhra",
+          "score": 0.5830557467956529,
+          "title": "Určení referenční úhrady při převzetí praxe",
+          "description": "Při převzetí praxe podle § 17 odst. 8 zákona se pro výpočet celkové výše úhrady použijí referenční hodnoty srovnatelných poskytovatelů, aby se zohlednila struktura a rozsah péče nového poskytovatele.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-025-anti-pattern-prevzeti-praxe-bez-aktualizace-referencnich-hodnot",
+          "score": 0.49860759224216533,
+          "title": "Převzetí praxe bez aktualizace referenčních hodnot neodpovídajících nové struktuře péče",
+          "description": "Lékař po převzetí praxe často převezme referenční hodnoty předchozího poskytovatele, které nezohledňují strukturu a rozsah péče nového poskytovatele, což může vést k nespravedlivému ohodnocení a neadekvátní úhradě.",
+          "type": "anti_pattern",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-010-anti-pattern-nizka-puro",
+          "score": 0.24833822439825576,
+          "title": "Anti-pattern: Ordinace s nízkou PURO a bez nových pacientů",
+          "description": "Ordinace, která má nízkou PURO (průměrnou úhradu na unikátního pojištěnce) a zároveň nepřijímá nové pacienty, ztrácí obě možnosti zvýšení úhrad: nižší PURO a bez bonifikace za nové pacienty. Toto je typická chyba vedoucí k postupnému snižování příjmů.",
+          "type": "anti_pattern",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-013-optimalizace-puro",
+          "score": 0.22889417105907464,
+          "title": "Strategie optimalizace PURO (průměrné úhrady na unikátního pojištěnce)",
+          "description": "PURO je klíčový ukazatel zdraví ordinace. Optimalizace PURO zvyšuje konkurenceschopnost a hodnotu praxe. Hlavní strategie zahrnují efektivní vykazování, splnění bonifikačních podmínek a zvýšení počtu nových pacientů.",
+          "type": "rule",
+          "domain": "provoz"
+        }
+      ]
+    },
+    {
+      "query": "Co je anti-pattern nízká PURO bez nových pacientů?",
+      "domain": "financni-rizika",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.8215559112721815,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "ku-010-anti-pattern-nizka-puro",
+          "score": 0.8215559112721815,
+          "title": "Anti-pattern: Ordinace s nízkou PURO a bez nových pacientů",
+          "description": "Ordinace, která má nízkou PURO (průměrnou úhradu na unikátního pojištěnce) a zároveň nepřijímá nové pacienty, ztrácí obě možnosti zvýšení úhrad: nižší PURO a bez bonifikace za nové pacienty. Toto je typická chyba vedoucí k postupnému snižování příjmů.",
+          "type": "anti_pattern",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-141-anti_pattern",
+          "score": 0.5544885887918577,
+          "title": "Nepřesné zařazení výkonů za účelem zvýšení úhrad",
+          "description": "Některá zdravotnická zařízení mohou nesprávně zařadit výkony do dražších DRG skupin s cílem zvýšit úhradu, což představuje anti-pattern porušující pravidla správné dokumentace a zařazení výkonů.",
+          "type": "anti_pattern",
+          "domain": "compliance"
+        },
+        {
+          "id": "ku-013-optimalizace-puro",
+          "score": 0.5109594055427928,
+          "title": "Strategie optimalizace PURO (průměrné úhrady na unikátního pojištěnce)",
+          "description": "PURO je klíčový ukazatel zdraví ordinace. Optimalizace PURO zvyšuje konkurenceschopnost a hodnotu praxe. Hlavní strategie zahrnují efektivní vykazování, splnění bonifikačních podmínek a zvýšení počtu nových pacientů.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-67-anti_pattern",
+          "score": 0.3786224090906213,
+          "title": "Nepřiměřené převody mezi fondy bez zdůvodnění",
+          "description": "Provádění převodů mezi fondy bez řádného zdůvodnění nebo dokumentace může vést k nesouladu s legislativními požadavky a ztrátě kontroly nad hospodařením s prostředky, což je považováno za anti-pattern v oblasti compliance.",
+          "type": "anti_pattern",
+          "domain": "compliance"
+        },
+        {
+          "id": "ipl-021-pojistovny-srovnani-puro-hodnoty",
+          "score": 0.35573167994611443,
+          "title": "Srovnání pojišťoven - PURO hodnoty a specifika",
+          "description": "Každá pojišťovna má mírně odlišné PURO hodnoty a specifické dodatky - je důležité znát rozdíly.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jak funguje regulace na předepsané léky a jaké jsou limity?",
+      "domain": "financni-rizika",
+      "difficulty": "medium",
+      "is_comparison": false,
+      "top_score": 0.8218681989128813,
+      "topic_coverage": 1.0,
+      "sources": [
+        {
+          "id": "ku-007-regulace-lp-zp-2026",
+          "score": 0.8218681989128813,
+          "title": "Zmírnění regulace na předepsané léčiva a zdravotnické prostředky v roce 2026",
+          "description": "Limit pro překročení průměrné úhrady, od kterého se uplatní regulace na předepsané léčiva a zdravotnické prostředky (Regulace B.3), byl zvýšen ze 110% na 115%. Toto zmírnění umožňuje poskytovatelům vyšší výkony bez automatické regulace.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-485-ipl-as-regulace-lp-zp",
+          "score": 0.8075779430448387,
+          "title": "Zmírnění regulace na předepsané LP a ZP (Regulace B.3) v roce 2026",
+          "description": "Limit pro překročení průměrné úhrady, od kterého se uplatní regulace na předepsané léčivé přípravky a zdravotnické prostředky (Regulace B.3), byl zvýšen (zmírněn) ze 110 % na 115 %.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "comp-004-regulace-b3-zmirneni",
+          "score": 0.4843377642332255,
+          "title": "Srovnání 2025 vs 2026: Zmírnění regulace předepsaných léčiv a ZP (B.3)",
+          "description": "Limit pro regulaci předepsaných léčivých přípravků a zdravotnických prostředků (Regulace B.3) byl zvýšen ze 110% na 115%. Toto zmírnění dává poskytovatelům více prostoru pro preskripci bez rizika srážky.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-020-regulace-b2-indukovana-pece",
+          "score": 0.35320345456011204,
+          "title": "Regulace B.2 - limit 110% pro indukovanou péči",
+          "description": "Indukovaná péče (předepsané výkony jiným poskytovatelům) nesmí překročit 110% referenčních hodnot.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-023-rust-nakladu-leky-zdravotnicke-prostredky-ockovani",
+          "score": 0.348571878560552,
+          "title": "Riziko vysoké růstové dynamiky nákladů na léky na recept, zdravotnické prostředky a očkování",
+          "description": "Mandatorní položky jako léky na recept, zdravotnické prostředky a očkování vykazují vysokou růstovou dynamiku v posledních letech, částečně způsobenou legislativními změnami (např. ochranné limity, změny ve zdravotnických prostředcích, monoklonální protilátky). Ministerstvo zdravotnictví odhaduje růst těchto segmentů na 3,7 mld. Kč.",
+          "type": "risk",
+          "domain": "financni-rizika"
+        }
+      ]
+    },
+    {
+      "query": "Jaké jsou penalizace za nesplnění bonifikačních podmínek?",
+      "domain": "financni-rizika",
+      "difficulty": "hard",
+      "is_comparison": false,
+      "top_score": 0.9362125537237608,
+      "topic_coverage": 0.6666666666666666,
+      "sources": [
+        {
+          "id": "ipl-030-penalizace-bonifikace-zmirnen",
+          "score": 0.9362125537237608,
+          "title": "Zmírnění penalizace za nesplnění bonifikací",
+          "description": "Penalizace za nesplnění bonifikačních podmínek byla snížena z -0.02 Kč na -0.01 Kč.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-006-penalizace-2026",
+          "score": 0.8631936430421391,
+          "title": "Snížené penalizace za nesplnění bonifikačních podmínek v roce 2026",
+          "description": "Pokud poskytovatel splnil bonifikační podmínky v referenčním období, ale v hodnoceném období je nesplní, uplatní se penalizace. V roce 2026 byly tyto penalizace sníženy. Například penalizace za ordinační hodiny klesla z -0,02 na -0,01 Kč/bod.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "comp-006-penalizace-snizeni",
+          "score": 0.8429197082921152,
+          "title": "Srovnání 2025 vs 2026: Snížení penalizací za nesplnění bonifikací",
+          "description": "Penalizace za nesplnění bonifikačních podmínek v hodnoceném období (při splnění v referenčním) byly sníženy. Penalizace za ordinační hodiny (KN b) klesla z -0,02 na -0,01 Kč, stejně penalizace za objednávkový systém (KN d).",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111130",
+          "score": 0.5758201536956056,
+          "title": "ZP MV - Riziko penalizace za nesplnění bonifikačních podmínek",
+          "description": "Pokud poskytovatel splňoval bonifikační podmínky v referenčním období ale nesplní je v hodnoceném období, hrozí záporný koeficient navýšení: CŽV -0,01; ordinační hodiny -0,02; noví pacienti -0,02; objednávkový systém -0,02. Může vést k výraznému snížení úhrady.",
+          "type": "risk",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-483-ipl-as-penalizace-kn",
+          "score": 0.49112494038990373,
+          "title": "Snížení penalizací za nesplnění bonifikací Koeficientu Navýšení (KN) v roce 2026",
+          "description": "U poskytovatelů, kteří splnili bonifikaci v referenčním období, ale v hodnoceném nikoli, došlo ke snížení penalizace (záporný koeficient). Např. u ordinačních hodin (KN b) klesla srážka z -0,02 na -0,01.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        }
+      ]
+    },
+    {
+      "query": "Jak se změnila hodnota bodu pro ambulantní specialisty oproti roku 2025?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": true,
+      "top_score": 0.6415158813844719,
+      "topic_coverage": 0.75,
+      "sources": [
+        {
+          "id": "ku-479-ipl-as-hodnota-bodu",
+          "score": 0.6415158813844719,
+          "title": "Jednotná základní hodnota bodu pro ambulantní specialisty (AS) v roce 2026",
+          "description": "Základní hodnota bodu pro hrazené služby ambulantních specialistů je nově stanovena jednotně ve výši 0,98 Kč, což nahrazuje dřívější členění do čtyř kategorií (0,94 Kč až 1,00 Kč).",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-001-bod-sas-2026",
+          "score": 0.6055634581674505,
+          "title": "Jednotná hodnota bodu pro ambulantní specialisty (SAS) v roce 2026",
+          "description": "Od roku 2026 platí jednotná základní hodnota bodu pro hrazené služby ambulantních specialistů ve výši 0,98 Kč. Toto zjednodušení nahradilo předchozí členění do čtyř kategorií (0,94 až 1,00 Kč).",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "e8a1c2d3-4567-4890-abcd-111111111101",
+          "score": 0.5572095550425606,
+          "title": "ZP MV - Základní hodnota bodu pro ambulantní specialisty dle odbornosti 2025",
+          "description": "ZP MV ČR stanoví různé základní hodnoty bodu pro ambulantní specialisty podle odbornosti: 1,00 Kč pro odbornosti 107, 302, 780; 0,98 Kč pro odbornosti 108, 205, 403, 501, 601, 708; 0,96 Kč pro odbornosti 102, 202, 207, 209, 402, 606, 701, 705, 706; 0,94 Kč pro ostatní odbornosti.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "comp-001-hodnota-bodu-sjednoceni",
+          "score": 0.502403335627938,
+          "title": "Srovnání 2025 vs 2026: Sjednocení základní hodnoty bodu pro AS",
+          "description": "Základní hodnota bodu pro ambulantní specialisty byla v roce 2026 sjednocena na 0,98 Kč. V roce 2025 existovaly 4 kategorie: 0,94 Kč, 0,96 Kč, 0,98 Kč a 1,00 Kč podle odbornosti. Tato změna zjednodušuje systém úhrad a zvyšuje průměrnou úhradu pro většinu odborností.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-024-navyseni-hodnoty-bodu-od-00033-00035",
+          "score": 0.5010874951525844,
+          "title": "Navýšení hodnoty bodu pro ošetřovací dny OD 00033 a 00035 o 2 %",
+          "description": "Hodnota bodu pro ošetřovací dny OD 00033 a 00035 je v roce 2026 navýšena o 2 % oproti roku 2025, zároveň jsou stanoveny hodnoty bodu pro tři nově zařazené ošetřovací dny.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Co se změnilo v koeficientu MAXÚ oproti minulému roku?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": true,
+      "top_score": 0.6756280953212973,
+      "topic_coverage": 0.5,
+      "sources": [
+        {
+          "id": "ku-003-maxu-2026",
+          "score": 0.6756280953212973,
+          "title": "Snížení koeficientu MAXÚ v roce 2026",
+          "description": "Základní koeficient ve vzorci pro výpočet maximální úhrady (MAXÚ) byl snížen z 1,065 na 1,03. MAXÚ je horní limit úhrady, kterou pojišťovna poskytne za dané období.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-481-ipl-as-maxu-koeficient",
+          "score": 0.5990842134162364,
+          "title": "Snížení základního koeficientu ve vzorci MAXÚ v roce 2026",
+          "description": "Základní koeficient ve vzorci pro výpočet maximální úhrady (MAXÚ) byl snížen z 1,065 na 1,03, což znamená zpřísnění regulace maximální úhrady.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "comp-003-maxu-koeficient",
+          "score": 0.5838171601221918,
+          "title": "Srovnání 2025 vs 2026: Snížení základního koeficientu MAXÚ",
+          "description": "Základní koeficient ve vzorci pro výpočet maximální úhrady (MAXÚ) byl snížen z 1,065 (2025) na 1,03 (2026). Toto představuje zpřísnění regulace maximální úhrady a omezuje prostor pro překročení průměru.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ipl-026-maxu-koeficient-snizeni",
+          "score": 0.5595344944414713,
+          "title": "MAXÚ koeficient - snížení z 1.065 na 1.03",
+          "description": "Snížení MAXÚ koeficientu omezuje maximální možný růst úhrad a zvyšuje riziko krácení.",
+          "type": "risk",
+          "domain": "uhrady"
+        },
+        {
+          "id": "cpzp-011-rule-maxu-dle-vyhlasky",
+          "score": 0.3962737098121292,
+          "title": "ČPZP - MAXÚ výpočet dle vyhlášky",
+          "description": "ČPZP aplikuje výpočet maximální úhrady (MAXÚ) přesně dle úhradové vyhlášky, včetně podmínky neuplatnění pro poskytovatele se 100 a méně unikátními pojištěnci nebo 30 a méně ordinačními hodinami.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    },
+    {
+      "query": "Jak se liší HBmin v roce 2026 oproti roku 2025?",
+      "domain": "uhrady",
+      "difficulty": "medium",
+      "is_comparison": true,
+      "top_score": 0.5820986167275631,
+      "topic_coverage": 0.0,
+      "sources": [
+        {
+          "id": "ku-31-rule",
+          "score": 0.5820986167275631,
+          "title": "Snížení čerpání PF v roce 2026 oproti roku 2025",
+          "description": "Pojišťovna plánuje snížení čerpání prostředků PF na 1 486 337 tis. Kč v roce 2026 oproti očekávané skutečnosti 2025, což odráží snahu o hospodárné nakládání s provozními prostředky vzhledem k celkové finanční situaci.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-016-navyseni-uhrazen-zdravotnicke-dopravy-2026",
+          "score": 0.575444360573306,
+          "title": "Navýšení úhrad za zdravotnickou dopravní službu o 2 % v roce 2026",
+          "description": "Výše úhrad hrazených služeb poskytovaných poskytovatelům zdravotnické dopravní služby bude v roce 2026 navýšena o 2 % oproti roku 2025.",
+          "type": "rule",
+          "domain": "uhrady"
+        },
+        {
+          "id": "ku-32-rule",
+          "score": 0.4739637387186548,
+          "title": "Snížení provozních nákladů v roce 2026",
+          "description": "Pojišťovna plánuje snížení provozních nákladů, včetně energií, nájemného, IT služeb a propagace, o 8,3 % oproti roku 2025, což je opatření ke zvýšení efektivity a úspor v provozu.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-087-rule",
+          "score": 0.4384984179097141,
+          "title": "Omezení výnosů z jiné činnosti na úroveň roku 2025",
+          "description": "Výnosy z jiné činnosti jsou limitovány na úroveň roku 2025, což může omezit růst příjmů v roce 2026 a ovlivnit finanční stabilitu zdravotní pojišťovny.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-71-rule",
+          "score": 0.4193170589395093,
+          "title": "Nárůst nákladů na zdravotní služby v roce 2026",
+          "description": "Náklady na zdravotní služby celkem vzrostou o 6,1 % oproti roku 2025, což představuje zvýšení rozpočtu na zdravotnictví a může ovlivnit financování a alokaci zdrojů v systému.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        }
+      ]
+    },
+    {
+      "query": "Změnily se nějak limity regulací na preskripci oproti roku 2025?",
+      "domain": "financni-rizika",
+      "difficulty": "hard",
+      "is_comparison": true,
+      "top_score": 0.4559855596711272,
+      "topic_coverage": 0.0,
+      "sources": [
+        {
+          "id": "ku-32-rule",
+          "score": 0.4559855596711272,
+          "title": "Snížení provozních nákladů v roce 2026",
+          "description": "Pojišťovna plánuje snížení provozních nákladů, včetně energií, nájemného, IT služeb a propagace, o 8,3 % oproti roku 2025, což je opatření ke zvýšení efektivity a úspor v provozu.",
+          "type": "rule",
+          "domain": "provoz"
+        },
+        {
+          "id": "ku-31-rule",
+          "score": 0.43950692883521336,
+          "title": "Snížení čerpání PF v roce 2026 oproti roku 2025",
+          "description": "Pojišťovna plánuje snížení čerpání prostředků PF na 1 486 337 tis. Kč v roce 2026 oproti očekávané skutečnosti 2025, což odráží snahu o hospodárné nakládání s provozními prostředky vzhledem k celkové finanční situaci.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-71-rule",
+          "score": 0.43317333230084876,
+          "title": "Nárůst nákladů na zdravotní služby v roce 2026",
+          "description": "Náklady na zdravotní služby celkem vzrostou o 6,1 % oproti roku 2025, což představuje zvýšení rozpočtu na zdravotnictví a může ovlivnit financování a alokaci zdrojů v systému.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-087-rule",
+          "score": 0.40455700459770894,
+          "title": "Omezení výnosů z jiné činnosti na úroveň roku 2025",
+          "description": "Výnosy z jiné činnosti jsou limitovány na úroveň roku 2025, což může omezit růst příjmů v roce 2026 a ovlivnit finanční stabilitu zdravotní pojišťovny.",
+          "type": "rule",
+          "domain": "financni-rizika"
+        },
+        {
+          "id": "ku-016-navyseni-uhrazen-zdravotnicke-dopravy-2026",
+          "score": 0.3984779088937669,
+          "title": "Navýšení úhrad za zdravotnickou dopravní službu o 2 % v roce 2026",
+          "description": "Výše úhrad hrazených služeb poskytovaných poskytovatelům zdravotnické dopravní služby bude v roce 2026 navýšena o 2 % oproti roku 2025.",
+          "type": "rule",
+          "domain": "uhrady"
+        }
+      ]
+    }
+  ]
+}
