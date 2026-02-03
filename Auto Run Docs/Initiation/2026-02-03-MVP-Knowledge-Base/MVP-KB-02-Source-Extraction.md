@@ -97,12 +97,30 @@ Tato fáze doplní kritické mezery identifikované v Phase 01 extrakcí dat z �
     - Seznamy výkonů zahrnutých do kapitace pro 001 a 002
   - Výstup uložen: `data/extracted/vzp_metodika_pl_2026.jsonl`
 
-- [ ] Validovat a sloučit extrahované jednotky do hlavního datasetu:
+- [x] Validovat a sloučit extrahované jednotky do hlavního datasetu:
   - Spustit `python scripts/merge_and_validate.py` na nové soubory
   - Ověřit schema compliance všech nových jednotek
   - Detekovat a odstranit duplicity (title + content similarity)
   - Přidat validní jednotky do `data/knowledge_base_expanded_v2.jsonl`
   - Vytvořit report: počet přidaných, odmítnutých, duplicitních jednotek
+
+  **Dokončeno 2026-02-03:**
+  - Aktualizován skript `scripts/merge_and_validate.py` pro aktuální prostředí projektu
+  - Zpracováno 3 VZP zdrojových souborů:
+    - `vzp_metodika_as_2026.jsonl`: 32 jednotek
+    - `vzp_dodatek_as_2026.jsonl`: 40 jednotek
+    - `vzp_metodika_pl_2026.jsonl`: 34 jednotek
+  - **Statistiky sloučení:**
+    - Jednotky před sloučením: 552
+    - Nové VZP jednotky: 106
+    - Validních: 106 (100%), Odmítnutých: 0
+    - Detekovaných duplicit: 0
+    - **Celková velikost datasetu: 658 jednotek**
+  - **Rozdělení přidaných jednotek:**
+    - Domény: 99 uhrady, 7 financni-rizika
+    - Typy: 66 rule, 14 condition, 11 definition, 8 exception, 7 risk
+  - Výstup uložen: `data/knowledge_base_expanded_v2.jsonl` (694.1 KB)
+  - Report vygenerován: `docs/analysis/merge_report_phase02.md`
 
 - [ ] Aktualizovat embeddings a otestovat zlepšení RAG:
   - Spustit `python scripts/generate_embeddings.py` na rozšířený dataset
