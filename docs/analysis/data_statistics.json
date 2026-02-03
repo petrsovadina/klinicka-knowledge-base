@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "analysis_date": "2026-02-03T01:09:24.310701",
+    "source_file": "data/knowledge_base_final.jsonl"
+  },
+  "overview": {
+    "total_units": 409,
+    "unique_ids": 409,
+    "duplicates": 0
+  },
+  "domain_distribution": {
+    "uhrady": 307,
+    "financni-rizika": 34,
+    "legislativa": 32,
+    "compliance": 20,
+    "provoz": 16
+  },
+  "type_distribution": {
+    "rule": 294,
+    "definition": 35,
+    "risk": 30,
+    "condition": 20,
+    "exception": 19,
+    "anti_pattern": 11
+  },
+  "version_distribution": {
+    "2025": 394,
+    "2026": 15
+  },
+  "validity_year_distribution": {
+    "2025": 344,
+    "2026": 65
+  },
+  "specialty_coverage": {
+    "total_specialty_assignments": 502,
+    "units_with_all_specialties": 307,
+    "unique_specialties": 102,
+    "specialty_distribution": {
+      "all": 307,
+      "603": 10,
+      "604": 9,
+      "stomatologie": 8,
+      "laboratorni-diagnostika": 7,
+      "926": 7,
+      "gynekologie": 6,
+      "zubní lékařství": 5,
+      "902": 5,
+      "917": 5,
+      "305": 4,
+      "306": 4,
+      "308": 4,
+      "praktický lékař pro děti a dorost": 4,
+      "ambulantní specialisté": 4,
+      "309": 3,
+      "701": 3,
+      "všeobecné praktické lékařství": 3,
+      "praktické lékařství pro děti a dorost": 3,
+      "všeobecní praktičtí lékaři": 3,
+      "onkologie": 3,
+      "radiologie": 3,
+      "102": 2,
+      "350": 2,
+      "355": 2,
+      "360": 2,
+      "370": 2,
+      "neurologie": 2,
+      "sociálně-zdravotní lůžková péče": 2,
+      "NIP": 2
+    }
+  },
+  "source_distribution": {
+    "Úhradová vyhláška 2025": 212,
+    "Odůvodnění k Úhradové vyhlášce 2025": 176,
+    "Úhradová vyhláška 2026 - Ambulantní specialisté": 12,
+    "Metodické doporučení PMÚ 2025": 6,
+    "Checklist kupujícího lékařské praxe": 2,
+    "Převzetí ordinace s existujícím IČZ: Skrytá finanční rizika": 1
+  },
+  "content_quality": {
+    "description_length": {
+      "min": 96,
+      "max": 464,
+      "mean": 240.0,
+      "median": 234
+    },
+    "title_length": {
+      "min": 24,
+      "max": 130,
+      "mean": 64.43,
+      "median": 64
+    },
+    "content_size_bytes": {
+      "min": 27,
+      "max": 4835,
+      "mean": 246.21
+    }
+  },
+  "relationships": {
+    "total_related_references": 38,
+    "mean_related_per_unit": 0.09,
+    "units_with_no_relations": 385,
+    "orphan_references_count": 0,
+    "orphan_references": []
+  },
+  "tags": {
+    "total_tag_assignments": 1593,
+    "unique_tags": 584,
+    "mean_tags_per_unit": 3.89,
+    "top_30_tags": {
+      "úhrady": 117,
+      "úhrada": 96,
+      "DRG": 39,
+      "CZ-DRG": 27,
+      "2026": 24,
+      "bonifikace": 22,
+      "hodnota bodu": 22,
+      "legislativa": 20,
+      "výkon": 20,
+      "diagnóza": 17,
+      "zařazení": 17,
+      "compliance": 16,
+      "výkony": 16,
+      "ambulantní péče": 13,
+      "vykazování": 13,
+      "výpočet": 11,
+      "náklady": 11,
+      "váhy": 11,
+      "chirurgie": 11,
+      "riziko": 10,
+      "definice": 10,
+      "jednodenní péče": 10,
+      "regulace": 9,
+      "výjimka": 9,
+      "casemix": 9,
+      "agregovaná úhrada": 9,
+      "pojištěnci": 9,
+      "hrazené služby": 9,
+      "limit": 9,
+      "kódy": 9
+    }
+  }
+}
