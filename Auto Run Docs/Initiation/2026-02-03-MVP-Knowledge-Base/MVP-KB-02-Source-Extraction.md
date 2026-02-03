@@ -70,12 +70,32 @@ Tato fáze doplní kritické mezery identifikované v Phase 01 extrakcí dat z �
     - Finanční rizika: kumulace srážek, přefakturace PMÚ, ztráta bonifikací
   - Výstup uložen: `data/extracted/vzp_dodatek_as_2026.jsonl`
 
-- [ ] Extrahovat data z VZP metodiky pro praktické lékaře a PLDD:
+- [x] Extrahovat data z VZP metodiky pro praktické lékaře a PLDD:
   - Zpracovat samostatně metodiku pro praktické lékaře (odbornost 001)
   - Zpracovat metodiku pro PLDD (odbornost 002)
   - Zachytit specifika kapitační platby vs. výkonová úhrada
   - Uložit do `data/extracted/vzp_metodika_pl_2026.jsonl`
   - Očekávaný výstup: 25-40 jednotek
+
+  **Dokončeno 2026-02-03:**
+  - Extrahováno z Úhradové vyhlášky 2026, Příloha č. 2 (§6 - Kombinovaná kapitačně výkonová platba)
+  - Vytvořen specializovaný extrakční skript: `scripts/extract_pl_2026.py`
+  - **Statistiky extrakce:**
+    - Celkem jednotek: 34 (v rámci očekávání 25-40)
+    - Typy: 17 rule, 8 condition, 5 definition, 2 exception, 2 risk
+    - Domény: 32 uhrady, 2 financni-rizika
+  - **Pokrytí klíčových oblastí:**
+    - Kapitační sazby (60/66/69/76 Kč) podle rozsahu ordinačních hodin a dostupnosti
+    - Bonifikace kapitace: CVL (+1 Kč), prevence (+2 Kč), screening (+5 Kč), akreditace (+1 Kč)
+    - Hodnoty bodu pro mimokapitační výkony (1.18-1.35 Kč)
+    - Bonifikace hodnoty bodu: CVL (+0.04 Kč), dostupnost (+0.06 Kč)
+    - Věkové indexy pro přepočet kapitace (0.90-4.35)
+    - Regulační omezení: preskripce (+20%), vyžádaná péče (+15%), odbornost 902 (+20%)
+    - Výjimky z regulací: nezbytná péče, malí poskytovatelé (≤50 pojištěnců)
+    - Týmová praxe: podmínky a vzorec úhrady (10 400 Kč za 0.1 úvazku nad 1.0)
+    - Podpůrná psychoterapie PLDD (5 000 Kč × koeficient okresu)
+    - Seznamy výkonů zahrnutých do kapitace pro 001 a 002
+  - Výstup uložen: `data/extracted/vzp_metodika_pl_2026.jsonl`
 
 - [ ] Validovat a sloučit extrahované jednotky do hlavního datasetu:
   - Spustit `python scripts/merge_and_validate.py` na nové soubory
