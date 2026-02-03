@@ -96,12 +96,30 @@ Tato závěrečná fáze validuje kompletní znalostní bázi, optimalizuje RAG 
     - **docker-compose.yml**: API service s resource limits, logging, env variables
     - **requirements.txt**: Všechny Python dependencies
 
-- [ ] Připravit dataset pro publikaci na Hugging Face:
+- [x] Připravit dataset pro publikaci na Hugging Face:
   - Aktualizovat `DATASET_README.md` s MVP statistikami
   - Vytvořit release notes pro MVP verzi
   - Spustit `python upload_to_hf.py` pro nahrání datasetu
   - Ověřit dostupnost datasetu na Hugging Face
   - Tagovat release v gitu: `mvp-v1.0`
+
+  **Dokončeno 2026-02-03:**
+  - Aktualizován `DATASET_README.md` s kompletními MVP statistikami:
+    - 669 znalostních jednotek
+    - RAG skóre 0.730
+    - 5 domén s breakdown pokrytí
+    - Přidána Version History tabulka
+    - Aktualizovaná citation a limitations
+  - Vytvořeny release notes v `CHANGELOG.md`:
+    - Verze 1.0.0-MVP s detailními change notes
+    - Statistiky, nové features, testování, známá omezení
+    - Doporučení pro další verze
+  - Přepracován `upload_to_hf.py`:
+    - Správné cesty pro MVP dataset (knowledge_base_mvp.jsonl)
+    - 3 možnosti uploadu (Web UI, CLI, Python SDK)
+    - Validace datasetu před uploadem (669 jednotek validated)
+  - Vytvořen git tag `mvp-v1.0`
+  - **Poznámka:** Samotný upload na Hugging Face vyžaduje manuální autentizaci - instrukce poskytnuty v upload scriptu
 
 - [ ] Vytvořit finální MVP Report a handoff dokumentaci:
   - Vytvořit `docs/mvp_final_report.md` s YAML front matter

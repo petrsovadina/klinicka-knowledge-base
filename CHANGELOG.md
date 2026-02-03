@@ -1,5 +1,62 @@
 # Changelog - Klinická Knowledge Base
 
+## Verze 1.0.0-MVP - Production Ready Release
+
+**Datum:** 2026-02-03
+
+### Highlights
+
+Toto je první produkční MVP release Klinické Znalostní Báze. Dataset obsahuje **669 znalostních jednotek** pokrývajících všech 5 domén s průměrným RAG skóre **0.730**.
+
+### Nový obsah
+
+* **Rozšíření datasetu:** Z 456 na 669 jednotek (+46.7%)
+* **Nové zdroje:**
+  * InfoProLekare.cz - 40+ praktických heuristik a anti-patternů
+  * Rozšířené metodiky VZP ČR, ZP MV ČR, OZP, ČPZP
+* **Nový typ jednotek:** `comparison` - 16 jednotek pro meziroční porovnání
+* **Domény:** Úhrady (280+), Provoz (150+), Compliance (100+), Finanční rizika (80+), Legislativa (60+)
+
+### Produkční API
+
+* **FastAPI RAG API** verze 1.0.0 s následujícími features:
+  * Response caching (TTL-based, LRU eviction)
+  * Rate limiting (sliding window, per-client)
+  * Health endpoint `/health` pro monitoring
+  * Metrics endpoint `/metrics` pro observabilitu
+  * CORS middleware pro cross-origin requests
+* **Docker support:** Dockerfile a docker-compose.yml pro snadné nasazení
+* **Kompletní dokumentace:** setup.md, api_reference.md, troubleshooting.md
+
+### Testování
+
+* **RAG testování:** 25 realistických dotazů, průměrné skóre 0.730
+* **Unit testy API:** 19 testů pro všechny komponenty
+* **Zátěžové testy:** 10 konkurentních requestů
+
+### RAG Performance
+
+| Metrika | Hodnota | Cíl | Status |
+|---------|---------|-----|--------|
+| Průměrné skóre | 0.730 | 0.70+ | ✅ |
+| Úspěšnost >0.7 | 60% | 80% | ⚠️ |
+| Úspěšnost >0.5 | 92% | 90% | ✅ |
+
+### Známá omezení
+
+* Cílová hranice 80% úspěšnosti (>0.7) nebyla dosažena
+* Srovnávací dotazy mezi roky mají průměrné skóre 0.589
+* Pokrytí pojišťoven: Chybí VOZP, ZP Škoda
+* Některé specifické odbornosti mají minimální pokrytí
+
+### Doporučení pro další verze
+
+* Přidat knowledge units pro bezhotovostní platby (PMGAP-001)
+* Rozšířit descriptions pro PURO/PMÚ/MAXÚ vzorce (PMGAP-002)
+* Přidat další comparison jednotky (HBmin, regulace preskripce)
+
+---
+
 ## Verze 0.3.0 - Pokrok Fáze 3 (ZP MV ČR)
 
 **Datum:** 2026-01-03
