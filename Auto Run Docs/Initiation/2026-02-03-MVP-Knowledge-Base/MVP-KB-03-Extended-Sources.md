@@ -19,12 +19,28 @@ Tato fáze rozšíří znalostní bázi o metodiky dalších zdravotních pojiš
   - Created priority list by market share: VZP (59%), ČPZP (12%), ZP MV (10.5%), OZP (6.5%), VoZP (6%), RBP (4%), ZPŠ (1.2%)
   - Added metadata summary: 13 PDFs, 14 HTML files; 27 available for extraction
 
-- [ ] Extrahovat znalostní jednotky ze ZP MV (Zdravotní pojišťovna Ministerstva vnitra):
+- [x] Extrahovat znalostní jednotky ze ZP MV (Zdravotní pojišťovna Ministerstva vnitra):
   - Fokus na specifické odlišnosti od VZP
   - Zachytit bonifikační programy a limity
   - Identifikovat pravidla pro speciální skupiny pojištěnců
   - Uložit do `data/extracted/zpmv_metodika_2026.jsonl`
   - Očekávaný výstup: 20-30 jednotek
+
+  **Completed 2026-02-03:**
+  - Extracted 30 knowledge units from ZP MV ČR Dodatek AS/2025 (7-page PDF)
+  - Covered payment rules by specialty: 4 tiers (1.00/0.98/0.96/0.94 Kč)
+  - Documented 7 bonification programs (+0.01 to +0.06 Kč):
+    - CŽV (continuous education): +0.03 Kč
+    - Extended hours (30h/week): +0.04 Kč
+    - Extra hours (35h/week): +0.02 Kč
+    - New patients (basic/extended): +0.01/+0.03 Kč
+    - Appointment system: +0.01 Kč
+    - Psychiatry specials: +0.06 Kč
+  - Captured MAXÚ formula with coefficient matrices
+  - Documented 3 regulation limits (ZUM/ZULP 115%, prescriptions 110%, induced care 110%)
+  - Identified exceptions for psychiatry/CDZ (305, 306, 308, 309, 350, 355, 360, 370, 922)
+  - Included risk unit for bonification loss penalties
+  - All 30 units validated against schema (100% compliance)
 
 - [ ] Extrahovat znalostní jednotky z OZP a ČPZP:
   - Zpracovat OZP (Oborová zdravotní pojišťovna) metodiky
