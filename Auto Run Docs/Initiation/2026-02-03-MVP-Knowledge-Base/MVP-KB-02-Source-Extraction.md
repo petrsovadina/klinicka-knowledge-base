@@ -47,12 +47,28 @@ Tato fáze doplní kritické mezery identifikované v Phase 01 extrakcí dat z �
   - Výstup uložen: `data/extracted/vzp_metodika_as_2026.jsonl`
   - Všechny jednotky prošly validací schématu
 
-- [ ] Extrahovat znalostní jednotky z Úhradového dodatku VZP pro ambulantní specialisty:
+- [x] Extrahovat znalostní jednotky z Úhradového dodatku VZP pro ambulantní specialisty:
   - Fokus na konkrétní číselné hodnoty (hodnota bodu 0.94 Kč, koeficienty)
   - Extrahovat pravidla pro specifické odbornosti (001-999)
   - Zachytit srovnání s předchozím rokem kde dostupné
   - Uložit do `data/extracted/vzp_dodatek_as_2026.jsonl`
   - Očekávaný výstup: 40-60 jednotek
+
+  **Dokončeno 2026-02-03:**
+  - Vytvořen specializovaný extrakční skript: `scripts/extract_as_dodatek_2026.py`
+  - **Statistiky extrakce:**
+    - Celkem jednotek: 40 (v rámci očekávání 40-60)
+    - Typy: 31 rule, 2 definition, 1 condition, 3 exception, 3 risk
+    - Domény: 37 uhrady, 3 financni-rizika
+  - **Pokrytí klíčových oblastí:**
+    - Hodnoty bodu pro 20 konkrétních odborností (101-708) s meziročním srovnáním 2025 vs 2026
+    - Změna základní hodnoty: 0.95 Kč (2025) → 0.98 Kč (2026), +3.2%
+    - Detailní bonifikace: CVL doklady, ordinační hodiny dle typu oboru, noví pacienti, objednávkový systém
+    - PURO detaily: referenční období 2023, HBmin = 0.90 Kč, koeficienty KN podle odbornosti
+    - Regulační omezení: mechanismus srážek, výjimky ZULP symbol S, screeningové programy
+    - Specialty-specific rules: dětská psychiatrie (306), oftalmologie (008), radiodiagnostika (407), foniatrie (903)
+    - Finanční rizika: kumulace srážek, přefakturace PMÚ, ztráta bonifikací
+  - Výstup uložen: `data/extracted/vzp_dodatek_as_2026.jsonl`
 
 - [ ] Extrahovat data z VZP metodiky pro praktické lékaře a PLDD:
   - Zpracovat samostatně metodiku pro praktické lékaře (odbornost 001)
