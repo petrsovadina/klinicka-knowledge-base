@@ -122,10 +122,58 @@ Tato fáze rozšíří znalostní bázi o metodiky dalších zdravotních pojiš
   - All 40 units validated against schema (100% compliance)
   - Saved to `data/extracted/infoprolekare_articles.jsonl`
 
-- [ ] Finální sloučení, validace a regenerace embeddings:
+- [x] Finální sloučení, validace a regenerace embeddings:
   - Sloučit všechny nové extrakce do `data/knowledge_base_phase3.jsonl`
   - Spustit kompletní validaci proti schema
   - Odstranit duplicity pomocí title + content similarity check
   - Regenerovat embeddings pro celý rozšířený dataset
   - Vytvořit finální statistiky: celkový počet jednotek, pokrytí, distribuce
   - Uložit finální dataset do `data/knowledge_base_mvp.jsonl`
+
+  **Completed 2026-02-03:**
+  - Merged 117 Phase 3 units with 552 existing units (Phase 1-2)
+  - Created new merge script: `scripts/merge_phase3_final.py`
+  - Fixed validation issues in source files:
+    - OZP: Fixed invalid "programy" domain → "uhrady" (3 units)
+    - InfoProLekare: Fixed missing source.name → source.document (40 units)
+    - InfoProLekare: Fixed invalid domains (bonifikace/administrativa/regulace) → valid domains
+    - InfoProLekare: Added missing applicability.valid_from fields
+  - All 117 Phase 3 units validated (100% compliance)
+  - Duplicate detection: 80% similarity threshold for external, 85% for internal
+  - No duplicates found (all units unique)
+  - Regenerated embeddings: TF-IDF + SVD (256 dimensions)
+
+  **Final MVP Dataset Statistics:**
+  - Total knowledge units: **669**
+  - Output files:
+    - Phase 3 only: `data/knowledge_base_phase3.jsonl` (117 units)
+    - MVP complete: `data/knowledge_base_mvp.jsonl` (669 units, 721.4 KB)
+    - Embeddings: `data/knowledge_base_embeddings.jsonl` (3802.0 KB)
+
+  **Distribution by Domain:**
+  - uhrady: 436 (65%)
+  - financni-rizika: 92 (14%)
+  - legislativa: 61 (9%)
+  - provoz: 51 (8%)
+  - compliance: 29 (4%)
+
+  **Distribution by Type:**
+  - rule: 494 (74%)
+  - risk: 50 (7%)
+  - definition: 44 (7%)
+  - exception: 32 (5%)
+  - condition: 30 (4%)
+  - anti_pattern: 19 (3%)
+
+  **Distribution by Source:**
+  - Úhradová vyhláška: 235
+  - ZP MV ČR: 78
+  - InfoProLekare.cz: 62
+  - OZP: 25
+  - ČPZP: 10
+  - Other (RBP, VZP metodiky): 259
+
+  **Coverage:**
+  - Insurance companies: VZP, ZP MV ČR, OZP, ČPZP
+  - Years: 2025 (452 units), 2026 (217 units)
+  - Practical heuristics from InfoProLekare.cz included
