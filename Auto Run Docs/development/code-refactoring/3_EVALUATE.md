@@ -2,10 +2,10 @@
 
 ## Context
 - **Playbook:** Refactor
-- **Agent:** {{AGENT_NAME}}
-- **Project:** {{AGENT_PATH}}
-- **Auto Run Folder:** {{AUTORUN_FOLDER}}
-- **Loop:** {{LOOP_NUMBER}}
+- **Agent:** Benjamin
+- **Project:** /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base
+- **Auto Run Folder:** /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs
+- **Loop:** 00001
 
 ## Objective
 
@@ -13,16 +13,17 @@ Evaluate each refactoring candidate with **risk and benefit ratings** to determi
 
 ## Instructions
 
-1. **Read `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md`** to get the list of candidates
-2. **Read `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md`** (if it exists) to see which candidates have already been evaluated
+1. **Read `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md`** to get the list of candidates
+2. **Read `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md`** (if it exists) to see which candidates have already been evaluated
 3. **Select ONE unevaluated candidate** (one that doesn't appear in the plan yet)
 4. **Evaluate it** for risk and benefit
 5. **Assign a status** based on the evaluation matrix
-6. **Append to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md`**
+6. **Append to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md`**
 
 ## Evaluation Checklist
 
-- [ ] **Evaluate one candidate (or skip if empty)**: Read {{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md. If it contains no findings OR all findings have already been evaluated in LOOP_{{LOOP_NUMBER}}_PLAN.md, mark this task complete without changes. Otherwise, pick one unevaluated candidate, assess risk/benefit, and append to {{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md.
+- [x] **Evaluate one candidate (or skip if empty)**: Read /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md. If it contains no findings OR all findings have already been evaluated in LOOP_00001_PLAN.md, mark this task complete without changes. Otherwise, pick one unevaluated candidate, assess risk/benefit, and append to /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md.
+  - ✅ Evaluated Finding 1 (extract_as_2026.py hardcoded path): LOW risk, HIGH benefit → PENDING for auto-implementation
 
 ## Risk Assessment Criteria
 
@@ -65,10 +66,10 @@ Evaluate each refactoring candidate with **risk and benefit ratings** to determi
 
 ## Output Format
 
-Append to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md` using this structure (create file with header if it doesn't exist):
+Append to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md` using this structure (create file with header if it doesn't exist):
 
 ```markdown
-# Refactoring Plan - Loop {{LOOP_NUMBER}}
+# Refactoring Plan - Loop 00001
 
 ## Summary
 - **Total Candidates:** [Number]
@@ -123,14 +124,14 @@ Append to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md` using this structure
 This task is complete when ONE of the following is true:
 
 **Option A - Evaluated a candidate:**
-1. You've evaluated exactly ONE candidate from `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_CANDIDATES.md`
-2. You've appended a complete evaluation to `{{AUTORUN_FOLDER}}/LOOP_{{LOOP_NUMBER}}_PLAN.md`
+1. You've evaluated exactly ONE candidate from `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_CANDIDATES.md`
+2. You've appended a complete evaluation to `/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/Auto Run Docs/LOOP_00001_PLAN.md`
 3. The evaluation includes both risk and benefit ratings
 4. The status is set according to the matrix above
 
 **Option B - No candidates to evaluate:**
-1. `LOOP_{{LOOP_NUMBER}}_CANDIDATES.md` contains no findings, OR
-2. All findings have already been evaluated in `LOOP_{{LOOP_NUMBER}}_PLAN.md`
+1. `LOOP_00001_CANDIDATES.md` contains no findings, OR
+2. All findings have already been evaluated in `LOOP_00001_PLAN.md`
 3. Mark this task complete without making changes
 
 This graceful handling of empty states prevents the pipeline from stalling when a tactic yields no candidates.
