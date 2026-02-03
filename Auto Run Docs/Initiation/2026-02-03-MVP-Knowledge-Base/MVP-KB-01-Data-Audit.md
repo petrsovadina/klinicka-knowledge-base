@@ -92,7 +92,7 @@ Tato fáze provede hloubkovou analýzu stávajících 409 znalostních jednotek 
   - Results saved to `docs/analysis/validation_results.json`
   - Added Section 7 (Validation) to `docs/analysis/gap_analysis_report.md`
 
-- [ ] Vytvořit prioritizovaný backlog datových potřeb v `docs/analysis/data_backlog.md`:
+- [x] Vytvořit prioritizovaný backlog datových potřeb v `docs/analysis/data_backlog.md`:
   - YAML front matter: type: reference, title: Data Backlog, created: YYYY-MM-DD, tags: [backlog, priorities, sources]
   - Priority 1 (Critical): Konkrétní hodnoty bodu z úhradových dodatků VZP
   - Priority 2 (High): Metodiky ostatních pojišťoven (ZP MV, OZP, ČPZP)
@@ -100,3 +100,14 @@ Tato fáze provede hloubkovou analýzu stávajících 409 znalostních jednotek 
   - Priority 4 (Low): Praktické heuristiky z InfoProLekare.cz
   - Každá položka: zdroj, očekávaný počet jednotek, dopad na RAG kvalitu
   - Cross-reference: `[[gap_analysis_report]]`, `[[Phase-02-Source-Extraction]]`
+
+  **Completed 2026-02-03:** Created comprehensive prioritized data backlog with 13 items across 4 priority levels. Key elements:
+  - **Priority 1 (Critical):** 3 items blocking MVP – VZP point values (50-80 units), regulation consequences (15-20 units), comparison units (25-30 units)
+  - **Priority 2 (High):** 4 items – ZP MV ČR, OZP, ČPZP methodologies + historical 2024 data (90-105 units total)
+  - **Priority 3 (Medium):** 3 items – practical heuristics, missing specialties, anti-patterns (70-90 units)
+  - **Priority 4 (Low):** 3 items – examples, legislative updates, remaining insurers (40-55 units)
+  - **Total expected expansion:** 290-380 new knowledge units (dataset growth from 552 to ~900)
+  - **Schema changes required:** 3 new types (comparison, heuristic, example)
+  - **Each item includes:** source URL, expected unit count, current coverage %, RAG quality impact, blocked use-cases
+  - **Cross-references:** [[gap_analysis_report]], [[Phase-02-Source-Extraction]], [[use_case_coverage_matrix]], [[rag_gap_analysis]]
+  - Output: `docs/analysis/data_backlog.md`
