@@ -1,5 +1,6 @@
 {
   "downloaded_at": "2025-12-14T12:32:38.280298",
+  "updated_at": "2026-02-03T00:00:00.000000",
   "sources": [
     {
       "name": "Úhradová vyhláška 2026",
@@ -27,7 +28,7 @@
       "url": "https://mzd.gov.cz/wp-content/uploads/2024/11/Metodicke-doporuceni-ke-stanoveni-predbezne-mesicni-uhrady-v-segmentu-ambulantnich-specialistu-v-roce-2025.pdf",
       "filename": "metodicke_doporuceni_pmu_2025.pdf",
       "year": 2025,
-     "type": "methodology"
+      "type": "methodology"
     },
     {
       "filename": "ozp_vyhled_2026_2027.pdf",
@@ -49,11 +50,113 @@
       "url": "https://www.rbp213.cz/systemfiles/file/1767681087zp-2026-01.pdf",
       "year": 2026,
       "type": "insurance-plan"
+    },
+    {
+      "name": "VZP Metodika pro pořizování a předávání dokladů",
+      "url": "https://media.vzpstatic.cz/media/Default/dokumenty/vyuctovani/metodika-pro-porizovani-a-predavani-dokladu-k-1.9.2025.pdf",
+      "filename": "vzp_metodika_doklady_2025.pdf",
+      "year": 2025,
+      "version": "6.2.52",
+      "effective_date": "2025-09-01",
+      "type": "methodology",
+      "priority": "high",
+      "expected_units": "20-30"
+    },
+    {
+      "name": "VZP Datové rozhraní číselníků",
+      "url": "https://media.vzpstatic.cz/media/Default/dokumenty/vyuctovani/datove-rozhrani-ciselniku-k-1.9.2025.pdf",
+      "filename": "vzp_datove_rozhrani_ciselniky_2025.pdf",
+      "year": 2025,
+      "version": "6.2.47",
+      "type": "technical-spec",
+      "priority": "medium",
+      "expected_units": "10-15"
+    },
+    {
+      "name": "VZP Datové rozhraní individuálních dokladů",
+      "url": "https://media.vzpstatic.cz/media/Default/dokumenty/vyuctovani/datove-rozhrani-individualnich-dokladu-k-1.9.2025.pdf",
+      "filename": "vzp_datove_rozhrani_ind_doklady_2025.pdf",
+      "year": 2025,
+      "version": "6.2.47",
+      "type": "technical-spec",
+      "priority": "medium",
+      "expected_units": "10-15"
+    },
+    {
+      "name": "VZP Speciální datové rozhraní",
+      "url": "https://media.vzpstatic.cz/media/Default/dokumenty/vyuctovani/specialni-datove-rozhrani-k-1.9.2025.pdf",
+      "filename": "vzp_specialni_datove_rozhrani_2025.pdf",
+      "year": 2025,
+      "version": "6.2.47",
+      "type": "technical-spec",
+      "priority": "low",
+      "expected_units": "5-10"
+    },
+    {
+      "name": "VZP Pravidla pro vyhodnocování dokladů",
+      "url": "https://media.vzpstatic.cz/media/Default/dokumenty/vyuctovani/pravidla_v62_13.pdf",
+      "filename": "vzp_pravidla_vyhodnocovani_dokladu.pdf",
+      "year": 2025,
+      "version": "v62_13",
+      "type": "rules",
+      "priority": "high",
+      "expected_units": "15-20"
+    },
+    {
+      "name": "VZP Připravované změny Metodiky 2026",
+      "url": "https://www.vzp.cz/o-nas/aktuality/pripravovane-zmeny-metodiky-pro-porizovani-a-predavani-dokladu-a-tiskopisu-2",
+      "filename": "vzp_zmeny_metodiky_2026.html",
+      "year": 2026,
+      "type": "news",
+      "priority": "high",
+      "expected_units": "10-15",
+      "format": "webpage"
+    },
+    {
+      "name": "VZP Vzorové typové smlouvy",
+      "url": "https://www.vzp.cz/poskytovatele/smluvni-vztahy/postup-uzavirani-smluv-pro-zdravotnicke-zarizeni/",
+      "filename": "vzp_vzorove_smlouvy.html",
+      "year": 2026,
+      "type": "contracts",
+      "priority": "high",
+      "expected_units": "20-30",
+      "format": "webpage"
+    },
+    {
+      "name": "VZP Průvodce financováním paušálně hrazených poskytovatelů",
+      "url": "https://www.vzp.cz/poskytovatele/informace-pro-praxi/poradna/pruvodce-financovanim-zdravotnich-sluzeb-pausalne-hrazenych-poskytovatelu",
+      "filename": "vzp_pruvodce_pausalni_uhrady.html",
+      "year": 2026,
+      "type": "guide",
+      "priority": "high",
+      "expected_units": "15-20",
+      "format": "webpage"
+    },
+    {
+      "name": "VZP Finanční vypořádání předběžných úhrad",
+      "url": "https://www.vzp.cz/poskytovatele/informace-pro-praxi/poradna/financni-vyporadani-predbeznych-uhrad-kdy-je-zasilano-a-jak-probiha-zuctovani-doplatku-ci-preplatku",
+      "filename": "vzp_financni_vyporadani_pmu.html",
+      "year": 2026,
+      "type": "guide",
+      "priority": "high",
+      "expected_units": "10-15",
+      "format": "webpage"
+    },
+    {
+      "name": "VZP Novinky ve zdravotní péči pro rok 2026",
+      "url": "https://www.vzp.cz/o-nas/aktuality/novinky-ve-zdravotni-peci-pro-rok-2026",
+      "filename": "vzp_novinky_2026.html",
+      "year": 2026,
+      "type": "news",
+      "priority": "high",
+      "expected_units": "10-15",
+      "format": "webpage"
     }
   ],
   "stats": {
-    "downloaded": 4,
-    "skipped": 0,
-    "failed": 0
+    "downloaded": 10,
+    "skipped": 7,
+    "failed": 0,
+    "last_run": "2026-02-03T02:05:48.859422"
   }
 }
