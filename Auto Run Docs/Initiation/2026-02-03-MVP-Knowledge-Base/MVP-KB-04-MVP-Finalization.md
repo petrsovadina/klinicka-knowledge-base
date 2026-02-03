@@ -73,12 +73,28 @@ Tato závěrečná fáze validuje kompletní znalostní bázi, optimalizuje RAG 
   - Vytvořen `scripts/test_api_load.py` pro zátěžové testování s 10 konkurentními requesty
   - API version aktualizována na 1.0.0
 
-- [ ] Vytvořit produkční dokumentaci a deployment instrukce:
+- [x] Vytvořit produkční dokumentaci a deployment instrukce:
   - `docs/deployment/setup.md`: instalace, konfigurace, environment variables
   - `docs/deployment/api_reference.md`: kompletní API dokumentace s příklady
   - `docs/deployment/troubleshooting.md`: časté problémy a řešení
   - Aktualizovat `README.md` s MVP instrukcemi
   - Vytvořit `docker-compose.yml` pro snadné nasazení (volitelně)
+
+  **Dokončeno 2026-02-03:**
+  - Vytvořena kompletní deployment dokumentace v `docs/deployment/`:
+    - **setup.md**: Instalace, konfigurace, environment variables, produkční nasazení (systemd, nginx)
+    - **api_reference.md**: Kompletní API dokumentace všech 7 endpointů s příklady (cURL, Python, JS)
+    - **troubleshooting.md**: Řešení 20+ častých problémů, diagnostické nástroje, health check scripty
+  - Aktualizován **README.md** s MVP instrukcemi:
+    - Přidán rychlý start (4 kroky)
+    - MVP status tabulka (669 units, 0.730 skóre, API 1.0.0)
+    - API endpointy s příklady
+    - Dokumentace odkazy
+    - Docker nasazení instrukce
+  - Vytvořeny Docker soubory pro snadné nasazení:
+    - **Dockerfile**: Multi-stage build, health check, non-root user
+    - **docker-compose.yml**: API service s resource limits, logging, env variables
+    - **requirements.txt**: Všechny Python dependencies
 
 - [ ] Připravit dataset pro publikaci na Hugging Face:
   - Aktualizovat `DATASET_README.md` s MVP statistikami
