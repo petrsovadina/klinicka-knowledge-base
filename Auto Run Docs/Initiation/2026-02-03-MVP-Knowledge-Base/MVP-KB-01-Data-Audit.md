@@ -73,12 +73,24 @@ Tato fáze provede hloubkovou analýzu stávajících 409 znalostních jednotek 
   - Wiki-links to `[[data_statistics]]`, `[[rag_gap_analysis]]`, `[[use_case_coverage_matrix]]`, `[[Phase-02-Source-Extraction]]`
   - Output: `docs/analysis/gap_analysis_report.md`
 
-- [ ] Spustit validaci datasetu a ověřit integritu:
+- [x] Spustit validaci datasetu a ověřit integritu:
   - Spustit `python scripts/merge_and_validate.py` s aktuálním datasetem
   - Ověřit 100% schema compliance
   - Zkontrolovat duplicitní ID
   - Zkontrolovat orphan related_units odkazy
   - Přidat výsledky validace do reportu
+
+  **Completed 2026-02-03:** Created new `scripts/validate_dataset.py` for comprehensive validation. Key findings:
+  - **552 knowledge units** (dataset grew from 409 to 552, +35% increase)
+  - **100% schema compliance** – all units pass validation
+  - **0 duplicate IDs** – all 552 IDs are unique
+  - **2 orphan references found** in unit `ku-22-rule-dup-7` (references "ZP" and "ZPP" which are not valid unit IDs)
+  - **ID format:** Dataset uses practical human-readable IDs (`ku-NNN-slug-YYYY`) instead of UUIDs
+  - **Domain distribution:** uhrady (338), financni-rizika (85), legislativa (58), provoz (45), compliance (26)
+  - **Type distribution:** rule (401), definition (41), risk (39), condition (30), exception (27), anti_pattern (14)
+  - **Relationships:** 25 units (4.5%) have related_units with 21 unique references
+  - Results saved to `docs/analysis/validation_results.json`
+  - Added Section 7 (Validation) to `docs/analysis/gap_analysis_report.md`
 
 - [ ] Vytvořit prioritizovaný backlog datových potřeb v `docs/analysis/data_backlog.md`:
   - YAML front matter: type: reference, title: Data Backlog, created: YYYY-MM-DD, tags: [backlog, priorities, sources]

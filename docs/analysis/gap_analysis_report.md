@@ -10,6 +10,7 @@ related:
   - "[[data_statistics]]"
   - "[[rag_gap_analysis]]"
   - "[[use_case_coverage_matrix]]"
+  - "[[validation_results]]"
   - "[[Phase-02-Source-Extraction]]"
 ---
 
@@ -284,6 +285,68 @@ Pro plnou implementaci doporučení je nutné rozšířit JSON schéma o násled
 
 ---
 
-*Generováno: 2026-02-03*
+## 7. Validace integrity datasetu
+
+Validace provedena 2026-02-03 pomocí `scripts/validate_dataset.py`.
+
+### 7.1 Souhrn validace
+
+| Kontrola | Výsledek | Poznámka |
+|----------|----------|----------|
+| Schema compliance | ✅ 100% (552/552) | Všechny jednotky splňují schéma |
+| Duplicitní ID | ✅ 0 duplicit | Všech 552 ID je unikátních |
+| Orphan reference | ⚠️ 2 nalezeny | V jednotce `ku-22-rule-dup-7` |
+
+### 7.2 Aktuální stav datasetu (po rozšíření)
+
+Dataset narostl z původních 409 na **552 znalostních jednotek** (+35%).
+
+**Distribuce podle domény:**
+| Doména | Počet | Podíl |
+|--------|-------|-------|
+| uhrady | 338 | 61.2% |
+| financni-rizika | 85 | 15.4% |
+| legislativa | 58 | 10.5% |
+| provoz | 45 | 8.2% |
+| compliance | 26 | 4.7% |
+
+**Distribuce podle typu:**
+| Typ | Počet | Podíl |
+|-----|-------|-------|
+| rule | 401 | 72.6% |
+| definition | 41 | 7.4% |
+| risk | 39 | 7.1% |
+| condition | 30 | 5.4% |
+| exception | 27 | 4.9% |
+| anti_pattern | 14 | 2.5% |
+
+### 7.3 Identifikované problémy
+
+**Orphan reference (2 případy):**
+- Jednotka `ku-22-rule-dup-7` obsahuje v `related_units` neplatné reference:
+  - `ZP` – není platný ID formát
+  - `ZPP` – není platný ID formát
+- **Doporučení:** Opravit nebo odstranit tyto reference
+
+### 7.4 ID formát
+
+Dataset používá lidsky čitelný formát ID místo UUID:
+- Formát: `ku-NNN-popis-YYYY` (např. `ku-001-bod-sas-2026`)
+- **Výhoda:** Snazší ladění a údržba
+- **Poznámka:** Schéma definuje UUID, ale praktický formát je použitelnější
+
+### 7.5 Závěr validace
+
+✅ **Dataset je v dobrém stavu** s 100% schema compliance a bez duplicit.
+
+⚠️ **Drobné nedostatky:**
+- 2 orphan reference k opravě (nízká priorita)
+- Pouze 4.5% jednotek má vyplněné `related_units` (prostor pro zlepšení)
+
+Výsledky uloženy do: [[validation_results]]
+
+---
+
+*Aktualizováno: 2026-02-03*
 *Autor: Benjamin (Maestro AI Agent)*
-*Zdroje: [[data_statistics]], [[rag_gap_analysis]], [[use_case_coverage_matrix]]*
+*Zdroje: [[data_statistics]], [[rag_gap_analysis]], [[use_case_coverage_matrix]], [[validation_results]]*

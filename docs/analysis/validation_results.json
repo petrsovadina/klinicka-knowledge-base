@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-02-03T01:22:56.787327",
+  "dataset_path": "/Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/data/knowledge_base_final.jsonl",
+  "total_units": 552,
+  "checks": {
+    "schema_validation": {
+      "passed": true,
+      "valid_units": 552,
+      "invalid_units": 0,
+      "compliance_percentage": 100.0,
+      "errors": []
+    },
+    "duplicate_ids": {
+      "passed": true,
+      "duplicate_count": 0,
+      "duplicates": {}
+    },
+    "orphan_references": {
+      "passed": false,
+      "orphan_count": 2,
+      "orphans": [
+        {
+          "unit_id": "ku-22-rule-dup-7",
+          "orphan_reference": "ZP",
+          "line": 506
+        },
+        {
+          "unit_id": "ku-22-rule-dup-7",
+          "orphan_reference": "ZPP",
+          "line": 506
+        }
+      ]
+    },
+    "relationships": {
+      "units_with_related": 25,
+      "unique_references": 21,
+      "percentage_with_relations": 4.5
+    },
+    "domain_distribution": {
+      "uhrady": 338,
+      "provoz": 45,
+      "financni-rizika": 85,
+      "legislativa": 58,
+      "compliance": 26
+    },
+    "type_distribution": {
+      "rule": 401,
+      "condition": 30,
+      "exception": 27,
+      "risk": 39,
+      "anti_pattern": 14,
+      "definition": 41
+    }
+  },
+  "overall_passed": false
+}
