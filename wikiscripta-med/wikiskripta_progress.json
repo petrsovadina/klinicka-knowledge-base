@@ -1,0 +1,15 @@
+{
+  "status": "error",
+  "total": 0,
+  "current": 0,
+  "success": 0,
+  "errors": 0,
+  "skipped": 0,
+  "current_title": "",
+  "log": [
+    "FATAL: Could not find a suitable TLS CA certificate bundle, invalid path: /Users/petrsovadina/Desktop/Develope/personal/klinicka-knowledge-base/.venv/lib/python3.14/site-packages/certifi/cacert.pem"
+  ],
+  "started_at": "2026-02-26 10:13:09",
+  "finished_at": null,
+  "output_dir": "wikiskripta_markdown"
+}
